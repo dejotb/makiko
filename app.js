@@ -19,9 +19,9 @@ const nav = document.querySelector('.nav')
 
 const toggleHam = function (e) {
     console.log(e.target);
-console.log(e.target.parentElement.hasAttribute('aria-expanded'));
-    if (e.target.hasAttribute('aria-expanded') || e.target.parentElement.hasAttribute('aria-expanded') || e.target.classList.contains('nav__link')) {
-        const eState = e.target.getAttribute('aria-expanded')
+console.log(e.target.classList.contains('hamburger__line'));
+    if (e.target.hasAttribute('aria-expanded') || e.target.classList.contains('hamburger__line') || e.target.classList.contains('nav__link')) {
+        const eState = burger.getAttribute('aria-expanded')
 
         if (eState == 'true' || e.target.classList.contains('nav__link')) {
             burger.classList.remove('toggleHam')

@@ -99,6 +99,7 @@ h1 {
   top: 25%;
   right: -5rem;
   color: white;
+  cursor: default;
 }
 
 .toggleHam:hover .hamburger__line::before,

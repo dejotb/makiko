@@ -7,7 +7,7 @@ const navigation = function () {
     const burgerText = document.querySelector('.hamburger__text')
     const nav = document.querySelector('.nav')
     const navListOverlay = document.querySelector('.nav__list--overlay')
-    const navList = document.querySelector('.nav__list')
+    const navListWrapper = document.querySelector('.nav__list--wrapper')
 
     const navAriaExpandedState = function (state) {
         nav.querySelectorAll('[aria-expanded]').forEach(element => {
@@ -16,10 +16,8 @@ const navigation = function () {
     }
 
     const navTranslate = function (navOverlayPosition, navListPosition) {
-        navListOverlay.style.transform = 'translateX(-150%)'
-        navList.style.transform = 'translateX(-100%)'
         navListOverlay.style.transform = `translateX(${navOverlayPosition}%)`
-        navList.style.transform = `translateX(${navListPosition}%)`
+        navListWrapper.style.transform = `translateX(${navListPosition}%)`
     }
 
     navTranslate()

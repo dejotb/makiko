@@ -1,7 +1,8 @@
 .nav {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  // justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
   font-size: 3rem;
@@ -105,28 +106,38 @@
   }
 }
 
-.nav__list {
+.nav__list--wrapper {
   position: absolute;
   background-color: pink;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-left: 5rem;
+  // padding-left: 5rem;
   transition: 0.7s all 0.2s ease-in-out;
-  list-style: none;
   inset: 0;
+  transform: translateX(-100%);
 
   @media screen and (min-width: $bp-sm) {
     inset: 0 50vw 0 0;
   }
 }
 
+.nav__list {
+  list-style: none;
+}
+
+.nav__item {
+  // color: red;
+  // align-self: flex-start;
+}
+
 .nav__list--overlay {
   background-color: black;
   position: absolute;
-  transition: 0.7s all 0.2s ease-in-out;
+  transition: 0.9s all 0.5s ease-out;
   opacity: 0.5;
+  transform: translateX(-150%);
 
   @media screen and (min-width: $bp-sm) {
     inset: 0;
@@ -134,11 +145,16 @@
 }
 
 .nav__link {
+  color: black;
   text-decoration: none;
+  transition: 0.2s all;
   &:visited,
   &:focus,
   &:active {
     color: black;
+  }
+  &:hover {
+    color: red;
   }
 }
 
@@ -148,6 +164,13 @@
 
 .hamburger__inactive {
   animation: lettersEffectsInactive 1s ease-in-out;
+}
+
+.nav__logo {
+  justify-self: end;
+  @media screen and (min-width: $bp-sm) {
+    margin-right: auto;
+  }
 }
 
 @keyframes lettersEffectActive {

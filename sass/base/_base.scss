@@ -22,8 +22,15 @@ html {
 
 body {
   font-family: $font-primary;
-  color: $color-grey-dark-1;
+  color: var(--color--font);
   font-weight: 400;
   line-height: 1.6;
-  background-color: #07b8ba;
+  // background-color: #07b8ba;
+  background-color: #ffd83f;
+  // position: relative;
+}
+
+::selection {
+  background-color: $color-yellow;
+  color: $color-grey-dark-2;
 }

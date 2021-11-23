@@ -1,3 +1,10 @@
+:root {
+  --color--font: #0f2a50;
+  --color--primary: #ffd83f;
+  --color--primary--dark: darken(var(--color--primary), 20%);
+  --color--primary--light: lighten(var(--color--primary), 15%);
+}
+
 *,
 *::before,
 *::after {
@@ -21,10 +28,15 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #696969;
+  color: var(--color--font);
   font-weight: 400;
   line-height: 1.6;
-  background-color: #07b8ba;
+  background-color: #ffd83f;
+}
+
+::selection {
+  background-color: #ffdc64;
+  color: #363636;
 }
 
 .pg {
@@ -43,8 +55,41 @@ body {
   margin-top: -1rem;
 }
 
-h1 {
-  text-align: center;
+.heading--1 {
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.heading--2 {
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #aaa;
+}
+.heading--3 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #696969;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.heading--4 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin: 0 1rem;
+}
+.heading--light {
+  color: #f9f7f6;
+}
+.heading--dark {
+  color: #696969;
 }
 
 .nav {
@@ -63,7 +108,7 @@ h1 {
   position: relative;
   background-color: transparent;
   cursor: pointer;
-  z-index: 100;
+  z-index: 150;
 }
 .hamburger:hover .hamburger__line::after {
   transform: translateY(-2px);
@@ -137,15 +182,17 @@ h1 {
 }
 
 .nav__list--wrapper {
-  position: absolute;
+  position: fixed;
   background-color: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: 0.7s all 0.2s ease-in-out;
+  height: 100vh;
   inset: 0;
   transform: translateX(-100%);
+  z-index: 100;
 }
 @media screen and (min-width: 45em) {
   .nav__list--wrapper {
@@ -159,10 +206,11 @@ h1 {
 
 .nav__list--overlay {
   background-color: black;
-  position: absolute;
+  position: fixed;
   transition: 0.9s all 0.5s ease-out;
   opacity: 0.5;
   transform: translateX(-150%);
+  z-index: 100;
 }
 @media screen and (min-width: 45em) {
   .nav__list--overlay {
@@ -220,11 +268,24 @@ h1 {
   }
 }
 .header {
-  width: 100%;
-  margin: 0 auto;
+  background-color: var(--color--primary);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
-
+.header__heading {
+  margin: 4rem 2rem;
+}
+.header__img {
+  display: block;
+  width: 40rem;
+  position: absolute;
+  bottom: -20rem;
+  right: -6rem;
+}
 .main {
   width: 100%;
   margin: 0 auto;

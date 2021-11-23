@@ -1,3 +1,67 @@
-h1 {
-  text-align: center;
+body {
+}
+
+.heading {
+  &--1 {
+    font-family: $font-primary;
+    font-size: 4rem;
+    // color: var(--color--font);
+    line-height: 1;
+    font-weight: 400;
+
+    // @media only screen and (max-width: $bp-large) {
+    //   font-size: 6rem;
+    // }
+
+    // @media only screen and (max-width: $bp-small) {
+    //   font-size: 5.7rem;
+    // }
+  }
+
+  &--2 {
+    font-family: $font-primary;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px $color-grey-light-2;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //   font-size: 3rem;
+    // }
+  }
+
+  &--3 {
+    font-family: $font-primary;
+    font-size: 2rem;
+    color: $color-grey-dark-1;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+
+    // @media only screen and (max-width: $bp-largest) {
+    //   font-size: 1.9rem;
+
+    //   &:before {
+    //     display: none;
+    //   }
+    // }
+  }
+
+  &--4 {
+    font-family: $font-display;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin: 0 1rem;
+  }
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
 }

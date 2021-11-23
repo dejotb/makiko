@@ -1,3 +1,11 @@
+:root {
+  // COLOR VARIABLES
+  --color--font: #0f2a50;
+  --color--primary: #ffd83f;
+  --color--primary--dark: darken(var(--color--primary), 20%);
+  --color--primary--light: lighten(var(--color--primary), 15%);
+}
+
 // COLOR VARIABLES
 
 $color-primary: #45a86e;

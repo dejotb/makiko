@@ -1,11 +1,34 @@
 .header {
-  width: 100%;
-  margin: 0 auto;
+  background-color: var(--color--primary);
+  // width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
   height: 100vh;
-  //   &__img {
-  //     position: fixed;
+  position: relative;
+  overflow: hidden;
 
-  //     width: 40vw;
-  //     height: auto;
-  //   }
+  &__heading {
+    margin: 4rem 2rem;
+    // margin: 2rem auto;
+    // text-align: center;
+  }
+  &__img {
+    display: block;
+    width: 40rem;
+    position: absolute;
+    bottom: -20rem;
+    right: -6rem;
+    // width: 80vw;
+    // height: auto;
+    // z-index: 1;
+    // width: 100%;
+
+    @media screen and (min-width: $bp-md) {
+      // width: 90vw;
+    }
+  }
+
+  &__text {
+  }
 }

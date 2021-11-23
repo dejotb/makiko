@@ -239,12 +239,16 @@ body {
 }
 
 .nav__logo {
+  width: 12rem;
   justify-self: end;
 }
 @media screen and (min-width: 45em) {
   .nav__logo {
     margin-right: auto;
   }
+}
+.nav__logo img {
+  width: 100%;
 }
 
 @keyframes lettersEffectActive {

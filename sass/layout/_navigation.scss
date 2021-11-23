@@ -172,9 +172,14 @@
 }
 
 .nav__logo {
+  width: 12rem;
   justify-self: end;
   @media screen and (min-width: $bp-sm) {
     margin-right: auto;
+  }
+
+  img {
+    width: 100%;
   }
 }
 

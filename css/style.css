@@ -281,10 +281,10 @@ body {
 }
 .header__img {
   display: block;
-  width: 40rem;
+  height: 100vh;
   position: absolute;
-  bottom: -20rem;
-  right: -6rem;
+  bottom: -16rem;
+  right: -7rem;
 }
 .main {
   width: 100%;

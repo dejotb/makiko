@@ -1,8 +1,6 @@
 :root {
   --color--font: #0f2a50;
-  --color--primary: #ffd83f;
-  --color--primary--dark: darken(var(--color--primary), 20%);
-  --color--primary--light: lighten(var(--color--primary), 15%);
+  --color--primary: #ffc600;
 }
 
 *,
@@ -31,7 +29,6 @@ body {
   color: var(--color--font);
   font-weight: 400;
   line-height: 1.6;
-  background-color: #ffd83f;
 }
 
 ::selection {
@@ -56,7 +53,7 @@ body {
 }
 
 .heading--1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Neuton", serif;
   font-size: 4rem;
   line-height: 1;
   font-weight: 400;
@@ -79,7 +76,7 @@ body {
   z-index: 1;
 }
 .heading--4 {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Neuton", serif;
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
@@ -93,6 +90,7 @@ body {
 }
 
 .nav {
+  background-color: var(--color--primary);
   width: 100%;
   display: grid;
   grid-auto-flow: column;
@@ -120,15 +118,15 @@ body {
   display: block;
   position: absolute;
   width: 100%;
-  height: 0.15rem;
-  background-color: #fff;
+  height: 0.3rem;
+  background-color: #e84118;
   transition: 0.5s all;
 }
 .hamburger__line::before, .hamburger__line::after {
   display: block;
   position: absolute;
   width: 100%;
-  height: 0.15rem;
+  height: 0.3rem;
   background-color: inherit;
   content: "";
   transition: 0.5s all;
@@ -140,10 +138,11 @@ body {
   top: 0.8rem;
 }
 .hamburger__text {
+  font-size: 1.5rem;
   position: absolute;
-  top: 25%;
+  top: 22%;
   right: -5rem;
-  color: white;
+  color: #e84118;
   cursor: default;
 }
 
@@ -163,7 +162,7 @@ body {
 .toggleHam .hamburger__line::before, .toggleHam .hamburger__line::after {
   height: 0.15rem;
   width: 100%;
-  background-color: black;
+  background-color: #e84118;
   content: "";
   display: block;
   position: absolute;
@@ -272,23 +271,36 @@ body {
   }
 }
 .header {
-  background-color: var(--color--primary);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow: hidden;
+  background-color: var(--color--primary);
 }
 .header__heading {
-  margin: 4rem 2rem;
+  margin: 4rem 2rem 2rem;
 }
 .header__img {
   display: block;
-  height: 100vh;
-  position: absolute;
-  bottom: -16rem;
-  right: -7rem;
+  position: fixed;
+  width: 40rem;
+  top: 50%;
+  left: 50%;
+  margin-top: -10rem;
+  /* Negative half of height. */
+  margin-left: -20rem;
+  /* Negative half of width. */
+}
+@media screen and (min-width: 55em) {
+  .header__img {
+    width: 60rem;
+    margin-top: -20rem;
+    /* Negative half of height. */
+    margin-left: -30rem;
+    /* Negative half of width. */
+  }
 }
 .main {
   width: 100%;

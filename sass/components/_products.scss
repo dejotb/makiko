@@ -1,3 +1,7 @@
+.products {
+  height: 300vh;
+}
+
 .box {
   display: grid;
   &__card {
@@ -9,10 +13,10 @@
       grid-auto-flow: column;
     }
     &--image {
-      width: 40vw;
+      height: 20rem;
 
       @media screen and (min-width: $bp-sm) {
-        width: 20vw;
+        width: 20vh;
       }
     }
   }

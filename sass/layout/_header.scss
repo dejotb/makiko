@@ -15,22 +15,21 @@
   }
   &__img {
     display: block;
-    position: fixed;
-    width: 40rem;
+    // position: fixed;
+    width: 20rem;
     // height: 200px;
-    top: 50%;
-    left: 50%;
-    margin-top: -10rem; /* Negative half of height. */
-    margin-left: -20rem; /* Negative half of width. */
+    // top: 55%;
+    // left: 50%;
+
     // width: 80vw;
     // height: auto;
     // z-index: 1;
     // width: 100%;
 
     @media screen and (min-width: $bp-md) {
-      width: 60rem;
-      margin-top: -20rem; /* Negative half of height. */
-      margin-left: -30rem; /* Negative half of width. */
+      width: 30rem;
+      margin-top: -30rem; /* Negative half of height. */
+      margin-left: -40rem; /* Negative half of width. */
     }
   }
 

@@ -13,10 +13,10 @@
       grid-auto-flow: column;
     }
     &--image {
-      height: 20rem;
+      height: 40vh;
 
       @media screen and (min-width: $bp-sm) {
-        width: 20vh;
+        height: 60vh;
       }
     }
   }

@@ -58,7 +58,6 @@ body {
 }
 
 .img-1 {
-  animation: productEffectsEnd 3s;
   display: block;
   height: 100%;
 }
@@ -69,22 +68,39 @@ body {
   display: block;
   height: 40vh;
   top: 60%;
-  left: 51.5%;
-  transform-origin: -80px -90px;
+  left: 50%;
+  transform-origin: 20% 40%;
+  animation: imageScrollEffects 2.5s linear 2s;
   /* bring your own prefixes */
 }
 @media screen and (min-width: 45em) {
   .img__scrolled {
-    height: 50vh;
+    top: 50%;
+    height: 60vh;
   }
 }
 
-@keyframes productEffectsEnd {
-  0% {
-    transform: translateX(0) scale(0.5) opacity(0);
+@keyframes imageScrollEffects {
+  0%, 7% {
+    transform: rotateZ(0) translate(-50%, -40%);
   }
-  100% {
-    transform: translateX(0) scale(1) opacity(1);
+  15% {
+    transform: rotateZ(-15deg) translate(-50%, -40%);
+  }
+  20% {
+    transform: rotateZ(10deg) translate(-50%, -40%);
+  }
+  25% {
+    transform: rotateZ(-10deg) translate(-50%, -40%);
+  }
+  30% {
+    transform: rotateZ(6deg) translate(-50%, -40%);
+  }
+  35% {
+    transform: rotateZ(-4deg) translate(-50%, -40%);
+  }
+  40%, 100% {
+    transform: rotateZ(0) translate(-50%, -40%);
   }
 }
 .heading--1 {
@@ -353,11 +369,11 @@ body {
   }
 }
 .box__card--image {
-  height: 20rem;
+  height: 40vh;
 }
 @media screen and (min-width: 45em) {
   .box__card--image {
-    width: 20vh;
+    height: 60vh;
   }
 }
 

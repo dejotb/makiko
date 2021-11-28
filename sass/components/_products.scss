@@ -1,23 +1,90 @@
 .products {
-  height: 300vh;
+  // height: 300vh;
 }
 
 .box {
   display: grid;
   &__card {
+    height: 100vh;
     display: grid;
-    // grid-auto-flow: column;
+    align-items: center;
     justify-items: center;
 
     @media screen and (min-width: $bp-sm) {
       grid-auto-flow: column;
+      grid-template-columns: 1fr 2fr 1fr;
     }
     &--image {
       height: 40vh;
 
       @media screen and (min-width: $bp-sm) {
-        height: 60vh;
+        height: 60vmin;
       }
     }
+
+    &--composition {
+      // background-color: pink;
+      text-align: left;
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 2px 4px;
+      }
+
+      td {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.img-1 {
+  // transition: 0.3s ease-in-out;
+  display: block;
+  height: 100%;
+  position: sticky;
+}
+
+.img__scrolled {
+  position: fixed;
+  transform: translate(-50%, -40%);
+  display: block;
+  height: 40vh;
+  top: 60%;
+  left: 50%;
+  transform-origin: 20% 40%;
+  animation: imageScrollEffects 2.5s linear 2s;
+  // transition: 0.3s;
+  /* bring your own prefixes */
+  @media screen and (min-width: $bp-sm) {
+    top: 50%;
+    height: 60vmin;
+  }
+}
+
+@keyframes imageScrollEffects {
+  0%,
+  7% {
+    transform: rotateZ(0) translate(-50%, -40%);
+  }
+  15% {
+    transform: rotateZ(-15deg) translate(-50%, -40%);
+  }
+  20% {
+    transform: rotateZ(10deg) translate(-50%, -40%);
+  }
+  25% {
+    transform: rotateZ(-10deg) translate(-50%, -40%);
+  }
+  30% {
+    transform: rotateZ(6deg) translate(-50%, -40%);
+  }
+  35% {
+    transform: rotateZ(-4deg) translate(-50%, -40%);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0) translate(-50%, -40%);
   }
 }

@@ -77,7 +77,7 @@ const movingImage = function (entries) {
 
 const productsOptions = {
     root: null,
-    threshold: [0.20],
+    threshold: [0.195],
     rootMargin: '0px',
 }
 

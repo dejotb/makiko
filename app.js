@@ -110,98 +110,118 @@ const productScroll = function() {
 
 const box = document.querySelector('.box')
 
-const infoType = document.querySelectorAll('.box__card--composition')
-console.log(infoType);
+const productDetails = document.querySelectorAll('.box__card--composition')
 
-const button = document.querySelectorAll('.btn')
-
-console.log(button);
-
-const cardIngredients = document.querySelectorAll('.box__card--composition-ingredients');
-
-const cardNutricients = document.querySelectorAll('.box__card--composition-nutrition');
-
-
-
-    box.addEventListener('click', function(e) {
-
-        if ([...e.target.parentElement.children].find(el => el.classList.contains('box__card--composition-nutrition'))) {
-            return
-        } else  {
-            if (e.target.classList.contains('products__btn--nutritients')          ) {
-                const cardNumber = e.target.parentElement.dataset.boxcomposition;
-                const NutritionTable = `
-                <div
-                class="box__card--composition-nutrition"
-                data-nutrition="1"
+const NutritionTable = `
+<div
+class="box__card--composition-nutrition"
+data-nutrition="1"
+>
+<table>
+<thead>
+  <th scope="col">Tabela</th>
+</thead>
+<tbody>
+  <tr>
+    <th scope="row">
+      Wartość odżywcza w /
+      <br />
+      Nutritional value per
+    </th>
+    <td>100g</td>
+  </tr>
+  <tr>
+    <th scope="row">Wartość energetyczna / Energy</th>
+    <td>
+      1811kJ
+      <br />
+      433kcal
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Tłuszcz / Fat
+      <br />
+      w tym kwasy tłuszczowe nasycone / including saturated
+      fatty acids
+    </th>
+    <td>
+      17.8g
+      <br />
+      3.2g
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+      Węglowodany / Carbohydrates
+      <br />
+      w tym cukry / including sugars
+    </th>
+    <td>
+      59.3g
+      <br />
+      6.9g
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">Błonnik / Fibre</th>
+    <td>3.2g</td>
+  </tr>
+  <tr>
+    <th scope="row">Białko / Protein</th>
+    <td>11.7g</td>
+  </tr>
+  <tr>
+    <th scope="row">Sól / Salt</th>
+    <td>0.04g</td>
+  </tr>
+</tbody>
+</table>
+</div>
+`
+const ingredients = `
+            <div
+                class="box__card--composition-ingredients"
+                data-ingredients="1"
               >
-                <table>
-                <thead>
-                  <th scope="col">Tabela</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      Wartość odżywcza w /
-                      <br />
-                      Nutritional value per
-                    </th>
-                    <td>100g</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Wartość energetyczna / Energy</th>
-                    <td>
-                      1811kJ
-                      <br />
-                      433kcal
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      Tłuszcz / Fat
-                      <br />
-                      w tym kwasy tłuszczowe nasycone / including saturated
-                      fatty acids
-                    </th>
-                    <td>
-                      17.8g
-                      <br />
-                      3.2g
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      Węglowodany / Carbohydrates
-                      <br />
-                      w tym cukry / including sugars
-                    </th>
-                    <td>
-                      59.3g
-                      <br />
-                      6.9g
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Błonnik / Fibre</th>
-                    <td>3.2g</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Białko / Protein</th>
-                    <td>11.7g</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Sól / Salt</th>
-                    <td>0.04g</td>
-                  </tr>
-                </tbody>
-              </table>
+                <p>Składniki</p>
+                <ul>
+                  <li>mąka pszenna</li>
+                  <li>ziarno sezamowe (20%)</li>
+                  <li>tłuszcz roślinny</li>
+                  <li>cukier</li>
+                  <li>drożdże</li>
+                  <li>wodorotlenek sodu (regulator kwasowości)</li>
+                </ul>
+
+                <!-- <p>Ingredients</p>
+                <ul>
+                  <li>wheat flour</li>
+                  <li>sesame seeds (20%)</li>
+                  <li>vegetable fat</li>
+                  <li>sugar</li>
+                  <li>yeast</li>
+                  <li>sodium hydroxide</li>
+                </ul> -->
               </div>
-                `
-                e.target.parentElement.insertAdjacentHTML('beforeend', NutritionTable);
+            </div>`
 
 
-            }
+productDetails.forEach(product => product.insertAdjacentHTML('beforeend', ingredients))
+
+
+const switchData = function (e, HTMLOption, cardType) {
+    e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
+    e.target.parentElement.querySelector(cardType).remove()
+}
+
+box.addEventListener('click', function(e) {
+        if (e.target.classList.contains('products__btn--nutritients') && !e.target.parentElement.querySelector('.box__card--composition-nutrition')) {
+            // const cardNumber = e.target.parentElement.dataset.boxcomposition;
+            switchData(e, NutritionTable, '.box__card--composition-ingredients')
+
+        } else if (e.target.classList.contains('products__btn--ingredients') && !e.target.parentElement.querySelector('.box__card--composition-ingredients')){
+            switchData(e, ingredients, '.box__card--composition-nutrition')
         }
-
-
-    })
+    }
+)

@@ -100,7 +100,7 @@ body {
 }
 
 .nav {
-  background-color: var(--color--primary);
+  background-color: transparent;
   width: 100%;
   display: grid;
   grid-auto-flow: column;
@@ -284,10 +284,12 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
-  height: 90vh;
+  align-items: start;
+  height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: var(--color--primary);
+  background: #ffc600;
+  background: linear-gradient(180deg, #ffc600 0%, #ffc600 56%, #fffc00 92%);
 }
 .header__heading {
   margin: 4rem 2rem 2rem;
@@ -311,39 +313,41 @@ body {
   background-color: aliceblue;
 }
 
-.box {
+.products__box {
   display: grid;
 }
-.box__card {
+.products__card {
   height: 100vh;
   display: grid;
   align-items: center;
   justify-items: center;
 }
 @media screen and (min-width: 45em) {
-  .box__card {
+  .products__card {
     grid-auto-flow: column;
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
-.box__card--image {
+.products__image {
   height: 40vh;
 }
 @media screen and (min-width: 45em) {
-  .box__card--image {
+  .products__image {
     height: 60vmin;
   }
 }
-.box__card--composition {
+.products__composition {
   text-align: left;
 }
-.box__card--composition th,
-.box__card--composition td {
-  border: 1px solid black;
+.products__composition th,
+.products__composition td {
   padding: 2px 4px;
 }
-.box__card--composition td {
+.products__composition td {
   text-align: center;
+}
+.products__composition th {
+  text-align: left;
 }
 
 .img-1 {

@@ -1,9 +1,9 @@
 .products {
   // height: 300vh;
-}
 
-.box {
-  display: grid;
+  &__box {
+    display: grid;
+  }
   &__card {
     height: 100vh;
     display: grid;
@@ -14,27 +14,30 @@
       grid-auto-flow: column;
       grid-template-columns: 1fr 2fr 1fr;
     }
-    &--image {
-      height: 40vh;
+  }
+  &__image {
+    height: 40vh;
 
-      @media screen and (min-width: $bp-sm) {
-        height: 60vmin;
-      }
+    @media screen and (min-width: $bp-sm) {
+      height: 60vmin;
+    }
+  }
+
+  &__composition {
+    // background-color: pink;
+    text-align: left;
+
+    th,
+    td {
+      // border: 1px solid black;
+      padding: 2px 4px;
     }
 
-    &--composition {
-      // background-color: pink;
+    td {
+      text-align: center;
+    }
+    th {
       text-align: left;
-
-      th,
-      td {
-        border: 1px solid black;
-        padding: 2px 4px;
-      }
-
-      td {
-        text-align: center;
-      }
     }
   }
 }

@@ -11,43 +11,43 @@
     <title>makiko</title>
   </head>
   <body>
-    <nav class="nav">
-      <button class="hamburger" aria-label="Nawigacja" aria-expanded="false">
-        <span class="hamburger__line"></span>
-        <span class="hamburger__text">MENU</span>
-      </button>
-      <div class="nav__list--overlay" aria-expanded="false"></div>
-      <div class="nav__list--wrapper">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#produkty" class="nav__link">Produkty</a>
-          </li>
-          <li class="nav__item">
-            <a href="#specjalizacje" class="nav__link">O firmie</a>
-          </li>
-          <li class="nav__item">
-            <a href="#kontakt" class="nav__link">Kontakt</a>
-          </li>
-          <li nav__item>
-            <a
-              href="https://www.google.com/maps/place/Makiko+s.c.+Producent+paluszk%C3%B3w+sezamowych,+makowych+i+s%C5%82onych/@52.1415142,21.2332521,15z/data=!4m2!3m1!1s0x0:0x6823dd208f41011a?sa=X&ved=2ahUKEwj_v9GZ1aL0AhWDlIsKHSKwCcUQ_BJ6BAg-EAU"
-              class="nav__link"
-              target="bank_"
-              >lokalizacja</a
-            >
-          </li>
-          <li nav__item>
-            <a href="tel:+487896184" class="nav__link">tel. 7896184</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="nav__logo">
-        <img src="img/logo.PNG" alt="logo" />
-      </div>
-    </nav>
     <header class="header">
-      <h1 class="header__heading heading--1">
+      <nav class="nav">
+        <button class="hamburger" aria-label="Nawigacja" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__text">MENU</span>
+        </button>
+        <div class="nav__list--overlay" aria-expanded="false"></div>
+        <div class="nav__list--wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#produkty" class="nav__link">Produkty</a>
+            </li>
+            <li class="nav__item">
+              <a href="#specjalizacje" class="nav__link">O firmie</a>
+            </li>
+            <li class="nav__item">
+              <a href="#kontakt" class="nav__link">Kontakt</a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.google.com/maps/place/Makiko+s.c.+Producent+paluszk%C3%B3w+sezamowych,+makowych+i+s%C5%82onych/@52.1415142,21.2332521,15z/data=!4m2!3m1!1s0x0:0x6823dd208f41011a?sa=X&ved=2ahUKEwj_v9GZ1aL0AhWDlIsKHSKwCcUQ_BJ6BAg-EAU"
+                class="nav__link"
+                target="bank_"
+                >lokalizacja</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="tel:+487896184" class="nav__link">tel. 7896184</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__logo">
+          <img src="img/logo.PNG" alt="logo" />
+        </div>
+      </nav>
+      <h1 class="heading--1 header__heading">
         Niezmienna receptura i smak od 1980 roku.
       </h1>
       <!-- <img class="header__img" src="img/products_img--1.png" /> -->
@@ -62,21 +62,21 @@
     </header>
     <main class="main">
       <section id="produkty" class="products">
-        <div class="box">
-          <div class="box__card">
-            <div class="box__card--description">
+        <div class="box products__box">
+          <div class="box__card products__card">
+            <div class="products__description">
               <h2>Paluszki z Sezamem</h2>
             </div>
-            <div class="box__card--image">
+            <div class="products__image">
               <img
                 src="img/products_img--1.png"
                 alt="opakowanie paluszków z sezamem"
                 srcset=""
-                data-image="image__moved"
-                class="img__scrolled"
+                class="img"
               />
             </div>
-            <div class="box__card--composition" data-boxComposition="1">
+
+            <div class="products__composition" data-boxComposition="1">
               <button
                 class="btn products__btn--ingredients"
                 data-btn-ingredients="1"
@@ -91,11 +91,12 @@
               </button>
             </div>
           </div>
-          <div class="box__card">
-            <div class="box__card--description">
+
+          <div class="box__card products__card">
+            <div class="products__description">
               <h2>Paluszki z Makiem</h2>
             </div>
-            <div class="box__card--image">
+            <div class="products__image">
               <img
                 src="img/products_img--2.png"
                 alt="opakowanie paluszków z sezamem"
@@ -103,7 +104,7 @@
                 class="img"
               />
             </div>
-            <div class="box__card--composition" data-boxComposition="2">
+            <div class="products__composition" data-boxComposition="2">
               <button
                 class="btn products__btn--ingredients"
                 data-btn-ingredients="2"
@@ -118,11 +119,11 @@
               </button>
             </div>
           </div>
-          <div class="box__card">
-            <div class="box__card--description">
+          <div class="box__card products__card">
+            <div class="products__description">
               <h2>Paluszki Solone</h2>
             </div>
-            <div class="box__card--image">
+            <div class="products__image">
               <img
                 src="img/products_img--3.png"
                 alt="opakowanie paluszków z sezamem"
@@ -130,7 +131,7 @@
                 class="img"
               />
             </div>
-            <div class="box__card--composition" data-boxComposition="3">
+            <div class="products__composition" data-boxComposition="3">
               <button
                 class="btn products__btn--ingredients"
                 data-btn-ingredients="3"

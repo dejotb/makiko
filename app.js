@@ -216,7 +216,6 @@ const compositionSwitch = function () {
         class="products__composition--ingredients"
         data-ingredients="1"
       >
-        <p>Składniki:</p>
         <ul>
           <li>mąka pszenna,</li>
           <li>${ingredient},</li>

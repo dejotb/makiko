@@ -58,6 +58,12 @@ body {
   height: 100%;
 }
 
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 body {
   font-size: 1.6rem;
 }
@@ -78,8 +84,8 @@ body {
   text-shadow: 1px 1px 1px #aaa;
 }
 .heading--3 {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
+  font-family: "Neuton", serif;
+  font-size: 4rem;
   color: #696969;
   font-weight: 700;
   position: relative;
@@ -328,6 +334,9 @@ body {
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
+.products__description {
+  font-family: "Neuton", serif;
+}
 .products__image {
   height: 40vh;
 }
@@ -348,6 +357,11 @@ body {
 }
 .products__composition th {
   text-align: left;
+}
+.products__btn {
+  padding: 2px 4px;
+  background-color: pink;
+  font-size: 2rem;
 }
 
 .img-1 {

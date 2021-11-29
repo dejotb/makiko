@@ -15,6 +15,11 @@
       grid-template-columns: 1fr 2fr 1fr;
     }
   }
+
+  &__description {
+    font-family: $font-display;
+  }
+
   &__image {
     height: 40vh;
 
@@ -39,6 +44,12 @@
     th {
       text-align: left;
     }
+  }
+
+  &__btn {
+    padding: 2px 4px;
+    background-color: pink;
+    font-size: 2rem;
   }
 }
 

@@ -10,7 +10,7 @@
     align-items: center;
     justify-items: center;
 
-    @media screen and (min-width: $bp-sm) {
+    @media screen and (min-width: $bp-xl) {
       grid-auto-flow: column;
       grid-template-columns: 1fr 2fr 1fr;
     }

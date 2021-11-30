@@ -72,6 +72,10 @@ body {
   cursor: pointer;
 }
 
+.show {
+  animation: fade-in 0.3s ease-in-out;
+}
+
 .hide {
   animation: fade-out 0.3s;
 }
@@ -350,7 +354,7 @@ body {
 }
 
 .box {
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .products__box {

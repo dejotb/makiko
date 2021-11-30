@@ -142,8 +142,7 @@ const compositionSwitch = function () {
   const nutritientsGenerator = function (nutritionData) {
     return `
     <div
-    class="products__composition--nutrition"
-    data-nutrition="1"
+    class="show products__composition--nutrition"
     >
     <table>
 
@@ -213,8 +212,8 @@ const compositionSwitch = function () {
   const ingredientsGenerator = function (ingredient) {
     return `
     <div
-        class="products__composition--ingredients"
-        data-ingredients="1"
+        class="show products__composition--ingredients"
+
       >
         <ul>
           <li>mąka pszenna,</li>
@@ -238,8 +237,13 @@ const compositionSwitch = function () {
   });
 
   const switchData = function (e, HTMLOption, cardType) {
-    e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
-    e.target.parentElement.querySelector(cardType).remove();
+    e.target.parentElement.querySelector(cardType).classList.add('hide');
+    setTimeout(() => {
+      e.target.parentElement.querySelector(cardType).remove();
+    }, 500);
+    setTimeout(() => {
+      e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
+    }, 500);
   };
 
   box.addEventListener('click', (e) => {

@@ -288,7 +288,7 @@ body {
 }
 
 .nav__logo {
-  width: 12rem;
+  width: 10rem;
   justify-self: end;
 }
 @media screen and (min-width: 45em) {
@@ -359,20 +359,25 @@ body {
 
 .products__box {
   display: grid;
-  grid-gap: 10rem;
+  grid-gap: 1rem;
+}
+@media screen and (min-width: 55em) {
+  .products__box {
+    grid-gap: 15rem;
+  }
 }
 .products__card {
-  height: 100vh;
+  min-height: 50vh;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
   grid-gap: 10rem;
 }
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 55em) {
   .products__card {
     grid-auto-flow: column;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .products__description {
@@ -388,7 +393,7 @@ body {
 }
 .products__composition {
   text-align: left;
-  height: 30rem;
+  min-height: 28rem;
   width: 25rem;
 }
 .products__composition th,

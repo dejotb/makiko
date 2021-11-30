@@ -18,7 +18,7 @@ const navigationSwitch = function () {
     navListWrapper.style.transform = `translateX(${navListPosition}%)`;
   };
 
-  navTranslate();
+  // navTranslate();
 
   const toggleHam = function (e) {
     if (

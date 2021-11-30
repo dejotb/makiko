@@ -3,12 +3,17 @@
 
   &__box {
     display: grid;
+    grid-gap: 10rem;
   }
   &__card {
-    height: 80vh;
+    // background-color: #507758;
+    height: 100vh;
     display: grid;
     align-items: center;
-    // justify-items: center;
+    justify-items: center;
+    // grid-template-rows: 1fr 1fr 50rem;
+    grid-template-columns: 1fr;
+    grid-gap: 10rem;
 
     @media screen and (min-width: $bp-xl) {
       grid-auto-flow: column;
@@ -29,14 +34,19 @@
   }
 
   &__composition {
-    // background-color: pink;
+    // background-color: #bada55;
+    // display: flex;
+    // flex-direction: column;
     text-align: left;
     // width: 100%;
+    height: 30rem;
+    width: 25rem;
+    // margin: 0 auto;
 
     th,
     td {
       // border: 1px solid black;
-      padding: 2px 4px;
+      padding: 3px 5px 3px 0;
     }
 
     td {
@@ -49,33 +59,13 @@
 
   &__btn {
     padding: 2px 4px;
-    background-color: pink;
-    font-size: 2rem;
+    // background-color: pink;
+    font-size: inherit;
   }
 }
 
-.img-1 {
-  // transition: 0.3s ease-in-out;
-  display: block;
-  height: 100%;
-  position: sticky;
-}
-
-.img__scrolled {
-  position: fixed;
-  transform: translate(-50%, -40%);
-  display: block;
-  height: 40vh;
-  top: 60%;
-  left: 50%;
-  transform-origin: 20% 40%;
-  animation: imageScrollEffects 2.5s linear 2s;
-  // transition: 0.3s;
-  /* bring your own prefixes */
-  @media screen and (min-width: $bp-sm) {
-    top: 50%;
-    height: 60vmin;
-  }
+.th--sm {
+  font-size: 1rem;
 }
 
 @keyframes imageScrollEffects {

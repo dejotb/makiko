@@ -139,6 +139,24 @@ const compositionSwitch = function () {
     ],
   };
 
+  const ingredientsGenerator = function (ingredient) {
+    return `
+    <div
+        class="show products__composition--ingredients"
+
+      >
+        <ul>
+          <li>mąka pszenna,</li>
+          <li>${ingredient},</li>
+          <li>tłuszcz roślinny,</li>
+          <li>cukier,</li>
+          <li>drożdże,</li>
+          <li>wodorotlenek sodu (regulator kwasowości).</li>
+        </ul>
+      </div>
+    </div>`;
+  };
+
   const nutritientsGenerator = function (nutritionData) {
     return `
     <div
@@ -165,7 +183,7 @@ const compositionSwitch = function () {
         <th scope="row">
           Tłuszcz
           <br />
-          w tym kwasy tłuszczowe nasycone
+          <span class="th--sm">w tym kwasy tłuszczowe nasycone</span>
         </th>
         <td>
         ${nutritionData[2]}
@@ -177,7 +195,7 @@ const compositionSwitch = function () {
         <th scope="row">
           Węglowodany
           <br />
-          w tym cukry
+          <span class="th--sm">w tym cukry</span>
         </th>
         <td>
         ${nutritionData[4]}
@@ -209,24 +227,6 @@ const compositionSwitch = function () {
     3: 'sól (2%)',
   };
 
-  const ingredientsGenerator = function (ingredient) {
-    return `
-    <div
-        class="show products__composition--ingredients"
-
-      >
-        <ul>
-          <li>mąka pszenna,</li>
-          <li>${ingredient},</li>
-          <li>tłuszcz roślinny,</li>
-          <li>cukier,</li>
-          <li>drożdże,</li>
-          <li>wodorotlenek sodu (regulator kwasowości).</li>
-        </ul>
-      </div>
-    </div>`;
-  };
-
   productDetails.forEach((product) => {
     product.insertAdjacentHTML(
       'beforeend',
@@ -240,10 +240,17 @@ const compositionSwitch = function () {
     e.target.parentElement.querySelector(cardType).classList.add('hide');
     setTimeout(() => {
       e.target.parentElement.querySelector(cardType).remove();
-    }, 500);
+    }, 300);
     setTimeout(() => {
       e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
-    }, 500);
+    }, 300);
+    e.target.classList.add('opacity--full');
+    e.target.classList.remove('opacity--half');
+
+    [...e.target.parentElement.children].forEach((el) => {
+      if (el !== e.target) el.classList.add('opacity--half');
+      el.classList.remove('opacity--full');
+    });
   };
 
   box.addEventListener('click', (e) => {

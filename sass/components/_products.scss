@@ -1,9 +1,10 @@
 .products {
   // height: 300vh;
+  margin: 0 1rem;
 
   &__box {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 6rem;
     @media screen and (min-width: $bp-md) {
       grid-gap: 15rem;
     }
@@ -12,7 +13,7 @@
     // background-color: #507758;
     min-height: 50vh;
     display: grid;
-    align-items: center;
+    // align-items: center;
     justify-items: center;
     // grid-template-rows: 1fr 1fr 50rem;
     grid-template-columns: 1fr;
@@ -29,44 +30,78 @@
   }
 
   &__image {
-    height: 40vh;
+    height: 50vh;
 
     @media screen and (min-width: $bp-sm) {
-      height: 60vmin;
+      height: 70vmin;
     }
   }
 
   &__composition {
     // background-color: #bada55;
-    // display: flex;
-    // flex-direction: column;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
     // width: 100%;
-    min-height: 28rem;
-    // width: 25rem;
+    min-height: 47rem;
+    // width: 40rem;
     // margin: 0 auto;
+
+    // tr {
+    //   // border: 1px solid black;
+    //   font-size: inherit;
+    //   caption-side: bottom;
+    //   border-spacing: 0;
+
+    //   &:last-of-type {
+    //     border-bottom: none;
+    //     color: pink;
+    //   }
+    // }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: inherit;
+    }
 
     th,
     td {
-      // border: 1px solid black;
-      padding: 3px 5px 3px 0;
+      border-bottom: 1px solid rgba(black, 0.3);
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+      font-weight: 400;
+    }
+
+    tr,
+    th,
+    td {
+      caption-side: bottom;
+      border-spacing: 0;
+      vertical-align: top;
     }
 
     td {
-      text-align: center;
+      // text-align: center;
     }
     th {
       text-align: left;
     }
   }
 
+  &__buttons {
+    display: flex;
+    // justify-content: space-around;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+
   &__btn {
-    padding: 2px 4px;
     // background-color: pink;
     font-size: inherit;
   }
 }
 
 .th--sm {
-  font-size: 1rem;
+  // font-size: 1rem;
 }

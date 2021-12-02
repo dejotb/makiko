@@ -1,5 +1,5 @@
 body {
-  font-size: 1.6rem;
+  font-size: calc(max(2rem, min(0.125rem + 3.333vw, 2.5rem)));
 }
 
 .heading {

@@ -182,24 +182,33 @@ const compositionSwitch = function () {
       <tr>
         <th scope="row">
           Tłuszcz
-          <br />
-          <span class="th--sm">w tym kwasy tłuszczowe nasycone</span>
         </th>
         <td>
         ${nutritionData[2]}
-          <br />
-          ${nutritionData[3]}
         </td>
+
+      </tr>
+      <tr>
+      <th scope="row">
+      w tym kwasy tłuszczowe nasycone
+      </th>
+
+      <td>${nutritionData[3]}</td>
       </tr>
       <tr>
         <th scope="row">
           Węglowodany
-          <br />
           <span class="th--sm">w tym cukry</span>
         </th>
         <td>
         ${nutritionData[4]}
-          <br />
+        </td>
+      </tr>
+      <tr>
+      <th scope="row">
+        w tym cukry
+        </th>
+        <td>
           ${nutritionData[5]}
         </td>
       </tr>
@@ -246,7 +255,6 @@ const compositionSwitch = function () {
         .closest('.products__composition')
         .insertAdjacentHTML('beforeend', HTMLOption);
       e.target.parentElement.nextElementSibling.classList.add('show');
-      console.log(e.target.parentElement.nextElementSibling);
     });
   };
 

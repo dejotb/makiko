@@ -95,14 +95,18 @@
 
   &__buttons {
     display: flex;
-    // justify-content: space-around;
+    justify-content: space-around;
     margin: 2rem 0;
-    align-self: center;
+    align-self: start;
+    gap: 4rem;
   }
 
   &__btn {
     // background-color: pink;
     font-size: inherit;
+    // &:hover {
+    //   opacity: 1;
+    // }
   }
 }
 

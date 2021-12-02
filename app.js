@@ -102,6 +102,7 @@ const productScroll = function () {
 const compositionSwitch = function () {
   const box = document.querySelector('.products__box');
   const productDetails = document.querySelectorAll('.products__composition');
+  const buttons = document.querySelectorAll('.products__buttons');
 
   const nutritionsOptions = {
     1: [
@@ -245,7 +246,7 @@ const compositionSwitch = function () {
     );
   });
 
-  const switchData = function (e, HTMLOption, cardType) {
+  const switchData = function (e, HTMLOption) {
     e.target.classList.replace('opacity--half', 'opacity--full');
     [...e.target.parentElement.children].forEach((el) => {
       if (el !== e.target)
@@ -273,8 +274,7 @@ const compositionSwitch = function () {
               .closest('[data-boxComposition]')
               .getAttribute('data-boxComposition')}`
           ]
-        ),
-        '.products__composition--ingredients'
+        )
       );
     } else if (
       e.target.classList.contains('products__btn--ingredients') &&
@@ -290,11 +290,28 @@ const compositionSwitch = function () {
               .closest('[data-boxComposition]')
               .getAttribute('data-boxComposition')}`
           ]
-        ),
-        '.products__composition--nutrition'
+        )
       );
     }
   });
+
+  // box.addEventListener('mouseover', (e) => {
+  //   if (!e.target.classList.contains('products__btn')) {
+  //   } else {
+  //     e.target.classList.add('opacity--full');
+  //     console.log(e.target);
+  //     // e.target.classList.add('opacity--half');
+  //   }
+  // });
+
+  // box.addEventListener('mouseout', (e) => {
+  //   if (!e.target.classList.contains('products__btn')) {
+  //   } else {
+  //     e.target.classList.remove('opacity--full');
+
+  //     // e.target.classList.add('opacity--half');
+  //   }
+  // });
 };
 
 compositionSwitch();

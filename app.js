@@ -142,7 +142,7 @@ const compositionSwitch = function () {
   const ingredientsGenerator = function (ingredient) {
     return `
     <div
-        class="show products__composition--ingredients"
+        class="products__composition--ingredients"
 
       >
         <ul>
@@ -160,7 +160,7 @@ const compositionSwitch = function () {
   const nutritientsGenerator = function (nutritionData) {
     return `
     <div
-    class="show products__composition--nutrition"
+    class="products__composition--nutrition"
     >
     <table>
 
@@ -237,39 +237,51 @@ const compositionSwitch = function () {
   });
 
   const switchData = function (e, HTMLOption, cardType) {
-    e.target.parentElement.querySelector(cardType).classList.add('hide');
     e.target.classList.replace('opacity--half', 'opacity--full');
-
     [...e.target.parentElement.children].forEach((el) => {
       if (el !== e.target)
         el.classList.replace('opacity--full', 'opacity--half');
-      e.target.parentElement.querySelector(cardType).remove();
-      e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
+      e.target.parentElement.nextElementSibling.remove();
+      e.target
+        .closest('.products__composition')
+        .insertAdjacentHTML('beforeend', HTMLOption);
+      e.target.parentElement.nextElementSibling.classList.add('show');
+      console.log(e.target.parentElement.nextElementSibling);
     });
   };
 
   box.addEventListener('click', (e) => {
     if (
       e.target.classList.contains('products__btn--nutritients') &&
-      !e.target.parentElement.querySelector('.products__composition--nutrition')
+      !e.target.parentElement.nextElementSibling.classList.contains(
+        'products__composition--nutrition'
+      )
     ) {
       switchData(
         e,
         nutritientsGenerator(
-          nutritionsOptions[`${e.target.parentElement.dataset.boxcomposition}`]
+          nutritionsOptions[
+            `${e.target
+              .closest('[data-boxComposition]')
+              .getAttribute('data-boxComposition')}`
+          ]
         ),
         '.products__composition--ingredients'
       );
     } else if (
       e.target.classList.contains('products__btn--ingredients') &&
-      !e.target.parentElement.querySelector(
-        '.products__composition--ingredients'
+      !e.target.parentElement.nextElementSibling.classList.contains(
+        'products__composition--ingredients'
       )
     ) {
       switchData(
         e,
         ingredientsGenerator(
-          ingredientsOptions[`${e.target.parentElement.dataset.boxcomposition}`]
+          ingredientsOptions[
+            `${e.target
+              .closest('[data-boxComposition]')
+              .getAttribute('data-boxComposition')}`
+          ]
         ),
         '.products__composition--nutrition'
       );

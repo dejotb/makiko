@@ -43,7 +43,7 @@
     text-align: left;
     // width: 100%;
     min-height: 28rem;
-    width: 25rem;
+    // width: 25rem;
     // margin: 0 auto;
 
     th,
@@ -69,30 +69,4 @@
 
 .th--sm {
   font-size: 1rem;
-}
-
-@keyframes imageScrollEffects {
-  0%,
-  7% {
-    transform: rotateZ(0) translate(-50%, -40%);
-  }
-  15% {
-    transform: rotateZ(-15deg) translate(-50%, -40%);
-  }
-  20% {
-    transform: rotateZ(10deg) translate(-50%, -40%);
-  }
-  25% {
-    transform: rotateZ(-10deg) translate(-50%, -40%);
-  }
-  30% {
-    transform: rotateZ(6deg) translate(-50%, -40%);
-  }
-  35% {
-    transform: rotateZ(-4deg) translate(-50%, -40%);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0) translate(-50%, -40%);
-  }
 }

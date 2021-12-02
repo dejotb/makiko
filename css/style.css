@@ -73,11 +73,11 @@ body {
 }
 
 .show {
-  animation: fade-in 0.3s ease-in-out;
+  animation: fade-in 0.5s ease-in-out;
 }
 
 .hide {
-  animation: fade-out 0.3s;
+  animation: fade-out 0.1s;
 }
 
 @keyframes fade-in {
@@ -394,7 +394,6 @@ body {
 .products__composition {
   text-align: left;
   min-height: 28rem;
-  width: 25rem;
 }
 .products__composition th,
 .products__composition td {
@@ -413,30 +412,6 @@ body {
 
 .th--sm {
   font-size: 1rem;
-}
-
-@keyframes imageScrollEffects {
-  0%, 7% {
-    transform: rotateZ(0) translate(-50%, -40%);
-  }
-  15% {
-    transform: rotateZ(-15deg) translate(-50%, -40%);
-  }
-  20% {
-    transform: rotateZ(10deg) translate(-50%, -40%);
-  }
-  25% {
-    transform: rotateZ(-10deg) translate(-50%, -40%);
-  }
-  30% {
-    transform: rotateZ(6deg) translate(-50%, -40%);
-  }
-  35% {
-    transform: rotateZ(-4deg) translate(-50%, -40%);
-  }
-  40%, 100% {
-    transform: rotateZ(0) translate(-50%, -40%);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

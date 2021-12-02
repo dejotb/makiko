@@ -38,19 +38,21 @@
 
 .show {
   // transition: 0.3s all;
-  animation: fade-in 0.3s ease-in-out;
+  animation: fade-in 0.5s ease-in-out;
 }
 
 .hide {
-  animation: fade-out 0.3s;
+  animation: fade-out 0.1s;
 }
 
 @keyframes fade-in {
   0% {
     opacity: 0;
+    // transform: translate3d(0, -0.5rem, 0);
   }
   to {
     opacity: 1;
+    // transform: translate3d(0, 0, 0);
   }
 }
 @keyframes fade-out {

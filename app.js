@@ -238,18 +238,13 @@ const compositionSwitch = function () {
 
   const switchData = function (e, HTMLOption, cardType) {
     e.target.parentElement.querySelector(cardType).classList.add('hide');
-    setTimeout(() => {
-      e.target.parentElement.querySelector(cardType).remove();
-    }, 300);
-    setTimeout(() => {
-      e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
-    }, 300);
-    e.target.classList.add('opacity--full');
-    e.target.classList.remove('opacity--half');
+    e.target.classList.replace('opacity--half', 'opacity--full');
 
     [...e.target.parentElement.children].forEach((el) => {
-      if (el !== e.target) el.classList.add('opacity--half');
-      el.classList.remove('opacity--full');
+      if (el !== e.target)
+        el.classList.replace('opacity--full', 'opacity--half');
+      e.target.parentElement.querySelector(cardType).remove();
+      e.target.parentElement.insertAdjacentHTML('beforeend', HTMLOption);
     });
   };
 

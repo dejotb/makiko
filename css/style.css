@@ -372,7 +372,7 @@ body {
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-gap: 10rem;
+  grid-gap: 5rem;
 }
 @media screen and (min-width: 55em) {
   .products__card {

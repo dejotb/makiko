@@ -362,7 +362,7 @@ body {
 .products__box {
   display: grid;
   grid-gap: 6rem;
-  background-color: #e30e1f;
+  background-color: #1f4c8a;
 }
 @media screen and (min-width: 55em) {
   .products__box {
@@ -370,7 +370,9 @@ body {
   }
 }
 .products__card {
+  padding: 0 1rem;
   background-color: #1f4c8a;
+  background-color: #3a8139;
   min-height: 50vh;
   display: grid;
   align-items: center;
@@ -396,13 +398,12 @@ body {
   }
 }
 .products__composition {
-  margin: 0 1rem;
   background-color: var(--color--primary);
   border-radius: 3%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  min-width: 80%;
+  min-width: 90%;
   min-height: 46rem;
   font-size: 2rem;
 }

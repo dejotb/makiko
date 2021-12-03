@@ -5,7 +5,7 @@
   &__box {
     display: grid;
     grid-gap: 6rem;
-    background-color: #1f4c8a;
+    background-color: #004490;
     @media screen and (min-width: $bp-md) {
       grid-gap: 15rem;
     }
@@ -13,8 +13,7 @@
   &__card {
     padding: 0 1rem;
     // background-color: var(--color--primary);
-    background-color: #1f4c8a;
-    background-color: #3a8139;
+    // background-color: #004490;
 
     min-height: 50vh;
     display: grid;
@@ -28,10 +27,20 @@
       grid-auto-flow: column;
       grid-template-columns: 1fr 1fr 1fr;
     }
-  }
 
-  &__description {
-    font-family: $font-display;
+    &--1 {
+      background-color: var(--color--yellow);
+    }
+    &--2 {
+      background-color: var(--color--blue);
+    }
+    &--3 {
+      background-color: var(--color--green);
+    }
+
+    &__description {
+      font-family: $font-display;
+    }
   }
 
   &__image {
@@ -44,7 +53,10 @@
 
   &__composition {
     background-color: var(--color--primary);
-    border-radius: 3%;
+    // background-color: white;
+    border: 1px solid var(--color--font);
+    border-radius: 4%;
+    // overflow: hidden;
     padding: 1rem;
     // height: 10%;
     // align-items: center;
@@ -71,10 +83,10 @@
     }
 
     &--nutrition {
-      width: 100%;
+      // width: 100%;
       // background-color: pink;
-      background-color: var(--color--primary);
-      border-radius: 3%;
+      // background-color: var(--color--primary);
+
       // padding: 1rem;
       font-size: 1rem;
     }

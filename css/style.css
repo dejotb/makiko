@@ -400,11 +400,16 @@ body {
 }
 .products__image {
   height: 56vh;
+  transition: 0.2s all ease-in-out;
+  transform: rotate(3deg);
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 80vmin;
+    height: 65rem;
   }
+}
+.products__image:hover {
+  transform: scale(1.05) rotate(1deg);
 }
 .products__composition {
   background-color: var(--color--primary);

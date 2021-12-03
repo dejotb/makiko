@@ -144,7 +144,6 @@ const compositionSwitch = function () {
     return `
     <div
         class="products__composition--ingredients"
-
       >
         <ul>
           <li>mąka pszenna,</li>
@@ -294,24 +293,6 @@ const compositionSwitch = function () {
       );
     }
   });
-
-  // box.addEventListener('mouseover', (e) => {
-  //   if (!e.target.classList.contains('products__btn')) {
-  //   } else {
-  //     e.target.classList.add('opacity--full');
-  //     console.log(e.target);
-  //     // e.target.classList.add('opacity--half');
-  //   }
-  // });
-
-  // box.addEventListener('mouseout', (e) => {
-  //   if (!e.target.classList.contains('products__btn')) {
-  //   } else {
-  //     e.target.classList.remove('opacity--full');
-
-  //     // e.target.classList.add('opacity--half');
-  //   }
-  // });
 };
 
 compositionSwitch();

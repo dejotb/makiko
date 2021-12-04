@@ -110,9 +110,11 @@ body {
 
 .heading--1 {
   font-family: "Neuton", serif;
-  font-size: 4rem;
+  font-size: 5rem;
+  color: var(--color--font);
   line-height: 1;
   font-weight: 700;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 .heading--2 {
   font-family: "Lato", sans-serif;
@@ -126,10 +128,15 @@ body {
 .heading--3 {
   font-family: "Neuton", serif;
   font-size: 4rem;
-  color: #696969;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
   font-weight: 700;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 75em) {
+  .heading--3 {
+    font-size: 5rem;
+  }
 }
 .heading--4 {
   font-family: "Neuton", serif;
@@ -328,29 +335,17 @@ body {
 }
 .header {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: start;
   height: 100vh;
   position: relative;
-  overflow: hidden;
-  background: #ffc600;
+  background: var(--color--primary);
 }
 .header__heading {
   margin: 4rem 2rem 2rem;
 }
 .header__img {
-  display: block;
-  width: 20rem;
-}
-@media screen and (min-width: 55em) {
-  .header__img {
-    width: 30rem;
-    margin-top: -30rem;
-    /* Negative half of height. */
-    margin-left: -40rem;
-    /* Negative half of width. */
-  }
+  height: 40vh;
 }
 .main {
   width: 100%;
@@ -360,65 +355,62 @@ body {
 
 .products {
   margin: 0;
+  background-color: var(--color--primary);
 }
 .products__box {
   display: grid;
-  grid-gap: 6rem;
-  background-color: #004490;
-}
-@media screen and (min-width: 55em) {
-  .products__box {
-    grid-gap: 15rem;
-  }
+  grid-gap: 5rem;
+  background-color: red;
 }
 .products__card {
-  padding: 0 1rem;
-  min-height: 50vh;
+  padding: 5rem 1rem;
+  min-height: 100vh;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
   grid-gap: 5rem;
+  background-repeat: no-repeat;
+  background-position: 15% 74%;
+  background-blend-mode: hard-light;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 @media screen and (min-width: 75em) {
   .products__card {
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr;
+    background-position: center;
   }
 }
 .products__card--1 {
-  background-color: var(--color--yellow);
+  background-image: url("/img/products-background-1.png");
 }
 .products__card--2 {
-  background-color: var(--color--blue);
+  background-image: url("/img/products-background-2.png");
 }
 .products__card--3 {
-  background-color: var(--color--green);
+  background-image: url("/img/products-background-3.png");
 }
-.products__card__description {
+.products__description {
   font-family: "Neuton", serif;
 }
 .products__image {
   height: 56vh;
   transition: 0.2s all ease-in-out;
-  transform: rotate(3deg);
+  transform: rotate(1deg);
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 65rem;
+    height: 60rem;
   }
-}
-.products__image:hover {
-  transform: scale(1.05) rotate(1deg);
 }
 .products__composition {
   background-color: var(--color--primary);
-  border: 1px solid var(--color--font);
+  background-color: white;
   border-radius: 4%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  min-width: 90%;
   min-height: 46rem;
   font-size: 2rem;
 }

@@ -1,21 +1,11 @@
 .header {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: start;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 
-  background: rgb(255, 198, 0);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(255, 198, 0, 1) 0%,
-  //   rgba(255, 198, 0, 1) 56%,
-  //   rgba(255, 252, 0, 1) 92%
-  // );
-
-  // background-color: var(--color--primary);
+  background: var(--color--primary);
 
   &__heading {
     margin: 4rem 2rem 2rem;
@@ -23,9 +13,10 @@
     // text-align: center;
   }
   &__img {
-    display: block;
+    // justify-self: end;
+    height: 40vh;
     // position: fixed;
-    width: 20rem;
+    // width: 20rem;
     // height: 200px;
     // top: 55%;
     // left: 50%;
@@ -36,9 +27,6 @@
     // width: 100%;
 
     @media screen and (min-width: $bp-md) {
-      width: 30rem;
-      margin-top: -30rem; /* Negative half of height. */
-      margin-left: -40rem; /* Negative half of width. */
     }
   }
 

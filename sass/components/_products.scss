@@ -1,21 +1,22 @@
 .products {
   // height: 300vh;
   margin: 0;
+  background-color: var(--color--primary);
 
   &__box {
     display: grid;
-    grid-gap: 6rem;
-    background-color: #004490;
+    grid-gap: 5rem;
+    background-color: red;
     @media screen and (min-width: $bp-md) {
-      grid-gap: 15rem;
+      // grid-gap: 15rem;
     }
   }
   &__card {
-    padding: 0 1rem;
+    padding: 5rem 1rem;
     // background-color: var(--color--primary);
     // background-color: #004490;
 
-    min-height: 50vh;
+    min-height: 100vh;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -23,43 +24,57 @@
     grid-template-columns: 1fr;
     grid-gap: 5rem;
 
+    background-repeat: no-repeat;
+    background-position: 15% 74%;
+    // background-size: cover;
+    background-blend-mode: hard-light;
+    background-color: rgba(255, 255, 255, 0.2);
+
     @media screen and (min-width: $bp-xl) {
       grid-auto-flow: column;
       grid-template-columns: 1fr 1fr 1fr;
+      background-position: center;
     }
 
     &--1 {
-      background-color: var(--color--yellow);
+      background-image: url("/img/products-background-1.png");
+      // background-color: rgba(253, 208, 27, 0.1);
+      // background-color: var(--color--primary);
     }
     &--2 {
-      background-color: var(--color--blue);
-    }
-    &--3 {
-      background-color: var(--color--green);
+      background-image: url("/img/products-background-2.png");
+      // background-color: rgba(0, 68, 144, 0.1);
+      // background-color: var(--color--blue);
     }
 
-    &__description {
-      font-family: $font-display;
+    &--3 {
+      background-image: url("/img/products-background-3.png");
+      // background-color: rgba(7, 121, 61, 0.1);
+      // background-color: var(--color--green);
     }
+  }
+
+  &__description {
+    font-family: $font-display;
   }
 
   &__image {
     height: 56vh;
     transition: 0.2s all ease-in-out;
-    transform: rotate(3deg);
+    transform: rotate(1deg);
 
     @media screen and (min-width: $bp-sm) {
-      height: 65rem;
+      height: 60rem;
     }
     &:hover {
-      transform: scale(1.05) rotate(1deg);
+      // transform: scale(1.05) rotate(1deg);
     }
   }
 
   &__composition {
     background-color: var(--color--primary);
-    // background-color: white;
-    border: 1px solid var(--color--font);
+    background-color: white;
+    // border: 1px solid var(--color--font);
     border-radius: 4%;
     // overflow: hidden;
     padding: 1rem;
@@ -68,7 +83,7 @@
     display: flex;
     flex-direction: column;
     // justify-items: center;
-    min-width: 90%;
+    // min-width: 95%;
     min-height: 46rem;
     font-size: 2rem;
     // width: 40rem;

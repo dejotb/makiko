@@ -5,11 +5,12 @@ body {
 .heading {
   &--1 {
     font-family: $font-display;
-    font-size: 4rem;
+    font-size: 5rem;
     // color: white;
-    // color: var(--color--font);
+    color: var(--color--font);
     line-height: 1;
     font-weight: 700;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 
     // @media only screen and (max-width: $bp-large) {
     //   font-size: 6rem;
@@ -37,18 +38,16 @@ body {
   &--3 {
     font-family: $font-display;
     font-size: 4rem;
-    color: $color-grey-dark-1;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    // color: red;
+    // color: $color-grey-dark-1;
     font-weight: 700;
     position: relative;
     z-index: 1;
 
-    // @media only screen and (max-width: $bp-largest) {
-    //   font-size: 1.9rem;
-
-    //   &:before {
-    //     display: none;
-    //   }
-    // }
+    @media screen and (min-width: $bp-xl) {
+      font-size: 5rem;
+    }
   }
 
   &--4 {

@@ -371,7 +371,7 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 5rem;
   background-repeat: no-repeat;
-  background-position: 15% 74%;
+  background-position: 15% 73%;
   background-blend-mode: hard-light;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -383,7 +383,7 @@ body {
   }
 }
 .products__card--1 {
-  background-image: url("/img/products-background-1.png");
+  background-image: url("/img/products-background-1.jpg");
 }
 .products__card--2 {
   background-image: url("/img/products-background-2.png");

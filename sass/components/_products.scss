@@ -25,7 +25,7 @@
     grid-gap: 5rem;
 
     background-repeat: no-repeat;
-    background-position: 15% 74%;
+    background-position: 15% 73%;
     // background-size: cover;
     background-blend-mode: hard-light;
     background-color: rgba(255, 255, 255, 0.2);
@@ -37,7 +37,8 @@
     }
 
     &--1 {
-      background-image: url("/img/products-background-1.png");
+      // background-image: url("/img/products-background-1.png");
+      background-image: url("/img/products-background-1.jpg");
       // background-color: rgba(253, 208, 27, 0.1);
       // background-color: var(--color--primary);
     }

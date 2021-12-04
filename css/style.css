@@ -383,7 +383,7 @@ body {
   }
 }
 .products__card--1 {
-  background-image: url("../../img/products-background-1.jpg");
+  background: url("/img/products-background-1.jpg");
 }
 .products__card--2 {
   background-image: url("/img/products-background-2.png");

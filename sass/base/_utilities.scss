@@ -31,7 +31,20 @@
 }
 
 .img--shadow {
-  bottom: -6rem;
+  bottom: -3rem;
+  right: -4rem;
+  position: absolute;
+  @media screen and (min-width: $bp-sm) {
+    bottom: -4rem;
+    right: -7rem;
+  }
+}
+
+.img--ingredient {
+  width: 70%;
+  left: -11vw;
+  bottom: -4rem;
+  display: block;
   position: absolute;
 }
 

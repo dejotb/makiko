@@ -403,7 +403,7 @@ body {
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 60rem;
+    height: 65rem;
   }
 }
 .products__composition {

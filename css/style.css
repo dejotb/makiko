@@ -114,7 +114,7 @@ body {
   color: var(--color--font);
   line-height: 1;
   font-weight: 700;
-  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 .heading--2 {
   font-family: "Lato", sans-serif;
@@ -128,7 +128,7 @@ body {
 .heading--3 {
   font-family: "Neuton", serif;
   font-size: 4rem;
-  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   font-weight: 700;
   position: relative;
   z-index: 1;
@@ -379,20 +379,22 @@ body {
   .products__card {
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr;
-    background-position: center;
+    background-position: 0 48%;
   }
 }
 .products__card--1 {
   background-image: url("../img/products-background-1.jpg");
 }
 .products__card--2 {
-  background-image: url("/img/products-background-2.png");
+  background-image: url("/img/products-background-2.jpg");
 }
 .products__card--3 {
-  background-image: url("/img/products-background-3.png");
+  background-image: url("/img/products-background-3.jpg");
 }
 .products__description {
-  font-family: "Neuton", serif;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 .products__image {
   height: 56vh;
@@ -405,14 +407,16 @@ body {
   }
 }
 .products__composition {
-  background-color: var(--color--primary);
-  background-color: white;
-  border-radius: 4%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px 0px, rgba(50, 50, 93, 0.25) 0px 30px 40px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-image: url("../img/products-composition-background.png");
+  border-radius: 1%;
   padding: 1rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
   min-height: 46rem;
   font-size: 2rem;
+  margin: 0 auto;
 }
 @media screen and (min-width: 45em) {
   .products__composition {
@@ -423,20 +427,9 @@ body {
   padding-top: 3rem;
 }
 .products__composition--ingredients ul {
-  padding-left: 2rem;
+  padding-left: 3rem;
   font-size: 1.6rem;
-  list-style: circle;
-}
-.products__composition--nutrition {
-  font-size: 1rem;
-}
-.products__composition tr {
-  font-size: inherit;
-  caption-side: bottom;
-  border-spacing: 0;
-}
-.products__composition tr:last-of-type {
-  border-bottom: none;
+  list-style: disc;
 }
 .products__composition table {
   border-collapse: collapse;
@@ -448,7 +441,6 @@ body {
   vertical-align: top;
   text-align: left;
   padding: 8px;
-  font-weight: 400;
 }
 .products__composition tr,
 .products__composition th,

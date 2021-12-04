@@ -10,7 +10,7 @@ body {
     color: var(--color--font);
     line-height: 1;
     font-weight: 700;
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
     // @media only screen and (max-width: $bp-large) {
     //   font-size: 6rem;
@@ -38,7 +38,7 @@ body {
   &--3 {
     font-family: $font-display;
     font-size: 4rem;
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     // color: red;
     // color: $color-grey-dark-1;
     font-weight: 700;

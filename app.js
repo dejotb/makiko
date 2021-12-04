@@ -167,7 +167,7 @@ const compositionSwitch = function () {
     <tbody>
       <tr>
         <th scope="row">
-          Wartość odżywcza w
+          WARTOŚĆ ODŻYWCZA W
         </th>
         <td>100g</td>
       </tr>

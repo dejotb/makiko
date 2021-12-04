@@ -67,6 +67,12 @@ body {
 .img {
   display: block;
   height: 100%;
+  position: relative;
+}
+
+.img--shadow {
+  bottom: -6rem;
+  position: absolute;
 }
 
 .btn {
@@ -403,7 +409,7 @@ body {
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 65rem;
+    height: 60rem;
   }
 }
 .products__composition {

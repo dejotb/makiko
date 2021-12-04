@@ -26,8 +26,13 @@
   // transition: 0.5s all;
   display: block;
   height: 100%;
-  // position: static;
+  position: relative;
   // transition: 4s all;
+}
+
+.img--shadow {
+  bottom: -6rem;
+  position: absolute;
 }
 
 .btn {

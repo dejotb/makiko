@@ -22,7 +22,7 @@
     justify-items: center;
     // grid-template-rows: 1fr 1fr 50rem;
     grid-template-columns: 1fr;
-    grid-gap: 5rem;
+    grid-gap: 10rem;
 
     background-repeat: no-repeat;
     background-position: 15% 73%;
@@ -62,15 +62,27 @@
   }
 
   &__image {
-    height: 45vh;
-    transition: 0.2s all ease-in-out;
+    height: 48vh;
+    transition: 0.3s all ease-in-out;
+
     transform: rotate(1deg);
 
     @media screen and (min-width: $bp-sm) {
       height: 60rem;
     }
     &:hover {
-      // transform: scale(1.05) rotate(1deg);
+      transform: scale(1.004) rotate(1deg);
+
+      .img--shadow {
+        transform: translateX(0.3rem);
+      }
+
+      .img--ingredient {
+        // left: -8vw;
+        // opacity: 0;
+        // bottom: -0.5rem;
+        // transform: rotate(-2deg);
+      }
     }
   }
 

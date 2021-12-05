@@ -65,6 +65,7 @@ body {
 }
 
 .img {
+  transition: 0.2s all ease-in-out;
   display: block;
   height: 100%;
   position: relative;
@@ -72,7 +73,7 @@ body {
 
 .img--shadow {
   bottom: -3rem;
-  right: -4rem;
+  right: -3rem;
   position: absolute;
 }
 @media screen and (min-width: 45em) {
@@ -85,9 +86,10 @@ body {
 .img--ingredient {
   width: 70%;
   left: -11vw;
-  bottom: -4rem;
+  bottom: -1rem;
   display: block;
   position: absolute;
+  transition: 0.2s all ease-in-out;
 }
 
 .btn {
@@ -390,7 +392,7 @@ body {
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-gap: 5rem;
+  grid-gap: 10rem;
   background-repeat: no-repeat;
   background-position: 15% 73%;
   background-blend-mode: hard-light;
@@ -418,14 +420,20 @@ body {
   justify-items: center;
 }
 .products__image {
-  height: 45vh;
-  transition: 0.2s all ease-in-out;
+  height: 48vh;
+  transition: 0.3s all ease-in-out;
   transform: rotate(1deg);
 }
 @media screen and (min-width: 45em) {
   .products__image {
     height: 60rem;
   }
+}
+.products__image:hover {
+  transform: scale(1.004) rotate(1deg);
+}
+.products__image:hover .img--shadow {
+  transform: translateX(0.3rem);
 }
 .products__composition {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;

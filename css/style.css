@@ -85,7 +85,7 @@ body {
 
 .img--ingredient {
   width: 70%;
-  left: -11vw;
+  left: -10vw;
   bottom: -1rem;
   display: block;
   position: absolute;
@@ -396,7 +396,6 @@ body {
   background-repeat: no-repeat;
   background-position: 15% 73%;
   background-blend-mode: hard-light;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 @media screen and (min-width: 75em) {
   .products__card {

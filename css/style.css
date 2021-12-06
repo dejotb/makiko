@@ -330,6 +330,7 @@ body {
 @media screen and (min-width: 45em) {
   .nav__logo {
     margin-right: auto;
+    width: 15rem;
   }
 }
 .nav__logo img {
@@ -399,7 +400,7 @@ body {
   grid-template-columns: 1fr;
   grid-gap: 10rem;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 15% 73%;
   background-blend-mode: hard-light;
 }
 @media screen and (min-width: 75em) {

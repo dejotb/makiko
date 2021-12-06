@@ -363,7 +363,7 @@ body {
   align-items: center;
   height: 95vh;
   position: relative;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 0.5fr 1fr;
   grid-gap: 10vh;
   padding: 0 1rem;
   background-image: url("../img/header-table.png"), url("../../img/header-backgroun.jpg");
@@ -380,7 +380,7 @@ body {
 }
 .header__images {
   display: flex;
-  height: 23vmax;
+  height: 27vmax;
 }
 @media screen and (min-width: 55em) {
   .header__images {

@@ -4,7 +4,7 @@
   align-items: center;
   height: 95vh;
   position: relative;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 0.5fr 1fr;
   grid-gap: 10vh;
   padding: 0 1rem;
 
@@ -29,7 +29,7 @@
   &__images {
     // background: red;
     display: flex;
-    height: 23vmax;
+    height: 27vmax;
     // padding-bottom: 2rem;
 
     @media screen and (min-width: $bp-md) {

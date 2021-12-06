@@ -1,12 +1,17 @@
 .header {
   display: grid;
   justify-items: center;
-  align-items: start;
+  align-items: center;
   height: 95vh;
   position: relative;
-  grid-template-rows: auto 1fr;
-  grid-gap: 5rem;
+  grid-template-rows: auto 1fr 1fr;
+  grid-gap: 10vh;
   padding: 0 1rem;
+
+  @media screen and (min-width: $bp-md) {
+    grid-template-rows: auto 0.5fr 4fr;
+    grid-gap: 1rem;
+  }
 
   // background: var(--color--primary);
   background-image: url("../img/header-table.png"),
@@ -17,30 +22,41 @@
   background-position: bottom, top;
 
   &__heading {
-    // margin: 4rem 2rem 2rem;
-    // align-self: end;
-    // display: block;
-    // margin: 2rem auto;
-    // text-align: center;
+    // margin-top: 5rem;
+    // background-color: yellow;
   }
-  &__img {
-    // justify-self: end;
-    height: 20vmax;
-    position: absolute;
-    bottom: 2rem;
-    // position: fixed;
-    // width: 20rem;
-    // height: 200px;
-    // top: 55%;
-    // left: 50%;
 
-    // width: 80vw;
-    // height: auto;
-    // z-index: 1;
-    // width: 100%;
+  &__images {
+    // background: red;
+    display: flex;
+    height: 23vmax;
+    // padding-bottom: 2rem;
 
     @media screen and (min-width: $bp-md) {
+      height: 19vmax;
     }
+
+    & .header__img:hover:nth-child(1n + 1) {
+      transform: scale(1.2) translateY(-1rem);
+      z-index: 10;
+    }
+
+    & .header__img:nth-child(2) {
+      transform: scale(1.1);
+      margin: 0 -2rem;
+      z-index: 1;
+
+      @media screen and (min-width: $bp-md) {
+        height: 20vmax;
+      }
+    }
+  }
+
+  &__img {
+    transition: 0.2s all ease-in-out;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   &__text {

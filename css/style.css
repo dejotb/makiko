@@ -133,7 +133,7 @@ body {
 
 .heading--1 {
   font-family: "Neuton", serif;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--color--font);
   line-height: 1;
   font-weight: 700;
@@ -329,8 +329,8 @@ body {
 }
 @media screen and (min-width: 45em) {
   .nav__logo {
-    margin-right: auto;
-    width: 15rem;
+    margin-right: calc(auto - 10rem);
+    width: 14rem;
   }
 }
 .nav__logo img {
@@ -360,11 +360,11 @@ body {
 .header {
   display: grid;
   justify-items: center;
-  align-items: start;
+  align-items: center;
   height: 95vh;
   position: relative;
-  grid-template-rows: auto 1fr;
-  grid-gap: 5rem;
+  grid-template-rows: auto 1fr 1fr;
+  grid-gap: 10vh;
   padding: 0 1rem;
   background-image: url("../img/header-table.png"), url("../../img/header-backgroun.jpg");
   background-color: pink;
@@ -372,10 +372,40 @@ body {
   background-repeat: no-repeat;
   background-position: bottom, top;
 }
+@media screen and (min-width: 55em) {
+  .header {
+    grid-template-rows: auto 0.5fr 4fr;
+    grid-gap: 1rem;
+  }
+}
+.header__images {
+  display: flex;
+  height: 23vmax;
+}
+@media screen and (min-width: 55em) {
+  .header__images {
+    height: 19vmax;
+  }
+}
+.header__images .header__img:hover:nth-child(1n+1) {
+  transform: scale(1.2) translateY(-1rem);
+  z-index: 10;
+}
+.header__images .header__img:nth-child(2) {
+  transform: scale(1.1);
+  margin: 0 -2rem;
+  z-index: 1;
+}
+@media screen and (min-width: 55em) {
+  .header__images .header__img:nth-child(2) {
+    height: 20vmax;
+  }
+}
 .header__img {
-  height: 20vmax;
-  position: absolute;
-  bottom: 2rem;
+  transition: 0.2s all ease-in-out;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .main {
   width: 100%;

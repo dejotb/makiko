@@ -2,19 +2,31 @@
   display: grid;
   justify-items: center;
   align-items: start;
-  height: 100vh;
+  height: 95vh;
   position: relative;
+  grid-template-rows: auto 1fr;
+  grid-gap: 5rem;
+  padding: 0 1rem;
 
-  background: var(--color--primary);
+  // background: var(--color--primary);
+  background-image: url("../../img/header-table.png"),
+    url("../../img/header-background.jpg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: bottom, top;
 
   &__heading {
-    margin: 4rem 2rem 2rem;
+    // margin: 4rem 2rem 2rem;
+    // align-self: end;
+    // display: block;
     // margin: 2rem auto;
     // text-align: center;
   }
   &__img {
     // justify-self: end;
-    height: 40vh;
+    height: 15vh;
+    position: absolute;
+    bottom: 2rem;
     // position: fixed;
     // width: 20rem;
     // height: 200px;

@@ -6,7 +6,8 @@
   &__box {
     display: grid;
     grid-gap: 5rem;
-    background-color: red;
+    // background-color: green;
+    background-image: url("../img/products-composition-background.png");
     @media screen and (min-width: $bp-md) {
       // grid-gap: 15rem;
     }
@@ -25,7 +26,8 @@
     grid-gap: 10rem;
 
     background-repeat: no-repeat;
-    background-position: 15% 73%;
+    background-position: top;
+    // background-position: 15% 73%;
     // background-size: cover;
     background-blend-mode: hard-light;
     // background-color: rgba(255, 255, 255, 0.1);
@@ -33,7 +35,8 @@
     @media screen and (min-width: $bp-xl) {
       grid-auto-flow: column;
       grid-template-columns: 1fr 1fr 1fr;
-      background-position: 0 48%;
+      background-position: 0 49%;
+      grid-gap: 5rem;
     }
 
     &--1 {

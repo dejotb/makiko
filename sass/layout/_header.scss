@@ -9,8 +9,9 @@
   padding: 0 1rem;
 
   // background: var(--color--primary);
-  background-image: url("../../img/header-table.png"),
-    url("../../img/header-background.jpg");
+  background-image: url("../img/header-table.png"),
+    url("../../img/header-backgroun.jpg");
+  background-color: pink;
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, top;
@@ -24,7 +25,7 @@
   }
   &__img {
     // justify-self: end;
-    height: 15vh;
+    height: 20vmax;
     position: absolute;
     bottom: 2rem;
     // position: fixed;

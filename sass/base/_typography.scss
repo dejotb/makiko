@@ -6,19 +6,20 @@ body {
   &--1 {
     font-family: $font-display;
     font-size: 4rem;
-    // color: white;
     color: var(--color--font);
+    color: white;
     line-height: 1;
     font-weight: 700;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: -1.5px 0 var(--color--font), 0 1.5px var(--color--font),
+      1.5px 0 var(--color--font), 0 -1.5px var(--color--font);
 
     // @media only screen and (max-width: $bp-large) {
     //   font-size: 6rem;
     // }
 
-    // @media only screen and (max-width: $bp-small) {
-    //   font-size: 5.7rem;
-    // }
+    @media screen and (min-width: $bp-xl) {
+      font-size: 6rem;
+    }
   }
 
   &--2 {

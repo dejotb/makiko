@@ -135,9 +135,15 @@ body {
   font-family: "Neuton", serif;
   font-size: 4rem;
   color: var(--color--font);
+  color: white;
   line-height: 1;
   font-weight: 700;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -1.5px 0 var(--color--font), 0 1.5px var(--color--font), 1.5px 0 var(--color--font), 0 -1.5px var(--color--font);
+}
+@media screen and (min-width: 75em) {
+  .heading--1 {
+    font-size: 6rem;
+  }
 }
 .heading--2 {
   font-family: "Lato", sans-serif;
@@ -366,8 +372,7 @@ body {
   grid-template-rows: auto 0.5fr 1fr;
   grid-gap: 10vh;
   padding: 0 1rem;
-  background-image: url("../img/header-table.png"), url("../../img/header-backgroun.jpg");
-  background-color: pink;
+  background-image: url("../img/header-table.png"), url("../../img/header-backgroiund.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, top;
@@ -377,6 +382,22 @@ body {
     grid-template-rows: auto 0.5fr 4fr;
     grid-gap: 1rem;
   }
+}
+@media screen and (min-width: 55em) {
+  .header {
+    height: 120vh;
+  }
+}
+.header__background {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/header-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .header__images {
   display: flex;
@@ -413,6 +434,10 @@ body {
   background-color: aliceblue;
 }
 
+.box {
+  background-color: aliceblue;
+}
+
 .products {
   margin: 0;
   background-color: var(--color--primary);
@@ -429,7 +454,7 @@ body {
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-gap: 10rem;
+  grid-gap: 5rem;
   background-repeat: no-repeat;
   background-position: 15% 73%;
   background-blend-mode: hard-light;
@@ -463,7 +488,7 @@ body {
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 60rem;
+    height: 50rem;
   }
 }
 .products__image:hover {
@@ -527,6 +552,22 @@ body {
 }
 .products__btn {
   font-size: inherit;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(3px);
 }
 
 /*# sourceMappingURL=style.css.map */

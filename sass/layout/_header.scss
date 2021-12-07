@@ -11,19 +11,37 @@
   @media screen and (min-width: $bp-md) {
     grid-template-rows: auto 0.5fr 4fr;
     grid-gap: 1rem;
+    // border: solid white 1rem;
+    // border-bottom: 0;
   }
 
   // background: var(--color--primary);
   background-image: url("../img/header-table.png"),
-    url("../../img/header-backgroun.jpg");
-  background-color: pink;
+    url("../../img/header-backgroiund.jpg");
+  // background-color: pink;
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, top;
 
+  @media screen and (min-width: $bp-md) {
+    height: 120vh;
+  }
+
+  &__background {
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/header-background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+    // filter: blur(3px);
+  }
+
   &__heading {
-    // margin-top: 5rem;
-    // background-color: yellow;
+    // text-align: center;
   }
 
   &__images {

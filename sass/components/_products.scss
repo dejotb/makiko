@@ -23,7 +23,7 @@
     justify-items: center;
     // grid-template-rows: 1fr 1fr 50rem;
     grid-template-columns: 1fr;
-    grid-gap: 10rem;
+    grid-gap: 5rem;
 
     background-repeat: no-repeat;
     background-position: 15% 73%;
@@ -70,7 +70,7 @@
     transform: rotate(1deg);
 
     @media screen and (min-width: $bp-sm) {
-      height: 60rem;
+      height: 50rem;
     }
     &:hover {
       transform: scale(1.004) rotate(1deg);

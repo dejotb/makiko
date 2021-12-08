@@ -4,8 +4,19 @@
   --color--green: #07793d;
   --color--yellow: #fdd01b;
   --color--blue: #004490;
+  --fs-xl: clamp(3.5rem, 6vw + 1rem, 6rem);
+  --fs-600: 3rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.5rem;
 }
 
+@media screen and (min-width: 75em) {
+  :root {
+    --fs-600: 3.5rem;
+    --fs-500: 2.75rem;
+    --fs-400: 2rem;
+  }
+}
 *,
 *::before,
 *::after {
@@ -29,15 +40,26 @@ html {
 }
 
 body {
+  font-size: var(--fs-400);
   font-family: "Lato", sans-serif;
   color: var(--color--font);
   font-weight: 400;
   line-height: 1.6;
+  text-rendering: optimizeSpeed;
 }
 
 ::selection {
   background-color: #ffdc64;
   color: #363636;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  font-family: inherit;
 }
 
 .pg {
@@ -127,22 +149,17 @@ body {
     transform: translate3d(0, 2rem, 0);
   }
 }
-body {
-  font-size: calc(max(2rem, min(0.125rem + 3.333vw, 2.5rem)));
-}
-
 .heading--1 {
   font-family: "Neuton", serif;
-  font-size: 4rem;
-  color: var(--color--font);
-  color: white;
+  font-size: var(--fs-xl);
+  color: var(--color--blue);
   line-height: 1;
   font-weight: 700;
-  text-shadow: -1.5px 0 var(--color--font), 0 1.5px var(--color--font), 1.5px 0 var(--color--font), 0 -1.5px var(--color--font);
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 @media screen and (min-width: 75em) {
   .heading--1 {
-    font-size: 6rem;
+    font-size: var(--fs-xl);
   }
 }
 .heading--2 {
@@ -156,7 +173,8 @@ body {
 }
 .heading--3 {
   font-family: "Neuton", serif;
-  font-size: 4rem;
+  color: var(--color--blue);
+  font-size: var(--fs-600);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   font-weight: 700;
   position: relative;
@@ -197,7 +215,6 @@ body {
   height: 3rem;
   position: relative;
   background-color: transparent;
-  cursor: pointer;
   z-index: 150;
 }
 .hamburger:hover .hamburger__line::after {
@@ -211,7 +228,7 @@ body {
   position: absolute;
   width: 100%;
   height: 0.3rem;
-  background-color: black;
+  background-color: var(--color--blue);
   transition: 0.5s all;
 }
 .hamburger__line::before, .hamburger__line::after {
@@ -234,7 +251,7 @@ body {
   position: absolute;
   top: 22%;
   right: -5rem;
-  color: black;
+  color: var(--color--blue);
   cursor: default;
 }
 
@@ -254,7 +271,7 @@ body {
 .toggleHam .hamburger__line::before, .toggleHam .hamburger__line::after {
   height: 0.15rem;
   width: 100%;
-  background-color: black;
+  background-color: var(--color--blue);
   content: "";
   display: block;
   position: absolute;
@@ -289,10 +306,6 @@ body {
   .nav__list--wrapper {
     inset: 0 50vw 0 0;
   }
-}
-
-.nav__list {
-  list-style: none;
 }
 
 .nav__list--overlay {
@@ -335,8 +348,7 @@ body {
 }
 @media screen and (min-width: 45em) {
   .nav__logo {
-    margin-right: calc(auto - 10rem);
-    width: 14rem;
+    width: 13rem;
   }
 }
 .nav__logo img {
@@ -367,15 +379,16 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 95vh;
+  min-height: 95vh;
   position: relative;
   grid-template-rows: auto 0.5fr 1fr;
   grid-gap: 10vh;
   padding: 0 1rem;
-  background-image: url("../img/header-table.png"), url("../../img/header-backgroiund.jpg");
+  background-image: url("../img/header-table.png"), url("../../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
+  background-position: bottom, bottom;
+  background-attachment: scroll, fixed;
 }
 @media screen and (min-width: 55em) {
   .header {
@@ -385,19 +398,8 @@ body {
 }
 @media screen and (min-width: 55em) {
   .header {
-    height: 120vh;
+    min-height: 110vh;
   }
-}
-.header__background {
-  position: fixed;
-  inset: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/header-background.jpg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  z-index: -1;
 }
 .header__images {
   display: flex;
@@ -444,7 +446,6 @@ body {
 }
 .products__box {
   display: grid;
-  grid-gap: 5rem;
   background-image: url("../img/products-composition-background.png");
 }
 .products__card {
@@ -457,7 +458,6 @@ body {
   grid-gap: 5rem;
   background-repeat: no-repeat;
   background-position: 15% 73%;
-  background-blend-mode: hard-light;
 }
 @media screen and (min-width: 75em) {
   .products__card {

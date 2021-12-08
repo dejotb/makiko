@@ -5,7 +5,7 @@
 
   &__box {
     display: grid;
-    grid-gap: 5rem;
+    // grid-gap: 5rem;
     // background-color: green;
     background-image: url("../img/products-composition-background.png");
     @media screen and (min-width: $bp-md) {
@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
     background-position: 15% 73%;
     // background-size: cover;
-    background-blend-mode: hard-light;
+    // background-blend-mode: hard-light;
     // background-color: rgba(255, 255, 255, 0.1);
 
     @media screen and (min-width: $bp-xl) {

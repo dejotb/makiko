@@ -1,24 +1,15 @@
-body {
-  font-size: calc(max(2rem, min(0.125rem + 3.333vw, 2.5rem)));
-}
-
 .heading {
   &--1 {
     font-family: $font-display;
-    font-size: 4rem;
-    color: var(--color--font);
-    color: white;
+    font-size: var(--fs-xl);
+    color: var(--color--blue);
+    // color: white;
     line-height: 1;
     font-weight: 700;
-    text-shadow: -1.5px 0 var(--color--font), 0 1.5px var(--color--font),
-      1.5px 0 var(--color--font), 0 -1.5px var(--color--font);
-
-    // @media only screen and (max-width: $bp-large) {
-    //   font-size: 6rem;
-    // }
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
     @media screen and (min-width: $bp-xl) {
-      font-size: 6rem;
+      font-size: var(--fs-xl);
     }
   }
 
@@ -30,18 +21,13 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 1px 1px $color-grey-light-2;
-
-    // @media only screen and (max-width: $bp-largest) {
-    //   font-size: 3rem;
-    // }
   }
 
   &--3 {
     font-family: $font-display;
-    font-size: 4rem;
+    color: var(--color--blue);
+    font-size: var(--fs-600);
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    // color: red;
-    // color: $color-grey-dark-1;
     font-weight: 700;
     position: relative;
     z-index: 1;

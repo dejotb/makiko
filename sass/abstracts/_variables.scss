@@ -1,12 +1,36 @@
 // COLOR VARIABLES
 
+// RESPONSIVE BREAKPOINTS
+
+$bp-xxl: 90em; // 1400px
+$bp-xl: 75em; // 1200px
+$bp-lg: 60em; // 1000px
+$bp-md: 55em; // 800px;
+$bp-sm: 45em; // 600px;
+
 :root {
+  // colors
   --color--font: #0f2a50;
   --color--primary: #ffc600;
 
   --color--green: #07793d;
   --color--yellow: #fdd01b;
   --color--blue: #004490;
+
+  //font size
+  --fs-xl: clamp(3.5rem, 6vw + 1rem, 6rem);
+  --fs-600: 3rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.5rem;
+}
+
+@media screen and (min-width: $bp-xl) {
+  :root {
+    // --fs-xl: 6rem;
+    --fs-600: 3.5rem;
+    --fs-500: 2.75rem;
+    --fs-400: 2rem;
+  }
 }
 
 $color-primary: #45a86e;
@@ -26,14 +50,6 @@ $color-yellow: #ffdc64;
 
 $font-primary: "Lato", sans-serif;
 $font-display: "Neuton", serif;
-
-// RESPONSIVE BREAKPOINTS
-
-$bp-xxl: 90em; // 1400px
-$bp-xl: 75em; // 1200px
-$bp-lg: 60em; // 1000px
-$bp-md: 55em; // 800px;
-$bp-sm: 45em; // 600px;
 
 // SHADOW VARIABLES
 

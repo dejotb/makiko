@@ -2,7 +2,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 95vh;
+  min-height: 95vh;
   position: relative;
   grid-template-rows: auto 0.5fr 1fr;
   grid-gap: 10vh;
@@ -15,32 +15,19 @@
     // border-bottom: 0;
   }
 
-  // background: var(--color--primary);
   background-image: url("../img/header-table.png"),
-    url("../../img/header-backgroiund.jpg");
-  // background-color: pink;
+    url("../../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
+  background-position: bottom, bottom;
+  background-attachment: scroll, fixed;
 
   @media screen and (min-width: $bp-md) {
-    height: 120vh;
-  }
-
-  &__background {
-    position: fixed;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/header-background.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: -1;
-    // filter: blur(3px);
+    min-height: 110vh;
   }
 
   &__heading {
+    // margin-top: 5rem;
     // text-align: center;
   }
 

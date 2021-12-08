@@ -384,7 +384,7 @@ button {
   grid-template-rows: auto 0.5fr 1fr;
   grid-gap: 10vh;
   padding: 0 1rem;
-  background-image: url("../img/header-table.png"), url("../../img/header-background-1.jpg");
+  background-image: url("../img/header-table.png"), url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, bottom;

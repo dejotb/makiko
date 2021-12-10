@@ -2,15 +2,11 @@
   &--1 {
     font-family: $font-display;
     font-size: var(--fs-xl);
-    color: var(--color--blue);
-    // color: white;
+    color: var(--color--font);
+    color: white;
     line-height: 1;
     font-weight: 700;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-
-    @media screen and (min-width: $bp-xl) {
-      font-size: var(--fs-xl);
-    }
+    text-shadow: 3px 3px 0px #f2a063;
   }
 
   &--2 {
@@ -25,7 +21,7 @@
 
   &--3 {
     font-family: $font-display;
-    color: var(--color--blue);
+    color: var(--color-blue);
     font-size: var(--fs-600);
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-weight: 700;

@@ -1,35 +1,23 @@
 .products {
-  // height: 300vh;
   margin: 0;
   background-color: var(--color--primary);
 
   &__box {
     display: grid;
-    // grid-gap: 5rem;
-    // background-color: green;
     background-image: url("../img/products-composition-background.png");
     @media screen and (min-width: $bp-md) {
-      // grid-gap: 15rem;
     }
   }
   &__card {
     padding: 5rem 1rem;
-    // background-color: var(--color--primary);
-    // background-color: #004490;
-
     min-height: 100vh;
     display: grid;
     align-items: center;
     justify-items: center;
-    // grid-template-rows: 1fr 1fr 50rem;
     grid-template-columns: 1fr;
     grid-gap: 5rem;
-
     background-repeat: no-repeat;
     background-position: 15% 73%;
-    // background-size: cover;
-    // background-blend-mode: hard-light;
-    // background-color: rgba(255, 255, 255, 0.1);
 
     @media screen and (min-width: $bp-xl) {
       grid-auto-flow: column;
@@ -39,21 +27,14 @@
     }
 
     &--1 {
-      // background-image: url("/img/products-background-1.png");
       background-image: url("../img/products-background-1.jpg");
-      // background-color: rgba(253, 208, 27, 0.1);
-      // background-color: var(--color--primary);
     }
     &--2 {
       background-image: url("../img/products-background-2.jpg");
-      // background-color: rgba(0, 68, 144, 0.1);
-      // background-color: var(--color--blue);
     }
 
     &--3 {
       background-image: url("../img/products-background-3.jpg");
-      // background-color: rgba(7, 121, 61, 0.1);
-      // background-color: var(--color--green);
     }
   }
 
@@ -80,17 +61,12 @@
       }
 
       .img--ingredient {
-        // left: -8vw;
-        // opacity: 0;
-        // bottom: -0.5rem;
-        // transform: rotate(-2deg);
       }
     }
   }
 
   &__composition {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;
+    box-shadow: var(--shadow-elevation-high);
 
     background-image: url("../img/products-composition-background.png");
     border-radius: 1%;
@@ -107,7 +83,6 @@
 
     &--ingredients {
       padding-top: 3rem;
-      // background-color: pink;
       ul {
         padding-left: 3rem;
         font-size: 1.6rem;
@@ -116,7 +91,6 @@
     }
 
     &--nutrition {
-      // font-size: 1rem;
     }
 
     table {
@@ -130,7 +104,6 @@
       vertical-align: top;
       text-align: left;
       padding: 8px;
-      // font-weight: 400;
     }
 
     tr,
@@ -153,16 +126,4 @@
     align-self: center;
     gap: 5rem;
   }
-
-  &__btn {
-    // background-color: pink;
-    font-size: inherit;
-    // &:hover {
-    //   opacity: 1;
-    // }
-  }
-}
-
-.th--sm {
-  // font-size: 1rem;
 }

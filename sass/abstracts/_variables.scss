@@ -10,21 +10,48 @@ $bp-sm: 45em; // 600px;
 
 :root {
   // colors
-  --color--font: #0f2a50;
+  --color--font: #121722;
   --color--primary: #ffc600;
 
-  --color--green: #07793d;
-  --color--yellow: #fdd01b;
-  --color--blue: #004490;
+  --color-green: #07793d;
+  --color-yellow: #fdd01b;
+  --color-blue: #004490;
+  --color-red: #e91c24;
 
   //font size
-  --fs-xl: clamp(3.5rem, 6vw + 1rem, 6rem);
-  --fs-600: 3rem;
+  --fs-xl: clamp(4.5rem, 6vw + 1rem, 6rem);
+  --fs-600: 3.25rem;
   --fs-500: 1.75rem;
   --fs-400: 1.5rem;
+
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.18),
+    0.8px 0.7px 0.9px -2.2px hsl(var(--shadow-color) / 0.13),
+    2.3px 2.1px 2.6px -4.3px hsl(var(--shadow-color) / 0.08);
+  --shadow-elevation-medium: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.19),
+    1.2px 1.1px 1.4px -1.4px hsl(var(--shadow-color) / 0.15),
+    4px 3.6px 4.6px -2.9px hsl(var(--shadow-color) / 0.11),
+    11.5px 10.3px 13.1px -4.3px hsl(var(--shadow-color) / 0.07);
+  --shadow-elevation-high: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.17),
+    1.4px 1.3px 1.6px -0.6px hsl(var(--shadow-color) / 0.16),
+    3px 2.7px 3.4px -1.2px hsl(var(--shadow-color) / 0.14),
+    6.4px 5.7px 7.3px -1.9px hsl(var(--shadow-color) / 0.12),
+    12.5px 11.2px 14.2px -2.5px hsl(var(--shadow-color) / 0.1),
+    22.4px 20.1px 25.5px -3.1px hsl(var(--shadow-color) / 0.08),
+    37.1px 33.2px 42.2px -3.7px hsl(var(--shadow-color) / 0.06),
+    57.5px 51.4px 65.4px -4.3px hsl(var(--shadow-color) / 0.04);
+
+  --shadow-elevation-highest: 0px 1px 0.8px hsl(var(--shadow-color) / 0.17),
+    0px 2.5px 2.1px -0.6px hsl(var(--shadow-color) / 0.16),
+    0px 5.3px 4.5px -1.2px hsl(var(--shadow-color) / 0.14),
+    -0.1px 11.2px 9.5px -1.9px hsl(var(--shadow-color) / 0.12),
+    -0.1px 21.8px 18.5px -2.5px hsl(var(--shadow-color) / 0.1),
+    -0.2px 39px 33.1px -3.1px hsl(var(--shadow-color) / 0.08),
+    -0.3px 64.5px 54.7px -3.7px hsl(var(--shadow-color) / 0.06),
+    -0.5px 100px 84.8px -4.3px hsl(var(--shadow-color) / 0.04);
 }
 
-@media screen and (min-width: $bp-xl) {
+@media screen and (min-width: var(--bp-xl)) {
   :root {
     // --fs-xl: 6rem;
     --fs-600: 3.5rem;

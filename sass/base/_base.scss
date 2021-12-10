@@ -11,8 +11,6 @@ ul {
 }
 
 * {
-  // scroll-margin-top: 1rem;
-
   &:focus {
     outline-color: $color-yellow;
   }
@@ -29,7 +27,7 @@ body {
   font-family: $font-primary;
   color: var(--color--font);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
   text-rendering: optimizeSpeed;
 }
 
@@ -45,4 +43,30 @@ button:hover {
 
 button {
   font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }

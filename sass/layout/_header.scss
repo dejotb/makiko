@@ -9,7 +9,7 @@
     "text"
     "img";
 
-  // grid-gap: 10vh;
+  grid-gap: 10vh;
   padding: 0 1rem;
 
   background-image: url("../img/header-table.png"),
@@ -20,6 +20,7 @@
   background-attachment: scroll, fixed;
 
   @media screen and (min-width: $bp-md) {
+    grid-gap: 1vh;
     background-image: url("../img/stripe-1.png"),
       url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
     background-size: contain, contain, cover;
@@ -39,14 +40,6 @@
     // align-self: center;
     grid-area: text;
     justify-content: center;
-    // margin-top: 5rem;
-    // text-align: center;
-
-    // &--color {
-    //   display: inline;
-    //   color: var(--color--blue);
-    //   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    // }
   }
 
   &__images {

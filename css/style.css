@@ -296,7 +296,7 @@ h6 {
   position: absolute;
   width: 100%;
   height: 0.3rem;
-  background-color: var(--color-blue);
+  background-color: var(--color-red);
   transition: 0.5s all;
 }
 .hamburger__line::before, .hamburger__line::after {
@@ -317,9 +317,9 @@ h6 {
 .hamburger__text {
   font-size: 1.5rem;
   position: absolute;
-  top: 22%;
+  top: 15%;
   right: -5rem;
-  color: var(--color-blue);
+  color: var(--color-red);
   cursor: default;
 }
 
@@ -339,7 +339,7 @@ h6 {
 .toggleHam .hamburger__line::before, .toggleHam .hamburger__line::after {
   height: 0.15rem;
   width: 100%;
-  background-color: var(--color-blue);
+  background-color: var(--color-red);
   content: "";
   display: block;
   position: absolute;
@@ -450,6 +450,7 @@ h6 {
   min-height: 100vh;
   position: relative;
   grid-template-areas: "nav" "text" "img";
+  grid-gap: 10vh;
   padding: 0 1rem;
   background-image: url("../img/header-table.png"), url("../img/header-background-1.jpg");
   background-size: contain, cover;
@@ -459,6 +460,7 @@ h6 {
 }
 @media screen and (min-width: 55em) {
   .header {
+    grid-gap: 1vh;
     background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
     background-size: contain, contain, cover;
     background-repeat: no-repeat;

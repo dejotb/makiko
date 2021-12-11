@@ -455,17 +455,18 @@ a {
   display: grid;
   justify-items: center;
   align-items: start;
-  min-height: 100vh;
+  min-height: 95vh;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas: "nav" "text" "img";
   padding: 0 1rem;
   background-image: url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center center;
+  background-position: bottom, center;
 }
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 45em) {
   .header {
+    min-height: 100vh;
     align-items: center;
     background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
     background-size: contain, contain, cover;

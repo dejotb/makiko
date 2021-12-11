@@ -3,7 +3,7 @@
   display: grid;
   justify-items: center;
   align-items: start;
-  min-height: 100vh;
+  min-height: 95vh;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas:
     "nav"
@@ -14,11 +14,10 @@
     url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center center;
-  // background-attachment: scroll, fixed;
-  // background-color: var(--color--primary);
+  background-position: bottom, center;
 
-  @media screen and (min-width: $bp-xl) {
+  @media screen and (min-width: $bp-sm) {
+    min-height: 100vh;
     align-items: center;
     // grid-gap: 9vh;
     background-image: url("../img/stripe-1.png"),

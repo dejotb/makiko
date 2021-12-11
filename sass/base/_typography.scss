@@ -26,21 +26,17 @@
     font-family: $font-display;
     color: var(--color-red);
     font-size: var(--fs-600);
-    text-shadow: 3px 3px 0px var(--color-white);
+    // text-shadow: 3px 3px 0px var(--color-white);
     font-weight: 700;
-    position: relative;
+    // position: relative;
     z-index: 1;
+    background-color: var(--color-white);
+    padding: 0 1rem 1rem;
+    border-radius: 15px;
 
     span {
+      font-size: var(--fs-600);
       color: var(--color-blue);
-      background-color: var(--color-white);
-      padding: 0 2rem 1rem;
-      border-radius: 15px;
-      // line-height: 1;
-    }
-
-    @media screen and (min-width: $bp-xl) {
-      font-size: 5rem;
     }
   }
 

@@ -8,13 +8,13 @@
     // }
   }
   &__card {
-    padding: 5rem 1rem;
+    padding: 8rem 1rem;
     min-height: 100vh;
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-gap: 5rem;
+    grid-gap: 8rem;
     background-repeat: no-repeat;
     background-position: 35% 73%;
 
@@ -60,7 +60,7 @@
   }
 
   &__image {
-    height: 48vh;
+    height: 50vh;
     transition: 0.3s all ease-in-out;
 
     transform: rotate(1deg);

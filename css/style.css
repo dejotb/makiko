@@ -7,7 +7,7 @@
   --color-red: #db3445;
   --color-white: #fff;
   --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
-  --fs-600: 3.25rem;
+  --fs-600: clamp(3.25rem, 6vw + 1rem, 4rem);
   --fs-500: 1.75rem;
   --fs-400: 1.5rem;
   --shadow-color: 0deg 0% 0%;
@@ -38,7 +38,6 @@
 
 @media screen and (min-width: var(--bp-xl)) {
   :root {
-    --fs-600: 3.5rem;
     --fs-500: 2.75rem;
     --fs-400: 2rem;
   }
@@ -218,13 +217,20 @@ a {
   font-weight: 700;
 }
 .heading--3 {
+  text-align: center;
   font-family: "Neuton", serif;
-  color: var(--color-blue);
+  color: var(--color-red);
   font-size: var(--fs-600);
-  text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+  text-shadow: 3px 3px 0px var(--color-white);
   font-weight: 700;
   position: relative;
   z-index: 1;
+}
+.heading--3 span {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  padding: 0 2rem 1rem;
+  border-radius: 15px;
 }
 @media screen and (min-width: 75em) {
   .heading--3 {
@@ -532,7 +538,7 @@ a {
   grid-template-columns: 1fr;
   grid-gap: 5rem;
   background-repeat: no-repeat;
-  background-position: 15% 73%;
+  background-position: 35% 73%;
 }
 @media screen and (min-width: 75em) {
   .products__card {
@@ -556,7 +562,6 @@ a {
   display: grid;
   justify-content: center;
   grid-gap: 2rem;
-  background-color: #f03434;
   background-color: #db3445;
   padding: 2rem 1rem 5rem;
   color: var(--color-white);
@@ -646,11 +651,12 @@ a {
 
 .btn--cta {
   transition: all 0.1s linear;
-  background: var(--color-primary);
+  background: var(--color-red);
   border-radius: 15px;
   color: white;
-  padding: 5px 20px;
+  padding: 8px 23px;
   border: 2px solid white;
+  text-transform: capitalize;
   font-size: var(--fs-500);
 }
 .btn--cta:hover,

@@ -21,7 +21,7 @@ $bp-sm: 45em; // 600px;
 
   //font size
   --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
-  --fs-600: 3.25rem;
+  --fs-600: clamp(3.25rem, 6vw + 1rem, 4rem);
   --fs-500: 1.75rem;
   --fs-400: 1.5rem;
 
@@ -55,7 +55,7 @@ $bp-sm: 45em; // 600px;
 @media screen and (min-width: var(--bp-xl)) {
   :root {
     // --fs-xl: 6rem;
-    --fs-600: 3.5rem;
+    // --fs-600: 3.5rem;
     --fs-500: 2.75rem;
     --fs-400: 2rem;
   }

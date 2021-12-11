@@ -8,11 +8,12 @@
 
 .btn--cta {
   transition: all 0.1s linear;
-  background: var(--color-primary);
+  background: var(--color-red);
   border-radius: 15px;
   color: white;
-  padding: 5px 20px;
+  padding: 8px 23px;
   border: 2px solid white;
+  text-transform: capitalize;
   //   text-shadow: 3px 3px 0px #f2a069;
   //   text-transform: capitalize;
   font-size: var(--fs-500);

@@ -2,8 +2,8 @@
   &--1 {
     font-family: $font-display;
     font-size: var(--fs-xl);
-    color: var(--color--font);
-    color: white;
+    // color: var(--color--font);
+    color: var(--color-white);
     line-height: 1;
     font-weight: 700;
     text-shadow: 3px 3px 0px #f2a069;
@@ -15,7 +15,8 @@
     font-size: var(--fs-xl);
     // font-style: italic;
     line-height: 1;
-    color: white;
+    color: var(--color-white);
+    text-align: center;
     // text-transform: uppercase;
     font-weight: 700;
   }
@@ -24,7 +25,8 @@
     font-family: $font-display;
     color: var(--color-blue);
     font-size: var(--fs-600);
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white),
+      1px 0 var(--color-white), 0 -1px var(--color-white);
     font-weight: 700;
     position: relative;
     z-index: 1;

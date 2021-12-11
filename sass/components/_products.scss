@@ -39,9 +39,16 @@
   }
 
   &__title {
-    background-color: var(--color-blue);
-    padding: 2rem 0 5rem;
-    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-gap: 2rem;
+    background-color: #f03434;
+    background-color: #db3445;
+    // background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+    // background-image: linear-gradient(147deg, #c62128 0%, #a00000 74%);
+    padding: 2rem 1rem 5rem;
+    color: var(--color-white);
+    // text-align: center;
     // border-bottom: 0.5vh solid white;
     // border-top: 0.5vh solid white;
   }

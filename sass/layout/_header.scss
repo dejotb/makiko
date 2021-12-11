@@ -14,7 +14,7 @@
     url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, bottom;
+  background-position: bottom, center;
   background-attachment: scroll, fixed;
 
   @media screen and (min-width: $bp-xl) {

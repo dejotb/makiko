@@ -1,6 +1,6 @@
 .pg {
   max-width: 70ch;
-  font-size: 1.6rem;
+  font-size: var(--fs-400);
 
   & > p:not(:last-child) {
     margin-bottom: 1rem;

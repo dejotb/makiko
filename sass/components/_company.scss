@@ -1,0 +1,27 @@
+.company {
+  //   display: grid;
+  //   align-items: flex-start;
+  //   min-height: 100vh;
+
+  &__title {
+    display: grid;
+    padding: 6rem 1rem 2rem;
+    background-color: var(--color-blue);
+
+    @media screen and (min-width: $bp-xl) {
+      background-image: url(../img/breadsticks.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: 125% 100%;
+    }
+  }
+
+  &__image {
+    justify-self: center;
+    height: 20vh;
+
+    @media screen and (min-width: $bp-xl) {
+      display: none;
+    }
+  }
+}

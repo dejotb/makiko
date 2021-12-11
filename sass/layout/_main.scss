@@ -8,3 +8,11 @@
 .box {
   background-color: aliceblue;
 }
+
+.section__title {
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+  padding: 2rem 1rem 5rem;
+  color: var(--color-white);
+}

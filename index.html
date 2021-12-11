@@ -12,7 +12,7 @@
     <title>makiko</title>
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <nav class="nav">
         <button class="hamburger" aria-label="Nawigacja" aria-expanded="false">
           <span class="hamburger__line"></span>
@@ -25,10 +25,10 @@
               <a href="#produkty" class="nav__link">Produkty</a>
             </li>
             <li class="nav__item">
-              <a href="#specjalizacje" class="nav__link">O firmie</a>
+              <a href="#company" class="nav__link">O firmie</a>
             </li>
             <li class="nav__item">
-              <a href="#kontakt" class="nav__link">Kontakt</a>
+              <a href="#contact" class="nav__link">Kontakt</a>
             </li>
             <li class="nav__item">
               <a
@@ -76,7 +76,7 @@
     </header>
     <main class="main">
       <section id="produkty" class="products">
-        <div class="products__title">
+        <div class="section__title products__title">
           <h2 class="heading--2">Nasze Produkty</h2>
           <p class="pg">
             Produkcja naszych paluszków oparta jest na oryginalnej recepturze. W
@@ -84,9 +84,9 @@
             spulchniających, ulepszaczy czy konserwantów.
           </p>
           <p class="pg">
-            Bazując na naturalnych, zdrowych produktach i stosując unikalną
-            metodę wytwarzania proponujemy produkty najwyższej jakości,
-            znajdujące amatorów również wśród amatorów zdrowej żywności.
+            Paluszki firmy Makiko to gwarancja niezmiennej receptury i smaku.
+            Właściwie dobrane proporcje składników sprawiają, że paluszki są
+            doskonale kruche i chrupiące.
           </p>
         </div>
         <div class="box products__box">
@@ -196,7 +196,80 @@
           </div>
         </div>
       </section>
+      <section id="company" class="company">
+        <div class="section__title company__title">
+          <h2 class="heading--2">Nasza Firma</h2>
+          <p class="pg">
+            Firma „MAKIKO” powstała w 1980 roku jako niewielka, rodzinna firma
+            nastawiona głównie na produkcję paluszków smakowych.
+          </p>
+          <p class="pg">
+            Początkowo produkowaliśmy jedynie paluszki z makiem. W miarę rozwoju
+            i unowocześniania firmy nasza produkcja została poszerzona o nowe
+            smaki - paluszki słone i sztandarowy produkt „MAKIKO” – paluszki z
+            sezamem.
+          </p>
+          <div class="company__image">
+            <img class="img" src="../img/breadsticks.png" alt="paluszki" />
+          </div>
+
+          <p class="pg">
+            Bazując na naturalnych, zdrowych produktach i stosując unikalną
+            metodę wytwarzania proponujemy produkty najwyższej jakości,
+            znajdujące amatorów również wśród amatorów zdrowej żywności.
+          </p>
+          <p class="pg">
+            W ciągu 30 lat działalności „MAKIKO” produkcja firmy zawsze opierała
+            się na zasadach Dobrej Praktyki Produkcyjnej i Higienicznej, co
+            pozwoliło nam wraz z wejściem przepisów unijnych na wdrażanie
+            systemu jakości HACCAP.
+          </p>
+          <p class="pg">
+            Firma „MAKIKO” zawsze była, jest i będzie nastawiona na zaspokojenie
+            oczekiwań swoich klientów!
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolorum
+          eveniet nulla ex. Fugit exercitationem sint inventore nam quaerat
+          asperiores soluta cumque voluptate modi animi quis ex magni, voluptas
+          repellat.
+        </p>
+      </section>
     </main>
+    <footer class="footer">
+      <!-- <div class="footer__img"></div> -->
+
+      <ul class="footer__list">
+        <li class="btn footer__item">
+          <a href="#header" class="footer__link">Start</a>
+        </li>
+        <li class="btn footer__item">
+          <a href="#produkty" class="footer__link">Produkty</a>
+        </li>
+        <li class="btn footer__item">
+          <a href="#company" class="footer__link">O firmie</a>
+        </li>
+        <li class="btn footer__item">
+          <a href="#contact" class="footer__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="footer__contact">
+        <a class="footer__link" href="tel:123 456 789">
+          <span class="icon">&#9743</span> 570 200 207
+        </a>
+        <a class="footer__link" href="mailto:makiko@makiko.pl">
+          <span class="icon">&#9993</span> makiko@makiko.pl
+        </a>
+      </div>
+      <div class="footer__text">
+        <span>&#174 2022 MAKIKO  / </span>
+        <span>realizacja: Bartosz Kraszewski</span>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

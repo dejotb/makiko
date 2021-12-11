@@ -1,0 +1,16 @@
+.contact {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+
+  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"),
+    url("../img/header-background-1.jpg");
+  background-size: contain, contain, cover;
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  //   background-attachment: scroll, scroll, fixed;
+
+  @media screen and (min-width: $bp-xl) {
+    background-attachment: scroll, scroll, fixed;
+  }
+}

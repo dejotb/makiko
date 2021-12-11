@@ -4,12 +4,12 @@
   background: none;
   cursor: pointer;
   z-index: 10;
+  border-radius: 15px;
 }
 
 .btn--cta {
   transition: all 0.1s linear;
   background: var(--color-red);
-  border-radius: 15px;
   color: white;
   padding: 8px 23px;
   border: 2px solid white;

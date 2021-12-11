@@ -8,40 +8,42 @@
   --color-white: #ffffff;
   --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
   --fs-600: clamp(3.25rem, 6vw + 1rem, 4rem);
-  --fs-500: 1.75rem;
-  --fs-400: 1.5rem;
-  --shadow-color: 0deg 0% 0%;
-  --shadow-elevation-low: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.18),
-    0.8px 0.7px 0.9px -2.2px hsl(var(--shadow-color) / 0.13),
-    2.3px 2.1px 2.6px -4.3px hsl(var(--shadow-color) / 0.08);
-  --shadow-elevation-medium: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.19),
-    1.2px 1.1px 1.4px -1.4px hsl(var(--shadow-color) / 0.15),
-    4px 3.6px 4.6px -2.9px hsl(var(--shadow-color) / 0.11),
-    11.5px 10.3px 13.1px -4.3px hsl(var(--shadow-color) / 0.07);
-  --shadow-elevation-high: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.17),
-    1.4px 1.3px 1.6px -0.6px hsl(var(--shadow-color) / 0.16),
-    3px 2.7px 3.4px -1.2px hsl(var(--shadow-color) / 0.14),
-    6.4px 5.7px 7.3px -1.9px hsl(var(--shadow-color) / 0.12),
-    12.5px 11.2px 14.2px -2.5px hsl(var(--shadow-color) / 0.1),
-    22.4px 20.1px 25.5px -3.1px hsl(var(--shadow-color) / 0.08),
-    37.1px 33.2px 42.2px -3.7px hsl(var(--shadow-color) / 0.06),
-    57.5px 51.4px 65.4px -4.3px hsl(var(--shadow-color) / 0.04);
-  --shadow-elevation-highest: 0px 1px 0.8px hsl(var(--shadow-color) / 0.17),
-    0px 2.5px 2.1px -0.6px hsl(var(--shadow-color) / 0.16),
-    0px 5.3px 4.5px -1.2px hsl(var(--shadow-color) / 0.14),
-    -0.1px 11.2px 9.5px -1.9px hsl(var(--shadow-color) / 0.12),
-    -0.1px 21.8px 18.5px -2.5px hsl(var(--shadow-color) / 0.1),
-    -0.2px 39px 33.1px -3.1px hsl(var(--shadow-color) / 0.08),
-    -0.3px 64.5px 54.7px -3.7px hsl(var(--shadow-color) / 0.06),
-    -0.5px 100px 84.8px -4.3px hsl(var(--shadow-color) / 0.04);
+  --fs-500: 2rem;
+  --fs-400: 1.8rem;
 }
-
 @media screen and (min-width: var(--bp-xl)) {
   :root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.18),
+      0.8px 0.7px 0.9px -2.2px hsl(var(--shadow-color) / 0.13),
+      2.3px 2.1px 2.6px -4.3px hsl(var(--shadow-color) / 0.08);
+    --shadow-elevation-medium: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.19),
+      1.2px 1.1px 1.4px -1.4px hsl(var(--shadow-color) / 0.15),
+      4px 3.6px 4.6px -2.9px hsl(var(--shadow-color) / 0.11),
+      11.5px 10.3px 13.1px -4.3px hsl(var(--shadow-color) / 0.07);
+    --shadow-elevation-high: 0.6px 0.5px 0.7px hsl(var(--shadow-color) / 0.17),
+      1.4px 1.3px 1.6px -0.6px hsl(var(--shadow-color) / 0.16),
+      3px 2.7px 3.4px -1.2px hsl(var(--shadow-color) / 0.14),
+      6.4px 5.7px 7.3px -1.9px hsl(var(--shadow-color) / 0.12),
+      12.5px 11.2px 14.2px -2.5px hsl(var(--shadow-color) / 0.1),
+      22.4px 20.1px 25.5px -3.1px hsl(var(--shadow-color) / 0.08),
+      37.1px 33.2px 42.2px -3.7px hsl(var(--shadow-color) / 0.06),
+      57.5px 51.4px 65.4px -4.3px hsl(var(--shadow-color) / 0.04);
+    --shadow-elevation-highest: 0px 1px 0.8px hsl(var(--shadow-color) / 0.17),
+      0px 2.5px 2.1px -0.6px hsl(var(--shadow-color) / 0.16),
+      0px 5.3px 4.5px -1.2px hsl(var(--shadow-color) / 0.14),
+      -0.1px 11.2px 9.5px -1.9px hsl(var(--shadow-color) / 0.12),
+      -0.1px 21.8px 18.5px -2.5px hsl(var(--shadow-color) / 0.1),
+      -0.2px 39px 33.1px -3.1px hsl(var(--shadow-color) / 0.08),
+      -0.3px 64.5px 54.7px -3.7px hsl(var(--shadow-color) / 0.06),
+      -0.5px 100px 84.8px -4.3px hsl(var(--shadow-color) / 0.04);
+  }
+  :root :root {
     --fs-500: 2.75rem;
-    --fs-400: 2rem;
+    --fs-400: 2.5rem;
   }
 }
+
 *,
 *::before,
 *::after {
@@ -121,7 +123,7 @@ a {
 
 .pg {
   max-width: 70ch;
-  font-size: 1.6rem;
+  font-size: var(--fs-400);
 }
 .pg > p:not(:last-child) {
   margin-bottom: 1rem;
@@ -215,6 +217,7 @@ a {
   color: var(--color-white);
   text-align: center;
   font-weight: 700;
+  padding: 2rem 0;
 }
 .heading--3 {
   text-align: center;
@@ -519,6 +522,50 @@ a {
   background-color: aliceblue;
 }
 
+.section__title {
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+  padding: 2rem 1rem 5rem;
+  color: var(--color-white);
+}
+
+.footer {
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 5rem 0 2rem;
+}
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__link {
+  display: block;
+  padding: 3px 0.8rem;
+  border-radius: 5px;
+  transition: all 0.2s;
+  border: 1px solid var(--color-white);
+}
+.footer__link:hover {
+  background-color: #fff;
+  color: var(--color-red);
+  transform: translateY(-0.5rem);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  justify-items: start;
+}
+.footer__text {
+  font-size: 1.4rem;
+  font-family: "Neuton", serif;
+}
+
 .products {
   margin: 0;
   background-color: var(--color--primary);
@@ -553,12 +600,8 @@ a {
   background-image: url("../img/products-background-3.jpg");
 }
 .products__title {
-  display: grid;
-  justify-content: center;
-  grid-gap: 2rem;
-  background-color: #db3445;
   padding: 2rem 1rem 5rem;
-  color: var(--color-white);
+  background-color: var(--color-red);
 }
 .products__description {
   display: grid;
@@ -635,18 +678,33 @@ a {
   gap: 5rem;
 }
 
+.contact {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
+  background-size: contain, contain, cover;
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+}
+@media screen and (min-width: 75em) {
+  .contact {
+    background-attachment: scroll, scroll, fixed;
+  }
+}
+
 .btn {
   padding: 4px 4px;
   border: none;
   background: none;
   cursor: pointer;
   z-index: 10;
+  border-radius: 15px;
 }
 
 .btn--cta {
   transition: all 0.1s linear;
   background: var(--color-red);
-  border-radius: 15px;
   color: white;
   padding: 8px 23px;
   border: 2px solid white;
@@ -657,6 +715,29 @@ a {
 .btn--cta .btn:active,
 .btn--cta .btn:focus {
   transform: translate3d(0, -0.5rem, 0);
+}
+
+.company__title {
+  display: grid;
+  padding: 6rem 1rem 2rem;
+  background-color: var(--color-blue);
+}
+@media screen and (min-width: 75em) {
+  .company__title {
+    background-image: url(../img/breadsticks.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 125% 100%;
+  }
+}
+.company__image {
+  justify-self: center;
+  height: 20vh;
+}
+@media screen and (min-width: 75em) {
+  .company__image {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

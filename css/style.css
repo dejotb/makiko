@@ -455,14 +455,14 @@ a {
   display: grid;
   justify-items: center;
   align-items: start;
-  min-height: 95vh;
+  min-height: 98vh;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas: "nav" "text" "img";
   padding: 0 1rem;
   background-image: url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center;
+  background-position: bottom, top;
   background-attachment: scroll, fixed;
 }
 @media screen and (min-width: 75em) {

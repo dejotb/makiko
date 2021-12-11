@@ -463,7 +463,6 @@ a {
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center center;
-  background-attachment: scroll, fixed;
 }
 @media screen and (min-width: 75em) {
   .header {

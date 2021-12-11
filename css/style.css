@@ -462,7 +462,7 @@ a {
   background-image: url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
+  background-position: bottom, 4%;
   background-attachment: scroll, fixed;
 }
 @media screen and (min-width: 75em) {

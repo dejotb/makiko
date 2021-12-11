@@ -546,6 +546,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     background-position: 0 49%;
     grid-gap: 5rem;
+    background-attachment: fixed;
   }
 }
 .products__card--1 {

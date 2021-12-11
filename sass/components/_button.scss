@@ -1,0 +1,27 @@
+.btn {
+  padding: 4px 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn--cta {
+  transition: all 0.1s linear;
+  background: var(--color-primary);
+  border-radius: 15px;
+  color: white;
+  padding: 5px 20px;
+  border: 2px solid white;
+  //   text-shadow: 3px 3px 0px #f2a069;
+  //   text-transform: capitalize;
+  font-size: var(--fs-500);
+  //   font-family: $font-primary;
+
+  &:hover,
+  .btn:active,
+  .btn:focus {
+    transform: translate3d(0, -0.5rem, 0);
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

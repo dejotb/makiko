@@ -1,11 +1,11 @@
 :root {
   --color--font: #121722;
-  --color--primary: #ffc600;
+  --color-primary: #ffc600;
   --color-green: #07793d;
   --color-yellow: #fdd01b;
   --color-blue: #004490;
   --color-red: #e91c24;
-  --fs-xl: clamp(4.5rem, 6vw + 1rem, 6rem);
+  --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
   --fs-600: 3.25rem;
   --fs-500: 1.75rem;
   --fs-400: 1.5rem;
@@ -113,6 +113,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+
 .pg {
   max-width: 70ch;
   font-size: 1.6rem;
@@ -207,20 +213,19 @@ h6 {
   color: white;
   line-height: 1;
   font-weight: 700;
-  text-shadow: 3px 3px 0px #f2a063;
+  text-shadow: 3px 3px 0px #f2a069;
+  letter-spacing: 1px;
 }
 .heading--2 {
-  font-family: "Lato", sans-serif;
-  font-size: 4rem;
-  font-style: italic;
+  font-family: "Neuton", serif;
+  font-size: var(--fs-xl);
   line-height: 1;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-shadow: 1px 1px 1px #aaa;
+  color: white;
+  font-weight: 700;
 }
 .heading--3 {
   font-family: "Neuton", serif;
-  color: var(--color-blue);
+  color: var(--color-red);
   font-size: var(--fs-600);
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   font-weight: 700;
@@ -275,6 +280,7 @@ h6 {
   align-items: center;
   padding: 1rem 0;
   font-size: 3rem;
+  align-self: start;
 }
 
 .hamburger {
@@ -315,10 +321,11 @@ h6 {
   top: 0.8rem;
 }
 .hamburger__text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-family: "Neuton", serif;
   position: absolute;
-  top: 15%;
-  right: -5rem;
+  top: 8%;
+  right: -5.5rem;
   color: var(--color-red);
   cursor: default;
 }
@@ -354,7 +361,7 @@ h6 {
   transform: rotate(-225deg);
 }
 .toggleHam .hamburger__text {
-  right: -6.5rem;
+  right: -7rem;
 }
 
 .nav__list--wrapper {
@@ -444,37 +451,39 @@ h6 {
   }
 }
 .header {
+  position: relative;
   display: grid;
   justify-items: center;
   align-items: start;
   min-height: 100vh;
-  position: relative;
+  grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas: "nav" "text" "img";
-  grid-gap: 10vh;
   padding: 0 1rem;
-  background-image: url("../img/header-table.png"), url("../img/header-background-1.jpg");
+  background-image: url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, bottom;
   background-attachment: scroll, fixed;
 }
-@media screen and (min-width: 55em) {
+@media screen and (min-width: 75em) {
   .header {
-    grid-gap: 1vh;
+    align-items: center;
     background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
     background-size: contain, contain, cover;
     background-repeat: no-repeat;
     background-position: top, bottom;
     background-attachment: scroll, scroll, fixed;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 0.8fr;
     padding: 0 5rem;
     grid-template-areas: "nav nav" "text img";
   }
 }
 .header__heading {
-  display: grid;
   grid-area: text;
-  justify-content: center;
+}
+.header__heading h1 {
+  padding-bottom: 4rem;
 }
 .header__images {
   grid-area: img;
@@ -520,10 +529,6 @@ h6 {
   margin: 0;
   background-color: var(--color--primary);
 }
-.products__box {
-  display: grid;
-  background-image: url("../img/products-composition-background.png");
-}
 .products__card {
   padding: 5rem 1rem;
   min-height: 100vh;
@@ -551,6 +556,11 @@ h6 {
 }
 .products__card--3 {
   background-image: url("../img/products-background-3.jpg");
+}
+.products__title {
+  background-color: var(--color-red);
+  padding: 2rem 0 6rem;
+  text-align: center;
 }
 .products__description {
   display: grid;
@@ -625,6 +635,29 @@ h6 {
   margin: 2rem 0;
   align-self: center;
   gap: 5rem;
+}
+
+.btn {
+  padding: 4px 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn--cta {
+  transition: all 0.1s linear;
+  background: var(--color-primary);
+  border-radius: 15px;
+  color: white;
+  padding: 5px 20px;
+  border: 2px solid white;
+  font-size: var(--fs-500);
+}
+.btn--cta:hover,
+.btn--cta .btn:active,
+.btn--cta .btn:focus {
+  transform: translate3d(0, -0.5rem, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

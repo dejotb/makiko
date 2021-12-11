@@ -6,22 +6,23 @@
     color: white;
     line-height: 1;
     font-weight: 700;
-    text-shadow: 3px 3px 0px #f2a063;
+    text-shadow: 3px 3px 0px #f2a069;
+    letter-spacing: 1px;
   }
 
   &--2 {
-    font-family: $font-primary;
-    font-size: 4rem;
-    font-style: italic;
+    font-family: $font-display;
+    font-size: var(--fs-xl);
+    // font-style: italic;
     line-height: 1;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-shadow: 1px 1px 1px $color-grey-light-2;
+    color: white;
+    // text-transform: uppercase;
+    font-weight: 700;
   }
 
   &--3 {
     font-family: $font-display;
-    color: var(--color-blue);
+    color: var(--color-red);
     font-size: var(--fs-600);
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-weight: 700;

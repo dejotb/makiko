@@ -7,6 +7,7 @@
   align-items: center;
   padding: 1rem 0;
   font-size: 3rem;
+  align-self: start;
 }
 
 .hamburger {
@@ -54,11 +55,12 @@
   }
 
   &__text {
-    font-size: 1.5rem;
-
+    font-size: 1.7rem;
+    font-family: $font-display;
+    // font-weight: 700;
     position: absolute;
-    top: 15%;
-    right: -5rem;
+    top: 8%;
+    right: -5.5rem;
     color: var(--color-red);
     cursor: default;
   }
@@ -104,7 +106,7 @@
   }
 
   .hamburger__text {
-    right: -6.5rem;
+    right: -7rem;
   }
 }
 

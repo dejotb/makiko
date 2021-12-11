@@ -11,7 +11,7 @@ $bp-sm: 45em; // 600px;
 :root {
   // colors
   --color--font: #121722;
-  --color--primary: #ffc600;
+  --color-primary: #ffc600;
 
   --color-green: #07793d;
   --color-yellow: #fdd01b;
@@ -19,7 +19,7 @@ $bp-sm: 45em; // 600px;
   --color-red: #e91c24;
 
   //font size
-  --fs-xl: clamp(4.5rem, 6vw + 1rem, 6rem);
+  --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
   --fs-600: 3.25rem;
   --fs-500: 1.75rem;
   --fs-400: 1.5rem;

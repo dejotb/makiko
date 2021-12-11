@@ -3,10 +3,9 @@
   background-color: var(--color--primary);
 
   &__box {
-    display: grid;
-    background-image: url("../img/products-composition-background.png");
-    @media screen and (min-width: $bp-md) {
-    }
+    // display: grid;
+    // @media screen and (min-width: $bp-sm) {
+    // }
   }
   &__card {
     padding: 5rem 1rem;
@@ -36,6 +35,14 @@
     &--3 {
       background-image: url("../img/products-background-3.jpg");
     }
+  }
+
+  &__title {
+    background-color: var(--color-red);
+    padding: 2rem 0 6rem;
+    text-align: center;
+    // border-bottom: 0.5vh solid white;
+    // border-top: 0.5vh solid white;
   }
 
   &__description {

@@ -3,7 +3,7 @@
   display: grid;
   justify-items: center;
   align-items: start;
-  min-height: 98vh;
+  min-height: 100vh;
   grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas:
     "nav"
@@ -14,7 +14,7 @@
     url("../img/header-background-1.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
+  background-position: bottom;
   background-attachment: scroll, fixed;
   // background-color: var(--color--primary);
 

@@ -27,13 +27,16 @@
     }
 
     &--1 {
+      background-color: var(--color-primary);
       background-image: url("../img/products-background-1.jpg");
     }
     &--2 {
+      background-color: var(--color-blue);
       background-image: url("../img/products-background-2.jpg");
     }
 
     &--3 {
+      background-color: var(--color-green);
       background-image: url("../img/products-background-3.jpg");
     }
   }

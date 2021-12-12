@@ -13,4 +13,9 @@
   @media screen and (min-width: $bp-xl) {
     background-attachment: scroll, scroll, fixed;
   }
+
+  &__form {
+    display: grid;
+    justify-content: center;
+  }
 }

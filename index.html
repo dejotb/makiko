@@ -215,7 +215,7 @@
             sezamem.
           </p>
           <div class="company__image">
-            <img class="img" src="../img/breadsticks.png" alt="paluszki" />
+            <img class="img" src="img/breadsticks.png" alt="paluszki" />
           </div>
           <p class="pg">
             W ciągu ponad 40 lat działalności „MAKIKO” produkcja firmy zawsze opierała
@@ -236,14 +236,23 @@
           asperiores soluta cumque voluptate modi animi quis ex magni, voluptas
           repellat.
         </p>
-        <div class="contact__form">
+        <div class="contact__modal">
 
-          <form action="https://formsubmit.co/your@email.com" method="POST">
+          <form class="contact__form" action="https://formsubmit.co/your@email.com" method="POST">
+            <h2>Formularz kontaktowy</h2>
+            <p class="pg">Pola oznaczone gwiazdką (*) są obowiązkowe do wypełnienia.</p>
             <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-            <input type="email" name="surname" value="" placeholder="Imię i nazwisko" required>
-            <input type="email" name="email" placeholder="Adres Email" required>
-            <input type="text" name="name" placeholder="Wpisz swoją wiadomość" required>
-            <button type="submit">Send</button>
+
+
+            <input type="text" name="subject" size='40' value="" placeholder="Wpisz temat wiadomości" required>
+            <input type="input" name="fullName" value="" placeholder="Imię i nazwisko" required>
+
+            <input type="email" name="email" placeholder="Adres e-mail" aria-invalid="true" aria-describedby="email-error" required>
+
+            <input type="tel" name="tel" placeholder="Numer telefonu" >
+
+            <textarea type="text"  name="name" placeholder="Wpisz swoją wiadomość" required></textarea>
+            <button class="btn btn--cta" type="submit">Send</button>
           </form>
         </div>
       </section>
@@ -276,7 +285,7 @@
       </div>
       <div class="footer__text">
         <span>&#174 2022 MAKIKO  / </span>
-        <span>realizacja: Bartosz Kraszewski</span>
+        <span>projekt i realizacja: Bartosz Kraszewski</span>
       </div>
     </footer>
     <script src="app.js"></script>

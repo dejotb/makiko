@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: grid;
   align-content: center;
+  justify-items: center;
 
   background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"),
     url("../img/header-background-1.jpg");
@@ -17,5 +18,14 @@
   &__form {
     display: grid;
     justify-content: center;
+    grid-gap: 2rem;
+    // background-color: var(--color-primary);
+    max-width: 30rem;
+    // width: 20rem;
+
+    input,
+    textarea {
+      display: block;
+    }
   }
 }

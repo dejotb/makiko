@@ -204,10 +204,10 @@ a {
 .heading--1 {
   font-family: "Neuton", serif;
   font-size: var(--fs-xl);
-  color: var(--color-white);
+  color: var(--color-red);
   line-height: 1;
   font-weight: 700;
-  text-shadow: 3px 3px 0px #f2a069;
+  text-shadow: 3px 3px 0px var(--color-white);
   letter-spacing: 1px;
 }
 .heading--2 {
@@ -579,6 +579,7 @@ a {
   grid-gap: 8rem;
   background-repeat: no-repeat;
   background-position: 35% 73%;
+  background-size: cover;
 }
 @media screen and (min-width: 75em) {
   .products__card {
@@ -590,16 +591,16 @@ a {
   }
 }
 .products__card--1 {
-  background-color: var(--color-primary);
   background-image: url("../img/products-background-1.jpg");
+  background-color: var(--color-primary);
 }
 .products__card--2 {
-  background-color: var(--color-blue);
   background-image: url("../img/products-background-2.jpg");
+  background-color: var(--color-blue);
 }
 .products__card--3 {
-  background-color: var(--color-green);
   background-image: url("../img/products-background-3.jpg");
+  background-color: var(--color-green);
 }
 .products__title {
   padding: 2rem 1rem 5rem;
@@ -684,6 +685,7 @@ a {
   min-height: 100vh;
   display: grid;
   align-content: center;
+  justify-items: center;
   background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
   background-size: contain, contain, cover;
   background-repeat: no-repeat;
@@ -697,6 +699,12 @@ a {
 .contact__form {
   display: grid;
   justify-content: center;
+  grid-gap: 2rem;
+  max-width: 30rem;
+}
+.contact__form input,
+.contact__form textarea {
+  display: block;
 }
 
 .btn {
@@ -710,12 +718,11 @@ a {
 
 .btn--cta {
   transition: all 0.1s linear;
-  background: var(--color-red);
-  color: white;
   padding: 8px 23px;
-  border: 2px solid white;
   text-transform: capitalize;
   font-size: var(--fs-500);
+  background: var(--color-red);
+  color: white;
 }
 .btn--cta:hover,
 .btn--cta .btn:active,
@@ -739,6 +746,7 @@ a {
 .company__image {
   justify-self: center;
   height: 20vh;
+  display: block;
 }
 @media screen and (min-width: 75em) {
   .company__image {

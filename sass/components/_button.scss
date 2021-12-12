@@ -9,20 +9,15 @@
 
 .btn--cta {
   transition: all 0.1s linear;
+  padding: 8px 23px;
+  // border: 2px solid white;
+  text-transform: capitalize;
+  font-size: var(--fs-500);
   background: var(--color-red);
   color: white;
-  padding: 8px 23px;
-  border: 2px solid white;
-  text-transform: capitalize;
-  //   text-shadow: 3px 3px 0px #f2a069;
-  //   text-transform: capitalize;
-  font-size: var(--fs-500);
-  //   font-family: $font-primary;
-
   &:hover,
   .btn:active,
   .btn:focus {
     transform: translate3d(0, -0.5rem, 0);
-    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }

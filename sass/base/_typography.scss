@@ -3,10 +3,10 @@
     font-family: $font-display;
     font-size: var(--fs-xl);
     // color: var(--color--font);
-    color: var(--color-white);
+    color: var(--color-red);
     line-height: 1;
     font-weight: 700;
-    text-shadow: 3px 3px 0px #f2a069;
+    text-shadow: 3px 3px 0px var(--color-white);
     letter-spacing: 1px;
   }
 

@@ -17,6 +17,7 @@
     grid-gap: 8rem;
     background-repeat: no-repeat;
     background-position: 35% 73%;
+    background-size: cover;
 
     @media screen and (min-width: $bp-xl) {
       grid-auto-flow: column;
@@ -27,17 +28,17 @@
     }
 
     &--1 {
-      background-color: var(--color-primary);
       background-image: url("../img/products-background-1.jpg");
+      background-color: var(--color-primary);
     }
     &--2 {
-      background-color: var(--color-blue);
       background-image: url("../img/products-background-2.jpg");
+      background-color: var(--color-blue);
     }
 
     &--3 {
-      background-color: var(--color-green);
       background-image: url("../img/products-background-3.jpg");
+      background-color: var(--color-green);
     }
   }
 

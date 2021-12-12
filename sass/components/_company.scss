@@ -19,6 +19,7 @@
   &__image {
     justify-self: center;
     height: 20vh;
+    display: block;
 
     @media screen and (min-width: $bp-xl) {
       display: none;

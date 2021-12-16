@@ -76,3 +76,8 @@ a {
   text-decoration: none;
   transition: 0.2s all;
 }
+
+html {
+  scrollbar-color: var(--color-blue) #e0e0e0;
+  scrollbar-width: thin;
+}

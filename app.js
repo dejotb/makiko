@@ -151,7 +151,7 @@ const compositionSwitch = function () {
           <li>tłuszcz roślinny,</li>
           <li>cukier,</li>
           <li>drożdże,</li>
-          <li>wodorotlenek sodu (regulator kwasowości).</li>
+          <li>wodorotlenek sodu <br> (regulator kwasowości).</li>
         </ul>
       </div>
     </div>`;
@@ -296,3 +296,55 @@ const compositionSwitch = function () {
 };
 
 compositionSwitch();
+
+// scroll snap
+
+// const box = document.querySelector('.products__box');
+// const sections = document.querySelectorAll('.products__card');
+
+// const btnNext = document.querySelector('.btn_next');
+// const btnPrev = document.querySelector('.btn_prev');
+
+// let index = 0;
+// const animationDuration = 1000;
+// // const lastTime = 0;
+
+// btnNext.addEventListener('click', () => {
+//   if (index > 2) return;
+//   index++;
+//   sections.forEach((section, i) => {
+//     if (i === index) {
+//       section.scrollIntoView({ behaviour: 'smooth' });
+//     }
+//   });
+// });
+
+// btnPrev.addEventListener('click', () => {
+//   if (index < 1) return;
+//   index--;
+//   sections.forEach((section, i) => {
+//     if (i === index) {
+//       section.scrollIntoView({ behaviour: 'smooth' });
+//     }
+//   });
+// });
+
+// window.addEventListener('wheel', (e) => {
+//   const delta = e.wheelDelta;
+//   console.log(delta);
+//   const currentTime = new Date().getTime();
+
+//   // if (currentTime - lastTime > animationDuration) {
+//   //   e.preventDefault();
+//   //   return;
+//   // }
+
+//   if (delta < 0) {
+//     const nextBtnClick = new Event('click');
+//     btnNext.dispatchEvent(nextBtnClick);
+//   } else {
+//     const prevBtnClick = new Event('click');
+//     btnPrev.dispatchEvent(prevBtnClick);
+//   }
+//   // lastTime = currentTime;
+// });

@@ -18,6 +18,7 @@
   &:hover,
   .btn:active,
   .btn:focus {
-    transform: translate3d(0, -0.5rem, 0);
+    // transform: translate3d(0, -0.5rem, 0);
+    background-color: var(--color-blue);
   }
 }

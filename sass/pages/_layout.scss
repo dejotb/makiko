@@ -1,0 +1,21 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  z-index: 9999;
+
+  & > img {
+    width: 10vw;
+    animation: float 1.5s 3;
+  }
+
+  &.hidden {
+    animation: fade-out 0.5s 2s forwards;
+  }
+}

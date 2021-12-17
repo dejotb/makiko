@@ -1,8 +1,8 @@
 .products {
   margin: 0;
   background-color: var(--color--primary);
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: auto;
 
   &__box {
   }
@@ -63,7 +63,7 @@
   }
 
   &__image {
-    height: 52vh;
+    height: 50vh;
     transition: 0.3s all ease-in-out;
     transform: rotate(1deg);
     position: relative;
@@ -87,7 +87,7 @@
     }
 
     @media screen and (min-width: $bp-sm) {
-      height: 60rem;
+      height: 55rem;
     }
 
     // .img--shadow {

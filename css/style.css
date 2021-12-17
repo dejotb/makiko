@@ -582,8 +582,6 @@ html {
 .products {
   margin: 0;
   background-color: var(--color--primary);
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
 }
 .products__title {
   background-color: var(--color-red);
@@ -634,7 +632,7 @@ html {
   justify-items: center;
 }
 .products__image {
-  height: 52vh;
+  height: 50vh;
   transition: 0.3s all ease-in-out;
   transform: rotate(1deg);
   position: relative;
@@ -658,7 +656,7 @@ html {
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 60rem;
+    height: 55rem;
   }
 }
 .products__image:hover {

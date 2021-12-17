@@ -609,6 +609,7 @@ html {
   .products__card {
     padding: 1rem;
     grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     background-position: 0 33%;
     background-attachment: fixed;
   }

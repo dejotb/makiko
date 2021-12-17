@@ -35,7 +35,7 @@
     @media screen and (min-width: $bp-xl) {
       padding: 1rem;
       grid-auto-flow: column;
-      // grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       background-position: 0 33%;
       // grid-gap: 1rem;
       background-attachment: fixed;

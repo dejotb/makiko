@@ -138,6 +138,14 @@ html {
   filter: blur(10px);
 }
 
+.opacity--half {
+  opacity: 0.5;
+}
+
+.opacity--full {
+  opacity: 1;
+}
+
 .img {
   transition: 0.2s all ease-in-out;
   display: block;
@@ -174,26 +182,6 @@ html {
   animation: fade-out 0.1s;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -0.5rem, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    opacity: 0;
-    transform: translate3d(0, 2rem, 0);
-  }
-}
 .heading--1 {
   font-family: "Neuton", serif;
   font-size: var(--fs-xl);
@@ -242,7 +230,7 @@ html {
 }
 
 .animation {
-  animation: float 3s infinite ease-in;
+  animation: float 3s infinite ease-in-out;
 }
 
 @media (prefers-reduced-motion) {
@@ -696,12 +684,12 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 46rem;
-  min-width: 30rem;
+  width: 30rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 45em) {
   .products__composition {
-    min-width: 35rem;
+    width: 35rem;
     height: 42rem;
   }
 }
@@ -829,7 +817,7 @@ html {
 }
 .loader > img {
   width: 20vmax;
-  animation: float 1.5s 3;
+  animation: float 1.5s 20;
 }
 .loader.hidden {
   animation: fade-out 0.5s 2s forwards;

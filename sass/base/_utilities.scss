@@ -11,6 +11,13 @@
   filter: blur(10px);
 }
 
+.opacity--half {
+  opacity: 0.5;
+}
+.opacity--full {
+  opacity: 1;
+}
+
 .img {
   // transition: 0.5s all;
   transition: 0.2s all ease-in-out;
@@ -46,27 +53,4 @@
 
 .hide {
   animation: fade-out 0.1s;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -0.5rem, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    // transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translate3d(0, 2rem, 0);
-    // transform: translateY(2rem);
-  }
 }

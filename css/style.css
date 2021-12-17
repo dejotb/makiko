@@ -585,7 +585,6 @@ html {
 }
 .products__title {
   background-color: var(--color-red);
-  scroll-snap-align: start;
 }
 @media screen and (min-width: 75em) {
   .products__title {
@@ -656,7 +655,7 @@ html {
 }
 @media screen and (min-width: 45em) {
   .products__image {
-    height: 55rem;
+    height: 52rem;
   }
 }
 .products__image:hover {

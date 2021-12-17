@@ -9,7 +9,7 @@
 
   &__title {
     background-color: var(--color-red);
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
 
     @media screen and (min-width: $bp-xl) {
       background-image: url(../img/breadstick-1.png);
@@ -87,7 +87,7 @@
     }
 
     @media screen and (min-width: $bp-sm) {
-      height: 55rem;
+      height: 52rem;
     }
 
     // .img--shadow {

@@ -1,6 +1,7 @@
 :root {
   --color-font: #121722;
   --color-primary: #ffc600;
+  --color-primary-lighter: hsl(from var(--color-primary) h s calc(l + 5%));
   --color-green: #07793d;
   --color-yellow: #fdd01b;
   --color-blue: #275fac;
@@ -305,7 +306,7 @@ textarea {
 .nav__list--wrapper {
   font-family: "Neuton", serif;
   position: fixed;
-  background-color: white;
+  background-color: var(--color-primary);
   display: grid;
   grid-gap: 10rem;
   align-content: center;
@@ -696,6 +697,8 @@ textarea {
 .products__composition {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   background-image: url("../img/linedpaper.png");
+  background-color: rgba(255, 198, 0, 0.5);
+  background-blend-mode: multiply;
   background-position: top;
   padding: 0 0.5rem;
   align-items: center;

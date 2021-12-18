@@ -62,6 +62,7 @@
     align-items: center;
     z-index: 99999;
     transition: 0.3s all;
+    padding: 1rem;
     // animation: fade-out 0.5s 2s forwards;
 
     &.hidden {

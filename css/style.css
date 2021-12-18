@@ -801,6 +801,7 @@ textarea {
   align-items: center;
   z-index: 99999;
   transition: 0.3s all;
+  padding: 1rem;
 }
 .contact__modal.hidden {
   opacity: 0;

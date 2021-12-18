@@ -908,4 +908,28 @@ textarea {
   animation: fade-out 0.5s 2s forwards;
 }
 
+.typ__container {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  grid-gap: 5rem;
+  background-color: var(--color-primary);
+  padding: 0 1rem;
+}
+.typ__heading {
+  font-size: var(--fs-600);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.typ__heading span {
+  font-size: var(--fs-500);
+  font-weight: 400;
+  display: block;
+}
+.typ__image {
+  width: 15rem;
+}
+
 /*# sourceMappingURL=style.css.map */

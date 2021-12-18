@@ -1,6 +1,6 @@
 .pg {
   max-width: 70ch;
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
 
   & > p:not(:last-child) {
     margin-bottom: 1rem;
@@ -53,4 +53,26 @@
 
 .hide {
   animation: fade-out 0.1s;
+}
+
+.breadsticks__image {
+  justify-self: center;
+  width: 100%;
+  // display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--products {
+    background-image: url("../img/breadstick-4.png");
+    height: 20vmin;
+  }
+  &--company {
+    background-image: url("../img/breadstick-3.png");
+    height: 10vmin;
+  }
+
+  @media screen and (min-width: $bp-xl) {
+    display: none;
+  }
 }

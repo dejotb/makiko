@@ -12,10 +12,11 @@
     // scroll-snap-align: start;
 
     @media screen and (min-width: $bp-xl) {
-      background-image: url(../img/breadstick-1.png);
+      background-image: url(../img/breadstick-1.png),
+        url(../img/breadstick-2.png);
       background-size: 30%;
       background-repeat: no-repeat;
-      background-position: -5% 10%;
+      background-position: -5% 40%, 125% 100%;
     }
   }
 
@@ -130,7 +131,7 @@
       align-self: flex-start;
       ul {
         padding-left: 3rem;
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
         line-height: 1.7;
         list-style: circle;
       }

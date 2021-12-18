@@ -10,7 +10,7 @@ $bp-sm: 45em; // 600px;
 
 :root {
   // colors
-  --color--font: #121722;
+  --color-font: #121722;
   --color-primary: #ffc600;
 
   --color-green: #07793d;
@@ -36,8 +36,6 @@ $bp-sm: 45em; // 600px;
 
   @media screen and (min-width: var(--bp-xl)) {
     :root {
-      // --fs-xl: 6rem;
-      // --fs-600: 3.5rem;
       --fs-500: 2.75rem;
       --fs-400: 2.5rem;
     }

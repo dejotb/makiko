@@ -7,20 +7,11 @@
     background-color: var(--color-blue);
 
     @media screen and (min-width: $bp-xl) {
-      background-image: url(../img/breadstick-2.png);
-      background-size: 40%;
+      background-image: url(../img/breadstick-5.png),
+        url(../img/breadstick-3.png);
+      background-size: 40%, 30%;
       background-repeat: no-repeat;
-      background-position: 125% 100%;
-    }
-  }
-
-  &__image {
-    justify-self: center;
-    height: 20vh;
-    display: block;
-
-    @media screen and (min-width: $bp-xl) {
-      display: none;
+      background-position: 125% 100%, -20% 50%;
     }
   }
 }

@@ -1,7 +1,6 @@
 :root {
   --color-font: #121722;
   --color-primary: #ffc600;
-  --color-primary-lighter: hsl(from var(--color-primary) h s calc(l + 5%));
   --color-green: #07793d;
   --color-yellow: #fdd01b;
   --color-blue: #275fac;
@@ -909,7 +908,7 @@ textarea {
   animation: float 1.5s 3;
 }
 .loader.hidden {
-  animation: fade-out 0.5s 2s forwards;
+  animation: fade-out 0.5s 1s forwards;
 }
 
 .typ__container {

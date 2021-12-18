@@ -253,34 +253,27 @@
         <div class="contact__card">
           <div class="contact__form">
             <h3 class="heading--4"><span>Formularz kontaktowy</span></h3>
-            <a href="#"><button class="btn btn--cta">Napisz do nas</button></a>
+            <a href="#"><button id='btn__form--open' class="btn btn--cta">Napisz do nas</button></a>
           </div>
         </div>
 
-        <!-- <div class="contact__modal">
-
-          <form class="contact__form" action="https://formsubmit.co/your@email.com" method="POST">
-            <h2>Formularz kontaktowy</h2>
+        <div class="contact__modal hidden">
+          <form class="contact__form" action="https://formsubmit.co/dejotb1@gmail.com" method="POST">
+            <h2 class="heading--2">Formularz kontaktowy</h2>
             <p class="pg">Pola oznaczone gwiazdką (*) są obowiązkowe do wypełnienia.</p>
+            <button id="btn__form--close" class="btn btn--close" title="zamknij (Esc)" type="button">x</button>
             <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-
-
             <input type="text" name="subject"  value="" placeholder="Wpisz temat wiadomości" required>
-            <input type="input" name="fullName" value="" placeholder="Imię i nazwisko" required>
-
+            <input type="text" name="fullName" value="" placeholder="Imię i nazwisko" required>
             <input type="email" name="email" placeholder="Adres e-mail" aria-invalid="true" aria-describedby="email-error" required>
-
             <input type="tel" name="tel" placeholder="Numer telefonu" >
-
-            <textarea type="text"  name="name" placeholder="Wpisz swoją wiadomość" required></textarea>
+            <textarea type="text" name="message" placeholder="Wpisz swoją wiadomość" required></textarea>
             <button class="btn btn--cta" type="submit">Send</button>
           </form>
-        </div> -->
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <!-- <div class="footer__img"></div> -->
-
       <ul class="footer__list">
         <li class="btn footer__item">
           <a href="#header" class="footer__link">Start</a>

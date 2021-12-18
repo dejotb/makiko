@@ -308,3 +308,19 @@ const compositionSwitch = function () {
 };
 
 compositionSwitch();
+
+// Form Modal handle
+
+const form = document.querySelector('.contact__modal');
+const closeBtn = document.querySelector('#btn__form--close');
+const openBtn = document.querySelector('#btn__form--open');
+
+openBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  form.classList.remove('hidden');
+});
+
+closeBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  form.classList.add('hidden');
+});

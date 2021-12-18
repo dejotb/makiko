@@ -5,20 +5,54 @@
   cursor: pointer;
   z-index: 10;
   border-radius: 15px;
-}
 
-.btn--cta {
-  transition: all 0.1s linear;
-  padding: 8px 23px;
-  // border: 2px solid white;
-  // text-transform: capitalize;
-  // font-size: var(--fs-400);
-  background: var(--color-red);
-  color: white;
-  &:hover,
-  .btn:active,
-  .btn:focus {
-    // transform: translate3d(0, -0.5rem, 0);
-    background-color: var(--color-blue);
+  &--cta {
+    transition: all 0.1s linear;
+    padding: 8px 23px;
+    // border: 2px solid white;
+    // text-transform: capitalize;
+    // font-size: var(--fs-400);
+    background: var(--color-red);
+    color: white;
+    &:hover,
+    .btn:active,
+    .btn:focus {
+      // transform: translate3d(0, -0.5rem, 0);
+      background-color: var(--color-blue);
+    }
+  }
+
+  &--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    font-size: 0;
+    // height: 2rem;
+    // width: 2rem;
+    // background-color: pink;
+
+    &::before,
+    &::after {
+      height: 0.5rem;
+      width: 100%;
+      background-color: var(--color-red);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 1.8rem;
+      right: 0;
+      transition: 0.5s all;
+    }
+
+    &::before {
+      transform: rotate(225deg);
+    }
+
+    &::after {
+      transform: rotate(-225deg);
+    }
   }
 }

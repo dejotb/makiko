@@ -794,22 +794,23 @@ textarea {
 }
 .contact__modal {
   position: fixed;
+  inset: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 100vh;
   background-color: var(--color-primary);
   display: grid;
   align-items: center;
   z-index: 99999;
   transition: 0.3s all;
   padding: 1rem;
+  overflow-y: auto;
 }
 .contact__modal.hidden {
   opacity: 0;
   display: none;
 }
 .contact__form {
+  overflow: hidden;
   display: grid;
   justify-items: center;
   grid-gap: 2.5rem;

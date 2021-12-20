@@ -11,8 +11,12 @@
   z-index: 9999;
 
   & > img {
-    width: 17vmax;
+    width: 15vmax;
     animation: float 1.5s 3;
+
+    @media screen and (min-width: $bp-xl) {
+      width: 8vmax;
+    }
   }
 
   &.hidden {

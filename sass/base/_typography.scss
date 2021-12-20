@@ -31,12 +31,12 @@
     font-weight: 700;
     // position: relative;
     z-index: 1;
-    background-color: var(--color-white);
+    // background-color: var(--color-white);
+    background-color: rgba(255, 198, 0, 0.9);
     padding: 0 1rem 1rem;
     border-radius: 15px;
 
     span {
-      font-size: var(--fs-500);
       color: var(--color-blue);
     }
   }

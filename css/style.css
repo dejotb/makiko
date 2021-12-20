@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  font-size: var(--fs-400);
+  font-size: calc(15px + 0.2vw);
   font-family: "Lato", sans-serif;
   color: var(--color-font);
   font-weight: 400;
@@ -133,7 +133,6 @@ textarea {
 
 .pg {
   max-width: 70ch;
-  font-size: var(--fs-400);
 }
 .pg > p:not(:last-child) {
   margin-bottom: 1rem;
@@ -233,12 +232,11 @@ textarea {
   font-size: var(--fs-600);
   font-weight: 700;
   z-index: 1;
-  background-color: var(--color-white);
+  background-color: rgba(255, 198, 0, 0.9);
   padding: 0 1rem 1rem;
   border-radius: 15px;
 }
 .heading--3 span {
-  font-size: var(--fs-500);
   color: var(--color-blue);
 }
 .heading--4 {
@@ -612,6 +610,17 @@ textarea {
 }
 .products__title {
   background-color: var(--color-red);
+  position: relative;
+}
+.products__title:after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  content: "";
+  background: var(--color-white);
 }
 @media screen and (min-width: 75em) {
   .products__title {
@@ -623,7 +632,6 @@ textarea {
 }
 .products__card {
   padding: 8rem 1rem 4rem;
-  min-height: 100vh;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -631,27 +639,25 @@ textarea {
   background-repeat: no-repeat;
   background-position: 25% 73%;
   background-size: cover;
+  position: relative;
 }
 @media screen and (min-width: 75em) {
   .products__card {
-    padding: 1rem;
+    padding: 12rem 1rem;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr 1fr;
-    background-position: 0 33%;
+    background-position: 0 59%;
     background-attachment: fixed;
   }
 }
 .products__card--1 {
   background-image: url("../img/products-background-1.jpg");
-  background-color: var(--color-primary);
 }
 .products__card--2 {
   background-image: url("../img/products-background-2.jpg");
-  background-color: var(--color-blue);
 }
 .products__card--3 {
   background-image: url("../img/products-background-3.jpg");
-  background-color: var(--color-green);
 }
 .products__description {
   display: grid;
@@ -883,6 +889,17 @@ textarea {
 
 .company__title {
   background-color: var(--color-blue);
+  position: relative;
+}
+.company__title:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  content: "";
+  background: var(--color-white);
 }
 @media screen and (min-width: 75em) {
   .company__title {
@@ -906,8 +923,13 @@ textarea {
   z-index: 9999;
 }
 .loader > img {
-  width: 17vmax;
+  width: 15vmax;
   animation: float 1.5s 3;
+}
+@media screen and (min-width: 75em) {
+  .loader > img {
+    width: 8vmax;
+  }
 }
 .loader.hidden {
   animation: fade-out 0.5s 1s forwards;

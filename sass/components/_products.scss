@@ -9,7 +9,18 @@
 
   &__title {
     background-color: var(--color-red);
-    // scroll-snap-align: start;
+    position: relative;
+
+    &:after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1rem;
+      content: "";
+      background: var(--color-white);
+    }
 
     @media screen and (min-width: $bp-xl) {
       background-image: url(../img/breadstick-1.png),
@@ -22,38 +33,37 @@
 
   &__card {
     padding: 8rem 1rem 4rem;
-    min-height: 100vh;
+    // min-height: 100vh;
     display: grid;
     align-items: center;
     justify-items: center;
-    // grid-template-columns: 1fr;
     grid-gap: 8rem;
     background-repeat: no-repeat;
     background-position: 25% 73%;
-    // background-position: bottom;
     background-size: cover;
+    position: relative;
 
     @media screen and (min-width: $bp-xl) {
-      padding: 1rem;
+      padding: 12rem 1rem;
       grid-auto-flow: column;
       grid-template-columns: 1fr 1fr 1fr;
-      background-position: 0 33%;
+      background-position: 0 59%;
       // grid-gap: 1rem;
       background-attachment: fixed;
     }
 
     &--1 {
       background-image: url("../img/products-background-1.jpg");
-      background-color: var(--color-primary);
+      // background-color: var(--color-primary);
     }
     &--2 {
       background-image: url("../img/products-background-2.jpg");
-      background-color: var(--color-blue);
+      // background-color: var(--color-blue);
     }
 
     &--3 {
       background-image: url("../img/products-background-3.jpg");
-      background-color: var(--color-green);
+      // background-color: var(--color-green);
     }
   }
 

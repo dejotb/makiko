@@ -32,8 +32,8 @@
   right: -3rem;
   position: absolute;
   @media screen and (min-width: $bp-sm) {
-    bottom: -4rem;
-    right: -7rem;
+    bottom: -3rem;
+    right: -5rem;
   }
 }
 
@@ -65,11 +65,11 @@
 
   &--products {
     background-image: url("../img/breadstick-4.png");
-    height: 20vmin;
+    height: 14vmin;
   }
   &--company {
     background-image: url("../img/breadstick-3.png");
-    height: 10vmin;
+    height: 6vmin;
   }
 
   @media screen and (min-width: $bp-xl) {

@@ -79,12 +79,12 @@
 
 .animation--hide {
   // animation: hide 0.5s forwards;
-  // opacity: 0;
-  filter: blur(20px);
+  // opacity: 0.5;
+  filter: blur(5px);
 }
 
 .animation--move {
-  animation: move 0.6s 0.4s forwards ease-in-out;
+  animation: move 0.6s 1s forwards ease-in-out;
   // opacity: 0;
 }
 

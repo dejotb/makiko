@@ -1,43 +1,33 @@
 .heading {
-  &--1 {
+  &--1,
+  &--2,
+  &--3 {
     font-family: $font-display;
     font-size: var(--fs-xl);
-    // color: var(--color--font);
-    color: var(--color-red);
-    line-height: 1;
     font-weight: 700;
+  }
+
+  &--1 {
+    color: var(--color-red);
     text-shadow: 3px 3px 0px var(--color-white);
+    line-height: 1;
+
     letter-spacing: 1px;
   }
 
   &--2 {
-    font-family: $font-display;
-    font-size: var(--fs-xl);
-    // font-style: italic;
     line-height: 1;
     color: var(--color-white);
     text-align: center;
-    // text-transform: uppercase;
-    font-weight: 700;
     padding: 2rem 0;
   }
 
   &--3 {
     text-align: center;
-    font-family: $font-display;
     color: var(--color-red);
-    font-size: var(--fs-600);
-    // text-shadow: 3px 3px 0px var(--color-white);
-    font-weight: 700;
-    // position: relative;
-    z-index: 1;
-    // background-color: var(--color-white);
-    background-color: rgba(255, 198, 0, 0.9);
-    padding: 0 1rem 1rem;
-    border-radius: 15px;
-
+    text-shadow: 3px 3px 0px var(--color-white);
     span {
-      color: var(--color-blue);
+      color: var(--color-font);
     }
   }
 

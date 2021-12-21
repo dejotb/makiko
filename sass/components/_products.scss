@@ -143,8 +143,9 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
       rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
       rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    background-image: url("../img/linedpaper.png");
-    background-color: rgba(255, 198, 0, 0.5);
+    // background-image: url("../img/linedpaper.png");
+    // background-color: rgba(255, 198, 0, 0.5);
+    background-color: var(--color-primary);
     background-blend-mode: multiply;
     background-position: top;
     padding: 0 0.5rem;
@@ -161,14 +162,15 @@
     }
 
     &--ingredients {
-      padding-top: 2.5rem;
-      align-self: flex-start;
-      ul {
-        padding-left: 3rem;
-        font-size: 1.6rem;
-        line-height: 1.7;
-        list-style: circle;
-      }
+      padding: 2.5rem 1.5rem;
+
+      // align-self: flex-start;
+      // ul {
+      //   padding-left: 3rem;
+      //   font-size: 1.6rem;
+      //   line-height: 1.7;
+      //   list-style: circle;
+      // }
     }
 
     &--nutrition {
@@ -181,7 +183,7 @@
 
     th,
     td {
-      border-bottom: 1px solid rgba(black, 0.2);
+      border-bottom: 1px solid rgba(#11347d, 0.2);
       vertical-align: top;
       text-align: left;
       padding: 8px;

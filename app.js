@@ -157,14 +157,11 @@ const compositionSwitch = function () {
     <div
         class="products__composition--ingredients"
       >
-        <ul>
-          <li>mąka pszenna,</li>
-          <li>${ingredient},</li>
-          <li>tłuszcz roślinny,</li>
-          <li>cukier,</li>
-          <li>drożdże,</li>
-          <li>wodorotlenek sodu <br> (regulator kwasowości).</li>
-        </ul>
+        <p class="pg">
+        Składniki: mąka pszenna, <b>${ingredient}</b>, tłuszcz roślinny, cukier, drożdże,
+        wodorotlenek sodu <br> (regulator kwasowości).
+        </p>
+
       </div>
     </div>`;
   };
@@ -243,9 +240,9 @@ const compositionSwitch = function () {
   };
 
   const ingredientsOptions = {
-    1: 'ziarno sezamowe (20%)',
-    2: 'mak (3%)',
-    3: 'sól (2%)',
+    1: 'ziarno SEZAMOWE (20%)',
+    2: 'MAK (3%)',
+    3: 'SÓL (2%)',
   };
 
   productDetails.forEach((product) => {

@@ -98,17 +98,17 @@
 
 .hamburger {
   border: none;
-  width: 4rem;
+  width: 4.5rem;
   height: 3rem;
   position: relative;
   background-color: transparent;
   z-index: 150;
   &:hover {
     .hamburger__line::after {
-      transform: translateY(-2px);
+      transform: translateY(-15px);
     }
     .hamburger__line::before {
-      transform: translateY(2px);
+      transform: translateY(15px);
     }
   }
 
@@ -116,16 +116,16 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 0.3rem;
+    height: 0.4rem;
     background-color: var(--color-red);
-    transition: 0.5s all;
+    transition: 0.2s all ease-out;
 
     &::before,
     &::after {
       display: block;
       position: absolute;
       width: 100%;
-      height: 0.3rem;
+      height: 0.4rem;
       background-color: inherit;
       content: "";
       transition: 0.5s all;
@@ -141,7 +141,7 @@
   }
 
   &__text {
-    font-size: 1.7rem;
+    font-size: var(--fs-400);
     font-family: $font-display;
     // font-weight: 700;
     position: absolute;
@@ -171,7 +171,7 @@
 
     &::before,
     &::after {
-      height: 0.15rem;
+      height: 0.4rem;
       width: 100%;
       background-color: var(--color-red);
       content: "";

@@ -240,9 +240,9 @@ const compositionSwitch = function () {
   };
 
   const ingredientsOptions = {
-    1: 'ziarno SEZAMOWE (20%)',
-    2: 'MAK (3%)',
-    3: 'SÓL (2%)',
+    1: 'ziarno sezamowe (20%)',
+    2: 'mak (3%)',
+    3: 'sól (2%)',
   };
 
   productDetails.forEach((product) => {

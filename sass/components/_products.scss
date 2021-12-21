@@ -46,7 +46,7 @@
     background-position: 25% 73%;
     background-size: cover;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 
     @media screen and (min-width: $bp-md) {
       // grid-gap: 1rem;

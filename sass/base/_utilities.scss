@@ -77,32 +77,32 @@
   }
 }
 
-.img--hidden {
-  // animation: hide 1s forwards;
-  opacity: 0;
-  transform: translateY(-2rem);
+.animation--hide {
+  // animation: hide 0.5s forwards;
+  // opacity: 0;
+  filter: blur(20px);
 }
 
-.img--visible {
-  animation: show 0.6s forwards;
+.animation--move {
+  animation: move 0.6s 0.4s forwards ease-in-out;
   // opacity: 0;
 }
 
 @keyframes hide {
   0% {
-    // transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 
   100% {
-    // transform: translateX(10rem);
+    transform: translateY(100%);
     opacity: 0;
   }
 }
 
-@keyframes show {
+@keyframes move {
   0% {
-    transform: translateX(10rem);
+    transform: translateX(200%);
     opacity: 0;
   }
 

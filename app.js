@@ -289,26 +289,27 @@ closeBtn.addEventListener('click', (e) => {
 // wheelDelta();
 
 const productImages = document.querySelectorAll('.products__image');
-const cards = document.querySelectorAll('.products__card');
+const productCards = document.querySelectorAll('.products__card');
 
 const revealProducts = function (entries, observer) {
-  window.addEventListener('wheel', (e) => {
-    const delta = e.wheelDelta;
-    const entry = entries[0];
-    if (!entry.isIntersecting && delta < 0) {
-      entry.target.classList.add('img--hidden');
-    } else {
-      entry.target.classList.remove('img--hidden');
-    }
-  });
+  const entry = entries[0];
+  if (!entry.isIntersecting) {
+    entry.target.classList.add('animation--hide');
+    entry.target.nextElementSibling.classList.remove('animation--move');
+  } else {
+    entry.target.classList.remove('animation--hide');
+    entry.target.nextElementSibling.classList.add('animation--move');
+    observer.unobserve(entry.target);
+  }
 };
 
 const productsObserver = new IntersectionObserver(revealProducts, {
   root: null,
-  threshold: 0.2,
+  threshold: 0.4,
 });
 
 productImages.forEach((product) => {
-  product.classList.add('img--hidden');
+  product.classList.add('animation--hide');
+  product.nextElementSibling.classList.remove('animation--move');
   productsObserver.observe(product);
 });

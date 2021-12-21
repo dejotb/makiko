@@ -11,26 +11,14 @@
     flex-wrap: wrap;
   }
 
-  &__item {
-    // display: flex;
-    // text-decoration: none;
-    // display: block;
-    // padding: 3px 0.8rem;
-    // border-radius: 2px;
-    // transition: all 0.2s;
-    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-
   &__link {
+    color: var(--color-white);
     display: block;
     padding: 3px 0.8rem;
     border-radius: 5px;
     transition: all 0.2s;
-    border: 1px solid var(--color-white);
 
     &:hover {
-      background-color: #fff;
-      color: var(--color-red);
       transform: translateY(-0.5rem);
       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
         rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;

@@ -61,7 +61,7 @@
     background-color: var(--color-primary);
     display: grid;
     align-items: center;
-    z-index: 99999;
+    z-index: var(--z-index-modal);
     transition: 0.3s all;
     padding: 1rem;
     // animation: fade-out 0.5s 2s forwards;

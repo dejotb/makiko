@@ -69,13 +69,14 @@
 
     & .header__img:hover:nth-child(1n + 1) {
       transform: scale(1.2) translateY(-1rem);
-      z-index: 10;
+      z-index: var(--z-index-popup);
     }
 
     & .header__img:nth-child(2) {
       transform: scale(1.1);
       margin: 0 -2rem;
-      z-index: 1;
+      z-index: var(--z-index-box);
+      // z-index: 1;
 
       @media screen and (min-width: $bp-md) {
         height: 20vmax;

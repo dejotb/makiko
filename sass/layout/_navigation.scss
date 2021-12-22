@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .nav {
   grid-area: nav;
   background-color: transparent;

@@ -36,7 +36,7 @@ ul {
 }
 
 *:focus {
-  outline-color: #ffdc64;
+  outline-color: var(--color-yellow);
 }
 
 html {
@@ -187,7 +187,8 @@ textarea {
 }
 
 .animation--hide {
-  filter: blur(4px);
+  transition: opacity 200ms ease;
+  opacity: 0;
 }
 
 .animation--move {
@@ -220,7 +221,6 @@ textarea {
   font-weight: 700;
 }
 .heading--1 {
-  color: var(--color-red);
   text-shadow: 3px 3px 0px var(--color-white);
   line-height: 1;
   letter-spacing: 1px;
@@ -872,7 +872,7 @@ textarea {
   transition: all 0.1s linear;
   padding: 8px 23px;
   background: var(--color-red);
-  color: white;
+  color: var(--color-white);
 }
 .btn--cta:hover,
 .btn--cta .btn:active,

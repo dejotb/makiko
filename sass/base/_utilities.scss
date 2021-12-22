@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .pg {
   max-width: 70ch;
   // font-size: calc(15px + 0.2vw);
@@ -80,7 +82,9 @@
 .animation--hide {
   // animation: hide 0.5s forwards;
   // opacity: 0.5;
-  filter: blur(4px);
+  // filter: blur(4px);
+  transition: opacity 200ms ease;
+  opacity: 0;
 }
 
 .animation--move {

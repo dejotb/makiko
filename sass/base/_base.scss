@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 *,
 *::before,
 *::after {
@@ -12,7 +14,7 @@ ul {
 
 * {
   &:focus {
-    outline-color: $color-yellow;
+    outline-color: var(--color-yellow);
   }
 }
 

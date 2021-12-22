@@ -110,6 +110,10 @@ textarea {
   border: none;
 }
 
+table {
+  contain: strict;
+}
+
 .pg {
   max-width: 70ch;
 }

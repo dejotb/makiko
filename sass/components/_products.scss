@@ -206,3 +206,24 @@
     gap: 4rem;
   }
 }
+
+.breadsticks__image {
+  justify-self: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--products {
+    background-image: url("../img/breadstick-4.png");
+    height: 14vmin;
+  }
+  &--company {
+    background-image: url("../img/breadstick-3.png");
+    height: 6vmin;
+  }
+
+  @media screen and (min-width: $bp-xl) {
+    display: none;
+  }
+}

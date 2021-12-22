@@ -20,6 +20,13 @@ $bp-sm: 45em; // 600px;
   --fs-500: 2rem;
   --fs-400: 1.8rem;
 
+  @media screen and (min-width: var(--bp-xl)) {
+    :root {
+      --fs-500: 2.75rem;
+      --fs-400: 2.5rem;
+    }
+  }
+
   // colors
   --color-font: #11347d;
   --color-primary: #ffc600;
@@ -42,11 +49,4 @@ $bp-sm: 45em; // 600px;
   --z-index-popup: 1100;
   --z-index-modal: 1200;
   --z-index-loader: 1300;
-
-  @media screen and (min-width: var(--bp-xl)) {
-    :root {
-      --fs-500: 2.75rem;
-      --fs-400: 2.5rem;
-    }
-  }
 }

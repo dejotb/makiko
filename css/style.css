@@ -42,7 +42,7 @@ ul {
 }
 
 *:focus {
-  outline-color: var(--color-yellow);
+  outline-color: var(--color-blue);
 }
 
 html {
@@ -658,6 +658,7 @@ table {
   overflow: hidden;
   display: grid;
   justify-items: center;
+  padding-bottom: 1rem;
   grid-gap: 2.5rem;
 }
 .contact__form input,
@@ -873,6 +874,12 @@ table {
   box-shadow: var(--shadow-primary);
   background: var(--color-red);
   color: var(--color-white);
+}
+.btn--cta:focus {
+  outline-style: dotted;
+  outline-color: var(--color-blue);
+  outline-width: 0.3rem;
+  outline-offset: 2px;
 }
 .btn--cta:hover,
 .btn--cta .btn:active,

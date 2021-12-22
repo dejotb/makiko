@@ -268,6 +268,12 @@ const modalOptions = function () {
     e.preventDefault();
     form.classList.add('hidden');
   });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      form.classList.add('hidden');
+    } else return;
+  });
 };
 
 // Products section images effects

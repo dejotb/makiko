@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .contact {
   min-height: 100vh;
@@ -80,6 +80,7 @@
     overflow: hidden;
     display: grid;
     justify-items: center;
+    padding-bottom: 1rem;
     // justify-self: center;
     grid-gap: 2.5rem;
     // max-width: 10rem;

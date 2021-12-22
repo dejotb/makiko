@@ -33,3 +33,11 @@
     }
   }
 }
+
+.pg {
+  max-width: 70ch;
+
+  & > p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

@@ -8,8 +8,6 @@ const pageLoader = function () {
   });
 };
 
-pageLoader();
-
 // Navigation
 
 const navigationSwitch = function () {
@@ -29,8 +27,6 @@ const navigationSwitch = function () {
     navListOverlay.style.transform = `translateX(${navOverlayPosition}%)`;
     navListWrapper.style.transform = `translateX(${navListPosition}%)`;
   };
-
-  // navTranslate();
 
   const toggleHam = function (e) {
     if (
@@ -60,8 +56,6 @@ const navigationSwitch = function () {
 
   nav.addEventListener('click', toggleHam);
 };
-
-navigationSwitch();
 
 // Product section composition switch
 
@@ -258,58 +252,64 @@ const compositionSwitch = function () {
   });
 };
 
-compositionSwitch();
-
 // Form Modal handle
 
-const form = document.querySelector('.contact__modal');
-const closeBtn = document.querySelector('#btn__form--close');
-const openBtn = document.querySelector('#btn__form--open');
+const modalOptions = function () {
+  const form = document.querySelector('.contact__modal');
+  const closeBtn = document.querySelector('#btn__form--close');
+  const openBtn = document.querySelector('#btn__form--open');
 
-openBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  form.classList.remove('hidden');
-});
+  openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    form.classList.remove('hidden');
+  });
 
-closeBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  form.classList.add('hidden');
-});
-
-// Products animation
-
-// let delta = 0;
-// const wheelDelta = function () {
-//   window.addEventListener('wheel', (e) => {
-//     delta = e.wheelDelta;
-//     console.log(delta);
-//   });
-// };
-
-// wheelDelta();
-
-const productImages = document.querySelectorAll('.products__image');
-const productCards = document.querySelectorAll('.products__card');
-
-const revealProducts = function (entries, observer) {
-  const entry = entries[0];
-  if (!entry.isIntersecting) {
-    entry.target.classList.add('animation--hide');
-    entry.target.nextElementSibling.classList.remove('animation--move');
-  } else {
-    entry.target.classList.remove('animation--hide');
-    entry.target.nextElementSibling.classList.add('animation--move');
-    observer.unobserve(entry.target);
-  }
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    form.classList.add('hidden');
+  });
 };
 
-const productsObserver = new IntersectionObserver(revealProducts, {
-  root: null,
-  threshold: 0.3,
-});
+// Products section images effects
 
-productImages.forEach((product) => {
-  product.classList.add('animation--hide');
-  product.nextElementSibling.classList.remove('animation--move');
-  productsObserver.observe(product);
-});
+const imagesEffects = function () {
+  const productImages = document.querySelectorAll('.products__image');
+  const productCards = document.querySelectorAll('.products__card');
+
+  const revealProducts = function (entries, observer) {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+      entry.target.classList.add('animation--hide');
+      entry.target.nextElementSibling.classList.remove('animation--move');
+    } else {
+      entry.target.classList.remove('animation--hide');
+      entry.target.nextElementSibling.classList.add('animation--move');
+      observer.unobserve(entry.target);
+    }
+  };
+
+  const productsObserver = new IntersectionObserver(revealProducts, {
+    root: null,
+    threshold: 0.3,
+  });
+
+  productImages.forEach((product) => {
+    product.classList.add('animation--hide');
+    product.nextElementSibling.classList.remove('animation--move');
+    productsObserver.observe(product);
+  });
+};
+
+const callFunctions = function () {
+  pageLoader(); // Page Loader
+
+  navigationSwitch(); // Navigation
+
+  compositionSwitch(); // Product section composition switch
+
+  modalOptions(); // Form Modal handle
+
+  imagesEffects(); // Products section images effects
+};
+
+callFunctions();

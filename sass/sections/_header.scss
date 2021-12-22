@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .header {
   position: relative;
@@ -23,7 +23,6 @@
   @media screen and (min-width: $bp-xl) {
     min-height: 100vh;
     align-items: center;
-    // grid-gap: 9vh;
     background-image: url("../img/stripe-1.png"),
       url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
     background-size: contain, contain, cover;
@@ -33,7 +32,6 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 0.8fr;
     padding: 0 5rem;
-    // min-height: 100vh;
     grid-template-areas:
       "nav nav"
       "text img"
@@ -41,29 +39,21 @@
   }
 
   &__heading {
-    // width: 100%;
     grid-area: text;
     display: grid;
     h1 {
-      // padding-bottom: 4rem;
     }
 
     @media screen and (min-width: $bp-xl) {
       align-self: end;
       justify-self: end;
     }
-    // display: flex;
-    // justify-content: center;
   }
 
   &__images {
     grid-area: img;
     display: flex;
-    // animation: float 3s infinite ease-in-out;
-    // background: red;
-    // transform: rotate(15deg);
     height: 28vmax;
-    // padding-bottom: 2rem;
 
     @media screen and (min-width: $bp-md) {
       height: 19vmax;
@@ -78,7 +68,6 @@
       transform: scale(1.1);
       margin: 0 -2rem;
       z-index: var(--z-index-box);
-      // z-index: 1;
 
       @media screen and (min-width: $bp-md) {
         height: 20vmax;

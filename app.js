@@ -305,7 +305,7 @@ const revealProducts = function (entries, observer) {
 
 const productsObserver = new IntersectionObserver(revealProducts, {
   root: null,
-  threshold: 0.5,
+  threshold: 0.3,
 });
 
 productImages.forEach((product) => {

@@ -4,7 +4,7 @@
   &--1,
   &--2,
   &--3 {
-    font-family: $font-display;
+    font-family: var(--ff-display);
     font-size: var(--fs-xl);
     font-weight: 700;
   }
@@ -31,11 +31,5 @@
     span {
       color: var(--color-font);
     }
-  }
-
-  &--4 {
-    font-family: $font-display;
-    font-size: var(--fs-600);
-    font-weight: 400;
   }
 }

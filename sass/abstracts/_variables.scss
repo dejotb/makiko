@@ -9,6 +9,17 @@ $bp-md: 55em; // 800px;
 $bp-sm: 45em; // 600px;
 
 :root {
+  // font family
+
+  --ff-primary: "Lato", sans-serif;
+  --ff-display: "Neuton", serif;
+
+  //font size
+  --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
+  --fs-600: clamp(3.25rem, 6vw + 1rem, 4rem);
+  --fs-500: 2rem;
+  --fs-400: 1.8rem;
+
   // colors
   --color-font: #11347d;
   --color-primary: #ffc600;
@@ -18,12 +29,11 @@ $bp-sm: 45em; // 600px;
   --color-blue: #275fac;
   --color-red: #db3445;
   --color-white: #ffffff;
+  --color-grey: #363636;
 
-  //font size
-  --fs-xl: clamp(3.5rem, 6vw + 1rem, 5rem);
-  --fs-600: clamp(3.25rem, 6vw + 1rem, 4rem);
-  --fs-500: 2rem;
-  --fs-400: 1.8rem;
+  --shadow-primary: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
   // z-index
 
@@ -40,28 +50,3 @@ $bp-sm: 45em; // 600px;
     }
   }
 }
-
-$color-primary: #45a86e;
-$color-primary-dark: #2a9254;
-$color-primary-light: lighten($color-primary, 15%);
-
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
-
-$color-grey-dark-1: #696969;
-$color-grey-dark-2: darken($color-grey-dark-1, 20%);
-
-$color-white: #fff;
-$color-yellow: #ffdc64;
-
-// FONT VARIABLES
-
-$font-primary: "Lato", sans-serif;
-$font-display: "Neuton", serif;
-
-// SHADOW VARIABLES
-
-$shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-$shadow-2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-$shadow-3: rgba(0, 0, 0, 0.35) 0px 5px 15px;

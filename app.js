@@ -344,9 +344,9 @@ if (mqs[2].matches) {
       opacity: 0,
       x: 100,
       ease: 'back',
-      duration: 0.5,
+      duration: 1,
     },
-    '<85%'
+    '<95%'
   );
   tl.from(
     '#btn--header',
@@ -354,6 +354,6 @@ if (mqs[2].matches) {
       opacity: 0,
       y: 20,
     },
-    '<90%'
+    '<85%'
   );
 }

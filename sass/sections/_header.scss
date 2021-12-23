@@ -54,6 +54,7 @@
     grid-area: img;
     display: flex;
     height: 28vmax;
+    width: auto;
 
     @media screen and (min-width: $bp-md) {
       height: 19vmax;

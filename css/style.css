@@ -325,6 +325,7 @@ table {
   grid-area: img;
   display: flex;
   height: 28vmax;
+  width: auto;
 }
 @media screen and (min-width: 55em) {
   .header__images {
@@ -693,7 +694,7 @@ table {
   height: 100vh;
   inset: 0;
   transform: translateX(-100%);
-  z-index: var(--z-index-box);
+  z-index: var(--z-index-popup);
 }
 @media screen and (min-width: 45em) {
   .nav__list--wrapper {
@@ -747,7 +748,7 @@ table {
   height: 3rem;
   position: relative;
   background-color: transparent;
-  z-index: var(--z-index-popup);
+  z-index: var(--z-index-modal);
 }
 .hamburger:hover .hamburger__line::after {
   transform: translateY(-15px);

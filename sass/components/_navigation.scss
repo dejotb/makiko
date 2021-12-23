@@ -25,7 +25,7 @@
     inset: 0;
     transform: translateX(-100%);
 
-    z-index: var(--z-index-box);
+    z-index: var(--z-index-popup);
 
     @media screen and (min-width: $bp-sm) {
       inset: 0 50vw 0 0;
@@ -99,7 +99,7 @@
   height: 3rem;
   position: relative;
   background-color: transparent;
-  z-index: var(--z-index-popup);
+  z-index: var(--z-index-modal);
   &:hover {
     .hamburger__line::after {
       transform: translateY(-15px);

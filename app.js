@@ -332,6 +332,7 @@ if (mqs[2].matches) {
   tl.play();
 
   tl.from('.header__images', {
+    // scale: 1.1,
     xPercent: -80,
     delay: 2.5,
     ease: 'back.inOut',
@@ -347,8 +348,12 @@ if (mqs[2].matches) {
     },
     '<85%'
   );
-  tl.from('#btn--header', {
-    opacity: 0,
-    y: 20,
-  });
+  tl.from(
+    '#btn--header',
+    {
+      opacity: 0,
+      y: 20,
+    },
+    '<90%'
+  );
 }

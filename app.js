@@ -344,7 +344,7 @@ if (mqs[2].matches) {
       opacity: 0,
       x: 100,
       ease: 'back',
-      duration: 1,
+      duration: 0.8,
     },
     '<95%'
   );

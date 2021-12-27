@@ -130,7 +130,6 @@ table {
 
 .img {
   transition: 0.2s all ease-in-out;
-  display: block;
   height: 100%;
   position: relative;
 }
@@ -470,7 +469,7 @@ table {
 @media screen and (min-width: 75em) {
   .products__image {
     justify-self: center;
-    height: 55rem;
+    height: 52rem;
   }
 }
 .products__image:hover {

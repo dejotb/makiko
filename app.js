@@ -5,6 +5,46 @@ const pageLoader = function () {
 
   window.addEventListener('load', () => {
     loader.classList.add('hidden');
+    const tl = gsap.timeline(
+      { paused: true },
+      { defaults: { duration: 1.75 } }
+    );
+
+    const mqs = [
+      window.matchMedia('(min-width: 600px)'),
+      window.matchMedia('(min-width: 768px)'),
+      window.matchMedia('(min-width: 1200px)'),
+    ];
+
+    if (mqs[2].matches) {
+      tl.play();
+
+      tl.from('.header__images', {
+        // scale: 1.1,
+        xPercent: -80,
+        delay: 2.5,
+        ease: 'back.inOut',
+        duration: 1,
+      });
+      tl.from(
+        '.heading--1',
+        {
+          opacity: 0,
+          x: 100,
+          ease: 'back',
+          duration: 0.8,
+        },
+        '<95%'
+      );
+      tl.from(
+        '#btn--header',
+        {
+          opacity: 0,
+          y: 20,
+        },
+        '<85%'
+      );
+    }
   });
 };
 
@@ -319,41 +359,3 @@ const callFunctions = function () {
 };
 
 callFunctions();
-
-const tl = gsap.timeline({ paused: true }, { defaults: { duration: 1.75 } });
-
-const mqs = [
-  window.matchMedia('(min-width: 600px)'),
-  window.matchMedia('(min-width: 768px)'),
-  window.matchMedia('(min-width: 1200px)'),
-];
-
-if (mqs[2].matches) {
-  tl.play();
-
-  tl.from('.header__images', {
-    // scale: 1.1,
-    xPercent: -80,
-    delay: 2.5,
-    ease: 'back.inOut',
-    duration: 1,
-  });
-  tl.from(
-    '.heading--1',
-    {
-      opacity: 0,
-      x: 100,
-      ease: 'back',
-      duration: 0.8,
-    },
-    '<95%'
-  );
-  tl.from(
-    '#btn--header',
-    {
-      opacity: 0,
-      y: 20,
-    },
-    '<85%'
-  );
-}

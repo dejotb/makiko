@@ -325,10 +325,10 @@ const imagesEffects = function () {
   const revealProducts = function (entries, observer) {
     const entry = entries[0];
     if (!entry.isIntersecting) {
-      entry.target.classList.add('animation--hide');
+      entry.target.classList.add('animation--blur');
       entry.target.nextElementSibling.classList.remove('animation--move');
     } else {
-      entry.target.classList.remove('animation--hide');
+      entry.target.classList.remove('animation--blur');
       entry.target.nextElementSibling.classList.add('animation--move');
       observer.unobserve(entry.target);
     }
@@ -340,7 +340,7 @@ const imagesEffects = function () {
   });
 
   productImages.forEach((product) => {
-    product.classList.add('animation--hide');
+    product.classList.add('animation--blur');
     product.nextElementSibling.classList.remove('animation--move');
     productsObserver.observe(product);
   });

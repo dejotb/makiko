@@ -700,13 +700,16 @@ table {
     inset: 0 50vw 0 0;
   }
 }
+.nav__item {
+  font-size: var(--fs-600);
+}
 .nav__list--overlay {
   background-color: black;
   position: fixed;
   transition: 0.9s all 0.5s ease-out;
   opacity: 0.5;
   transform: translateX(-150%);
-  z-index: var(--z-index-box);
+  z-index: var(--z-index-popup);
 }
 @media screen and (min-width: 45em) {
   .nav__list--overlay {
@@ -714,7 +717,6 @@ table {
   }
 }
 .nav__link {
-  font-size: var(--fs-600);
   text-decoration: none;
   transition: 0.2s all;
   position: relative;
@@ -729,7 +731,7 @@ table {
   width: 0%;
   height: 0.5rem;
   background-color: var(--color-red);
-  z-index: var(--z-ndex-negative);
+  z-index: -1;
 }
 .nav__link:hover::after, .nav__link:focus::after, .nav__link:active::after {
   width: 100%;
@@ -836,7 +838,7 @@ table {
 }
 @media screen and (min-width: 45em) {
   .nav__logo {
-    width: 14rem;
+    width: 12rem;
   }
 }
 .nav__logo img {

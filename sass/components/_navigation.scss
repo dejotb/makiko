@@ -37,7 +37,7 @@
   }
 
   &__item {
-    // display: inline-block;
+    font-size: var(--fs-600);
   }
 
   &__list--overlay {
@@ -46,7 +46,7 @@
     transition: 0.9s all 0.5s ease-out;
     opacity: 0.5;
     transform: translateX(-150%);
-    z-index: var(--z-index-box);
+    z-index: var(--z-index-popup);
 
     @media screen and (min-width: $bp-sm) {
       inset: 0;
@@ -54,7 +54,6 @@
   }
 
   &__link {
-    font-size: var(--fs-600);
     text-decoration: none;
     transition: 0.2s all;
     position: relative;
@@ -73,7 +72,7 @@
       width: 0%;
       height: 0.5rem;
       background-color: var(--color-red);
-      z-index: var(--z-ndex-negative);
+      z-index: -1;
     }
 
     &:hover,
@@ -204,7 +203,7 @@
   width: 10rem;
   justify-self: end;
   @media screen and (min-width: $bp-sm) {
-    width: 14rem;
+    width: 12rem;
   }
 
   img {

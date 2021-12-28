@@ -5,10 +5,7 @@ const pageLoader = function () {
 
   window.addEventListener('load', () => {
     loader.classList.add('hidden');
-    const tl = gsap.timeline(
-      { paused: true },
-      { defaults: { duration: 1.75 } }
-    );
+    const tl = gsap.timeline({ paused: true });
 
     const mqs = [
       window.matchMedia('(min-width: 600px)'),
@@ -20,11 +17,18 @@ const pageLoader = function () {
       tl.play();
 
       tl.from('.header__images', {
-        // scale: 1.1,
+        // yPercent: -100,
+        delay: 1.5,
+        scale: 0.8,
+        duration: 0.9,
+        ease: 'power1.inOut',
+      });
+
+      tl.from('.header__images', {
         xPercent: -80,
-        delay: 2.5,
+        delay: 1,
         ease: 'back.inOut',
-        duration: 1,
+        duration: 0.9,
       });
       tl.from(
         '.heading--1',

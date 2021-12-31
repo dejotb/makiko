@@ -22,32 +22,31 @@ const pageLoader = function () {
         scale: 0.8,
         duration: 0.9,
         ease: 'power1.inOut',
-      });
-
-      tl.from('.header__images', {
-        xPercent: -80,
-        delay: 1,
-        ease: 'back.inOut',
-        duration: 0.9,
-      });
-      tl.from(
-        '.heading--1',
-        {
-          opacity: 0,
-          x: 100,
-          ease: 'back',
-          duration: 0.8,
-        },
-        '<35%'
-      );
-      tl.from(
-        '#btn--header',
-        {
-          opacity: 0,
-          y: 20,
-        },
-        '<85%'
-      );
+      })
+        .from('.header__images', {
+          xPercent: -80,
+          delay: 1,
+          ease: 'back.inOut',
+          duration: 0.9,
+        })
+        .from(
+          '.heading--1',
+          {
+            opacity: 0,
+            x: 100,
+            ease: 'back',
+            duration: 0.8,
+          },
+          '<35%'
+        )
+        .from(
+          '#btn--header',
+          {
+            opacity: 0,
+            y: 20,
+          },
+          '<85%'
+        );
     }
   });
 };
@@ -103,9 +102,10 @@ const navigationSwitch = function () {
 
 // Text Scroll trigger
 
-const sections = document.querySelectorAll('.section__title');
+const sectionsText = document.querySelectorAll('.section__title');
+const sectionsProducts = document.querySelectorAll('.products__card');
 
-sections.forEach((section) => {
+sectionsText.forEach((section) => {
   gsap.fromTo(
     section.children,
     { y: '+=100', opacity: 0 },
@@ -123,12 +123,45 @@ sections.forEach((section) => {
   );
 });
 
+sectionsProducts.forEach((section) => {
+  gsap.fromTo(
+    section.querySelector('.products__composition'),
+    { x: '+=100', opacity: 0.5 },
+    {
+      x: 0,
+      opacity: 1,
+      stagger: 0.15,
+      duration: 1,
+      ease: 'easeInOut',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 40%',
+      },
+    }
+  );
+  gsap.fromTo(
+    section.querySelector('.products__image'),
+    { filter: 'blur(10px)' },
+    {
+      filter: 'blur(0)',
+      stagger: 0.2,
+      duration: 0.75,
+      ease: 'easeInOut',
+
+      scrollTrigger: {
+        trigger: section,
+        start: 'top bottom',
+        // markers: true,
+      },
+    }
+  );
+});
+
 // Product section composition switch
 
 const compositionSwitch = function () {
   const box = document.querySelector('.products__box');
   const productDetails = document.querySelectorAll('.products__composition');
-  const buttons = document.querySelectorAll('.products__buttons');
 
   const nutritionsOptions = {
     1: [
@@ -381,7 +414,8 @@ const callFunctions = function () {
 
   modalOptions(); // Form Modal handle
 
-  imagesEffects(); // Products section images effects
+  // Products section images effects
+  // imagesEffects();
 };
 
 callFunctions();

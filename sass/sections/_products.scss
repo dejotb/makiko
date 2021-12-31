@@ -4,7 +4,6 @@
   margin: 0;
   background-color: var(--color--primary);
   // scroll-snap-type: y mandatory;
-  // overflow-y: auto;
 
   &__box {
   }
@@ -48,7 +47,7 @@
     background-position: 25% 73%;
     background-size: cover;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media screen and (min-width: $bp-md) {
       // grid-gap: 1rem;

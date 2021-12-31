@@ -38,7 +38,7 @@ const pageLoader = function () {
           ease: 'back',
           duration: 0.8,
         },
-        '<95%'
+        '<35%'
       );
       tl.from(
         '#btn--header',
@@ -100,6 +100,28 @@ const navigationSwitch = function () {
 
   nav.addEventListener('click', toggleHam);
 };
+
+// Text Scroll trigger
+
+const sections = document.querySelectorAll('.section__title');
+
+sections.forEach((section) => {
+  gsap.fromTo(
+    section.children,
+    { y: '+=100', opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      stagger: 0.2,
+      duration: 1,
+      ease: 'easeInOut',
+      scrollTrigger: {
+        trigger: section,
+        start: 'top 70%',
+      },
+    }
+  );
+});
 
 // Product section composition switch
 

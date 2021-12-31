@@ -17,7 +17,6 @@ const pageLoader = function () {
       tl.play();
 
       tl.from('.header__images', {
-        // yPercent: -100,
         delay: 1.5,
         scale: 0.8,
         duration: 0.9,
@@ -100,62 +99,68 @@ const navigationSwitch = function () {
   nav.addEventListener('click', toggleHam);
 };
 
-// Text Scroll trigger
+// gsap animations
 
-const sectionsText = document.querySelectorAll('.section__title');
-const sectionsProducts = document.querySelectorAll('.products__card');
+const animationElements = function () {
+  const sectionsText = document.querySelectorAll('.section__title');
+  const sectionsProducts = document.querySelectorAll('.products__card');
 
-sectionsText.forEach((section) => {
-  gsap.fromTo(
-    section.children,
-    { y: '+=100', opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      stagger: 0.2,
-      duration: 1,
-      ease: 'easeInOut',
-      scrollTrigger: {
-        trigger: section,
-        start: 'top 70%',
-      },
-    }
-  );
-});
+  // Text Scroll trigger
 
-sectionsProducts.forEach((section) => {
-  gsap.fromTo(
-    section.querySelector('.products__composition'),
-    { x: '+=100', opacity: 0.5 },
-    {
-      x: 0,
-      opacity: 1,
-      stagger: 0.15,
-      duration: 1,
-      ease: 'easeInOut',
-      scrollTrigger: {
-        trigger: section,
-        start: 'top 40%',
-      },
-    }
-  );
-  gsap.fromTo(
-    section.querySelector('.products__image'),
-    { filter: 'blur(10px)' },
-    {
-      filter: 'blur(0)',
-      stagger: 0.2,
-      duration: 0.75,
-      ease: 'easeInOut',
+  sectionsText.forEach((section) => {
+    gsap.fromTo(
+      section.children,
+      { y: '+=100', opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'easeInOut',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+        },
+      }
+    );
+  });
 
-      scrollTrigger: {
-        trigger: section,
-        start: 'top bottom',
-        // markers: true,
-      },
-    }
-  );
-});
+  // Composition Scroll trigger
+
+  sectionsProducts.forEach((section) => {
+    gsap.fromTo(
+      section.querySelector('.products__composition'),
+      { x: '+=100', opacity: 0.5 },
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 0.15,
+        duration: 1,
+        ease: 'easeInOut',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 40%',
+        },
+      }
+    );
+    // Image Scroll trigger
+    gsap.fromTo(
+      section.querySelector('.products__image'),
+      { filter: 'blur(8px)' },
+      {
+        filter: 'blur(0)',
+        stagger: 0.2,
+        duration: 0.75,
+        ease: 'easeInOut',
+
+        scrollTrigger: {
+          trigger: section,
+          start: 'top bottom',
+        },
+      }
+    );
+  });
+};
 
 // Product section composition switch
 
@@ -375,36 +380,6 @@ const modalOptions = function () {
   });
 };
 
-// Products section images effects
-
-const imagesEffects = function () {
-  const productImages = document.querySelectorAll('.products__image');
-  const productCards = document.querySelectorAll('.products__card');
-
-  const revealProducts = function (entries, observer) {
-    const entry = entries[0];
-    if (!entry.isIntersecting) {
-      entry.target.classList.add('animation--blur');
-      entry.target.nextElementSibling.classList.remove('animation--move');
-    } else {
-      entry.target.classList.remove('animation--blur');
-      entry.target.nextElementSibling.classList.add('animation--move');
-      observer.unobserve(entry.target);
-    }
-  };
-
-  const productsObserver = new IntersectionObserver(revealProducts, {
-    root: null,
-    threshold: 0.3,
-  });
-
-  productImages.forEach((product) => {
-    product.classList.add('animation--blur');
-    product.nextElementSibling.classList.remove('animation--move');
-    productsObserver.observe(product);
-  });
-};
-
 const callFunctions = function () {
   pageLoader(); // Page Loader
 
@@ -414,8 +389,8 @@ const callFunctions = function () {
 
   modalOptions(); // Form Modal handle
 
-  // Products section images effects
-  // imagesEffects();
+  // gsap animations
+  animationElements();
 };
 
 callFunctions();

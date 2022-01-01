@@ -144,21 +144,21 @@ const animationElements = function () {
       }
     );
     // Image Scroll trigger
-    gsap.fromTo(
-      section.querySelector('.products__image'),
-      { filter: 'blur(8px)' },
-      {
-        filter: 'blur(0)',
-        stagger: 0.2,
-        duration: 0.75,
-        ease: 'easeInOut',
+    // gsap.fromTo(
+    //   section.querySelector('.products__image'),
+    //   { filter: 'blur(8px)' },
+    //   {
+    //     filter: 'blur(0)',
+    //     stagger: 0.2,
+    //     duration: 0.75,
+    //     ease: 'easeInOut',
 
-        scrollTrigger: {
-          trigger: section,
-          start: 'top bottom',
-        },
-      }
-    );
+    //     scrollTrigger: {
+    //       trigger: section,
+    //       start: 'top bottom',
+    //     },
+    //   }
+    // );
   });
 };
 

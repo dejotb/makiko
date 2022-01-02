@@ -187,6 +187,17 @@ table {
   margin-bottom: 1rem;
 }
 
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 .show {
   animation: fade-in 0.2s ease-in;
 }
@@ -286,6 +297,7 @@ table {
   display: flex;
   height: 28vmax;
   width: auto;
+  aspect-ratio: 1.58/1;
 }
 @media screen and (min-width: 55em) {
   .header__images {
@@ -293,12 +305,12 @@ table {
   }
 }
 .header__images .header__img:hover:nth-child(1n+1) {
-  transform: scale(1.2) translateY(-1rem);
+  transform: scale(1.2);
   z-index: var(--z-index-popup);
 }
 .header__images .header__img:nth-child(2) {
   transform: scale(1.1);
-  margin: 0 -2rem;
+  margin: 0 -3rem;
   z-index: var(--z-index-box);
 }
 @media screen and (min-width: 55em) {

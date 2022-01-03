@@ -192,8 +192,8 @@ table {
 }
 
 @media (prefers-reduced-motion) {
-  .btn-cta {
-    animation: none;
+  .btn--cta {
+    animation-name: dissolve;
   }
 }
 @keyframes float {
@@ -201,7 +201,7 @@ table {
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-7px);
+    transform: translatey(5px);
   }
   100% {
     transform: translatey(0px);
@@ -274,7 +274,7 @@ table {
   background-image: url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center;
+  background-position: bottom, 20%;
 }
 @media screen and (min-width: 75em) {
   .header {

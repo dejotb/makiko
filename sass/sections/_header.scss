@@ -18,7 +18,7 @@
     url("../img/header-background-2.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center;
+  background-position: bottom, 20%;
 
   @media screen and (min-width: $bp-xl) {
     min-height: 100vh;

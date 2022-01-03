@@ -1,6 +1,6 @@
 @media (prefers-reduced-motion) {
-  .btn-cta {
-    animation: none;
+  .btn--cta {
+    animation-name: dissolve;
   }
 }
 
@@ -9,7 +9,7 @@
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-7px);
+    transform: translatey(5px);
   }
   100% {
     transform: translatey(0px);

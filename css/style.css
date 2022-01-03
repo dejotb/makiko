@@ -147,12 +147,16 @@ table {
 }
 
 .img--ingredient {
-  width: 70%;
+  width: 60%;
   left: -10vw;
   bottom: -1rem;
   display: block;
   position: absolute;
   transition: 0.2s all ease-in-out;
+}
+
+.accented {
+  accent-color: var(--color-blue);
 }
 
 .heading--1, .heading--2, .heading--3 {
@@ -162,7 +166,7 @@ table {
 }
 .heading--1 {
   text-shadow: 3px 3px 0px var(--color-white);
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: 1px;
 }
 .heading--2 {
@@ -187,12 +191,17 @@ table {
   margin-bottom: 1rem;
 }
 
+@media (prefers-reduced-motion) {
+  .btn-cta {
+    animation: none;
+  }
+}
 @keyframes float {
   0% {
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-10px);
+    transform: translatey(-7px);
   }
   100% {
     transform: translatey(0px);
@@ -262,7 +271,7 @@ table {
   grid-template-areas: "nav" "text" "img" "button";
   padding: 0 1rem;
   grid-gap: 2rem;
-  background-image: url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
+  background-image: url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
@@ -271,7 +280,7 @@ table {
   .header {
     min-height: 100vh;
     align-items: center;
-    background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
+    background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
     background-size: contain, contain, cover;
     background-repeat: no-repeat;
     background-position: top, bottom;
@@ -575,7 +584,7 @@ table {
   align-content: center;
   justify-items: center;
   padding: 9rem 0 12rem;
-  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background-1.jpg");
+  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
   background-size: contain, contain, cover;
   background-repeat: no-repeat;
   background-position: top, bottom;
@@ -771,7 +780,7 @@ table {
   font-size: var(--fs-400);
   font-family: var(--ff-display);
   position: absolute;
-  top: 8%;
+  top: 0;
   right: -5.5rem;
   color: var(--color-red);
   cursor: default;
@@ -846,6 +855,7 @@ table {
   box-shadow: var(--shadow-primary);
   background: var(--color-red);
   color: var(--color-white);
+  animation: float 3s infinite ease-in-out;
 }
 .btn--cta:focus {
   outline-style: dotted;

@@ -26,10 +26,14 @@
 }
 
 .img--ingredient {
-  width: 70%;
+  width: 60%;
   left: -10vw;
   bottom: -1rem;
   display: block;
   position: absolute;
   transition: 0.2s all ease-in-out;
+}
+
+.accented {
+  accent-color: var(--color-blue);
 }

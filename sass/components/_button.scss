@@ -12,6 +12,7 @@
     box-shadow: var(--shadow-primary);
     background: var(--color-red);
     color: var(--color-white);
+    animation: float 3s infinite ease-in-out;
 
     &:focus {
       outline-style: dotted;

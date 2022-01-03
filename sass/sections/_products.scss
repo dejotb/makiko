@@ -3,7 +3,6 @@
 .products {
   margin: 0;
   background-color: var(--color--primary);
-  // scroll-snap-type: y mandatory;
 
   &__box {
   }
@@ -34,7 +33,6 @@
 
   &__card {
     padding: 8rem 1rem 4rem;
-    // min-height: 100vh;
     display: grid;
     grid-template-areas:
       "description"
@@ -50,15 +48,11 @@
     overflow: hidden;
 
     @media screen and (min-width: $bp-md) {
-      // grid-gap: 1rem;
       padding: 12rem 1rem;
-      // grid-auto-flow: column;
-      // grid-template-columns: 1fr;
       grid-template-areas:
         "description description"
         "img composition";
       background-position: center;
-      // grid-gap: 1rem;
       background-attachment: fixed;
     }
 
@@ -70,16 +64,13 @@
 
     &--1 {
       background-image: url("../img/products-background-1.jpg");
-      // background-color: var(--color-primary);
     }
     &--2 {
       background-image: url("../img/products-background-2.jpg");
-      // background-color: var(--color-blue);
     }
 
     &--3 {
       background-image: url("../img/products-background-3.jpg");
-      // background-color: var(--color-green);
     }
   }
 

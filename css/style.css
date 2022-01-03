@@ -271,7 +271,7 @@ table {
   grid-template-areas: "nav" "text" "img" "button";
   padding: 0 1rem;
   grid-gap: 2rem;
-  background-image: url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
+  background-image: url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, 20%;
@@ -280,7 +280,7 @@ table {
   .header {
     min-height: 100vh;
     align-items: center;
-    background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
+    background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
     background-size: contain, contain, cover;
     background-repeat: no-repeat;
     background-position: top, bottom;
@@ -584,7 +584,7 @@ table {
   align-content: center;
   justify-items: center;
   padding: 9rem 0 12rem;
-  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background-2.jpg");
+  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
   background-size: contain, contain, cover;
   background-repeat: no-repeat;
   background-position: top, bottom;
@@ -895,6 +895,11 @@ table {
   transform: rotate(-225deg);
 }
 
+@media (prefers-reduced-motion) {
+  .btn--cta {
+    animation-name: none;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;

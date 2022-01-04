@@ -10,10 +10,13 @@
   }
 
   &--1 {
-    // color: var(--color-red);
     text-shadow: 3px 3px 0px var(--color-white);
     line-height: 1.1;
     letter-spacing: 1px;
+
+    & .first-word {
+      color: var(--color-red);
+    }
   }
 
   &--2 {

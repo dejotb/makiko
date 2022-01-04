@@ -1,9 +1,3 @@
-@media (prefers-reduced-motion) {
-  .btn--cta {
-    animation-name: dissolve;
-  }
-}
-
 @keyframes float {
   0% {
     transform: translatey(0px);

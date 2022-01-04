@@ -169,6 +169,9 @@ table {
   line-height: 1.1;
   letter-spacing: 1px;
 }
+.heading--1 .first-word {
+  color: var(--color-red);
+}
 .heading--2 {
   line-height: 1;
   color: var(--color-white);
@@ -191,11 +194,6 @@ table {
   margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion) {
-  .btn--cta {
-    animation-name: dissolve;
-  }
-}
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -271,16 +269,16 @@ table {
   grid-template-areas: "nav" "text" "img" "button";
   padding: 0 1rem;
   grid-gap: 2rem;
-  background-image: url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
+  background-image: url("../img/stripe-bottom.webp"), url("../img/header-background.webp");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, 20%;
+  background-position: bottom, 0%;
 }
 @media screen and (min-width: 75em) {
   .header {
     min-height: 100vh;
     align-items: center;
-    background-image: url("../img/stripe-1.png"), url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
+    background-image: url("../img/stripe-1.webp"), url("../img/stripe-bottom.webp"), url("../img/header-background.webp");
     background-size: contain, contain, cover;
     background-repeat: no-repeat;
     background-position: top, bottom;
@@ -369,6 +367,10 @@ table {
 }
 .products__title {
   background-color: var(--color-red);
+  background-image: url(../img/products-title-background.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
   position: relative;
 }
 .products__title:after {
@@ -381,12 +383,18 @@ table {
   content: "";
   background: var(--color-white);
 }
+@media screen and (min-width: 55em) {
+  .products__title {
+    background-size: 50%;
+    background-position: top left;
+  }
+}
 @media screen and (min-width: 75em) {
   .products__title {
-    background-image: url(../img/breadstick-1.png), url(../img/breadstick-2.png);
-    background-size: 30%;
+    background-image: url(../img/breadstick-1.webp), url(../img/products-title-background.webp);
+    background-size: 30%, contain;
     background-repeat: no-repeat;
-    background-position: -5% 40%, 125% 100%;
+    background-position: 120% 80%, left;
   }
 }
 .products__card {
@@ -541,11 +549,11 @@ table {
   background-size: contain;
 }
 .breadsticks__image--products {
-  background-image: url("../img/breadstick-4.png");
+  background-image: url("../img/breadstick-3.webp");
   height: 14vmin;
 }
 .breadsticks__image--company {
-  background-image: url("../img/breadstick-3.png");
+  background-image: url("../img/breadstick-2.webp");
   height: 6vmin;
 }
 @media screen and (min-width: 75em) {
@@ -556,6 +564,10 @@ table {
 
 .company__title {
   background-color: var(--color-blue);
+  background-image: url(../img/company-background.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
   position: relative;
 }
 .company__title:after {
@@ -568,12 +580,18 @@ table {
   content: "";
   background: var(--color-white);
 }
+@media screen and (min-width: 55em) {
+  .company__title {
+    background-size: 50%;
+    background-position: right;
+  }
+}
 @media screen and (min-width: 75em) {
   .company__title {
-    background-image: url(../img/breadstick-5.png), url(../img/breadstick-3.png);
-    background-size: 40%, 30%;
+    background-image: url(../img/breadstick-3.webp), url(../img/company-background.webp);
+    background-size: 40%, contain;
     background-repeat: no-repeat;
-    background-position: 125% 100%, -20% 50%;
+    background-position: -30% 50%, right;
   }
 }
 
@@ -584,10 +602,10 @@ table {
   align-content: center;
   justify-items: center;
   padding: 9rem 0 12rem;
-  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
+  background-image: url("../img/stripe-2.webp"), url("../img/stripe-bottom.webp"), url("../img/header-background.webp");
   background-size: contain, contain, cover;
   background-repeat: no-repeat;
-  background-position: top, bottom;
+  background-position: top, bottom, right;
 }
 @media screen and (min-width: 75em) {
   .contact {

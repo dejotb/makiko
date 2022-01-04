@@ -8,7 +8,13 @@
   }
 
   &__title {
+    // position: relative;
+
     background-color: var(--color-red);
+    background-image: url(../img/products-title-background.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
     position: relative;
 
     &:after {
@@ -22,12 +28,17 @@
       background: var(--color-white);
     }
 
+    @media screen and (min-width: $bp-md) {
+      background-size: 50%;
+      background-position: top left;
+    }
+
     @media screen and (min-width: $bp-xl) {
-      background-image: url(../img/breadstick-1.png),
-        url(../img/breadstick-2.png);
-      background-size: 30%;
+      background-image: url(../img/breadstick-1.webp),
+        url(../img/products-title-background.webp);
+      background-size: 30%, contain;
       background-repeat: no-repeat;
-      background-position: -5% 40%, 125% 100%;
+      background-position: 120% 80%, left;
     }
   }
 
@@ -201,11 +212,11 @@
   background-size: contain;
 
   &--products {
-    background-image: url("../img/breadstick-4.png");
+    background-image: url("../img/breadstick-3.webp");
     height: 14vmin;
   }
   &--company {
-    background-image: url("../img/breadstick-3.png");
+    background-image: url("../img/breadstick-2.webp");
     height: 6vmin;
   }
 

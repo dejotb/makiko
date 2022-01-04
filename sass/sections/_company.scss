@@ -7,6 +7,10 @@
 
   &__title {
     background-color: var(--color-blue);
+    background-image: url(../img/company-background.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
     position: relative;
 
     &:after {
@@ -20,12 +24,17 @@
       background: var(--color-white);
     }
 
+    @media screen and (min-width: $bp-md) {
+      background-size: 50%;
+      background-position: right;
+    }
+
     @media screen and (min-width: $bp-xl) {
-      background-image: url(../img/breadstick-5.png),
-        url(../img/breadstick-3.png);
-      background-size: 40%, 30%;
+      background-image: url(../img/breadstick-3.webp),
+        url(../img/company-background.webp);
+      background-size: 40%, contain;
       background-repeat: no-repeat;
-      background-position: 125% 100%, -20% 50%;
+      background-position: -30% 50%, right;
     }
   }
 }

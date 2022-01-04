@@ -14,17 +14,17 @@
     "button";
   padding: 0 1rem;
   grid-gap: 2rem;
-  background-image: url("../img/stripe-bottom.png"),
-    url("../img/header-background.jpg");
+  background-image: url("../img/stripe-bottom.webp"),
+    url("../img/header-background.webp");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, 20%;
+  background-position: bottom, 0%;
 
   @media screen and (min-width: $bp-xl) {
     min-height: 100vh;
     align-items: center;
-    background-image: url("../img/stripe-1.png"),
-      url("../img/stripe-bottom.png"), url("../img/header-background.jpg");
+    background-image: url("../img/stripe-1.webp"),
+      url("../img/stripe-bottom.webp"), url("../img/header-background.webp");
     background-size: contain, contain, cover;
     background-repeat: no-repeat;
     background-position: top, bottom;

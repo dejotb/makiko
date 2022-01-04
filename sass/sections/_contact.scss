@@ -8,11 +8,11 @@
   justify-items: center;
   padding: 9rem 0 12rem;
 
-  background-image: url("../img/stripe-2.png"), url("../img/stripe-bottom.png"),
-    url("../img/header-background.jpg");
+  background-image: url("../img/stripe-2.webp"),
+    url("../img/stripe-bottom.webp"), url("../img/header-background.webp");
   background-size: contain, contain, cover;
   background-repeat: no-repeat;
-  background-position: top, bottom;
+  background-position: top, bottom, right;
 
   @media screen and (min-width: $bp-xl) {
     grid-template-columns: repeat(3, 1fr);

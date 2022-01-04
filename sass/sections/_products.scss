@@ -123,7 +123,7 @@
     }
     @media screen and (min-width: $bp-xl) {
       justify-self: center;
-      height: 52rem;
+      height: 54rem;
     }
 
     &:hover {
@@ -132,9 +132,6 @@
       .img--shadow {
         transform: translateX(0.3rem);
         z-index: var(--z-index-negative);
-      }
-
-      .img--ingredient {
       }
     }
   }

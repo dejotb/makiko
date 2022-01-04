@@ -473,7 +473,7 @@ table {
 @media screen and (min-width: 75em) {
   .products__image {
     justify-self: center;
-    height: 52rem;
+    height: 54rem;
   }
 }
 .products__image:hover {

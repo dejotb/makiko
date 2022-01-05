@@ -35,10 +35,11 @@
 
     @media screen and (min-width: $bp-xl) {
       background-image: url(../img/breadstick-1.webp),
+        url(../img/products-title-background.webp),
         url(../img/products-title-background.webp);
       background-size: 30%, contain;
-      background-repeat: no-repeat, repeat;
-      background-position: 120% 80%, center;
+      background-repeat: no-repeat;
+      background-position: 120% 80%, 5%, 95%;
     }
   }
 

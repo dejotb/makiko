@@ -302,7 +302,7 @@ table {
 .header__images {
   grid-area: img;
   display: flex;
-  height: 25vmax;
+  height: 26.5vmax;
   width: auto;
   aspect-ratio: 1.58/1;
 }

@@ -53,7 +53,7 @@
   &__images {
     grid-area: img;
     display: flex;
-    height: 28vmax;
+    height: 25vmax;
     width: auto;
 
     aspect-ratio: 1.58/1;
@@ -71,10 +71,6 @@
       transform: scale(1.1);
       margin: 0 -3rem;
       z-index: var(--z-index-box);
-
-      @media screen and (min-width: $bp-md) {
-        height: 20vmax;
-      }
     }
   }
 

@@ -147,8 +147,8 @@ table {
 }
 
 .img--ingredient {
-  width: 60%;
-  left: -10vw;
+  width: 50%;
+  left: -8vw;
   bottom: -1rem;
   display: block;
   position: absolute;
@@ -302,7 +302,7 @@ table {
 .header__images {
   grid-area: img;
   display: flex;
-  height: 28vmax;
+  height: 25vmax;
   width: auto;
   aspect-ratio: 1.58/1;
 }
@@ -319,11 +319,6 @@ table {
   transform: scale(1.1);
   margin: 0 -3rem;
   z-index: var(--z-index-box);
-}
-@media screen and (min-width: 55em) {
-  .header__images .header__img:nth-child(2) {
-    height: 20vmax;
-  }
 }
 .header__img {
   transition: 0.2s all ease-in-out;
@@ -393,8 +388,8 @@ table {
   .products__title {
     background-image: url(../img/breadstick-1.webp), url(../img/products-title-background.webp);
     background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position: 120% 80%, left;
+    background-repeat: no-repeat, repeat;
+    background-position: 120% 80%, center;
   }
 }
 .products__card {
@@ -441,7 +436,7 @@ table {
   grid-area: description;
 }
 .products__image {
-  height: 50vmax;
+  height: 55vmax;
   transition: 0.3s all ease-in-out;
   transform: rotate(1deg);
   position: relative;
@@ -590,7 +585,7 @@ table {
   .company__title {
     background-image: url(../img/breadstick-3.webp), url(../img/company-background.webp);
     background-size: 40%, contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
     background-position: -30% 50%, right;
   }
 }

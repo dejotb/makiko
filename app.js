@@ -46,6 +46,14 @@ const pageLoader = function () {
           },
           '<85%'
         );
+    } else {
+      tl.play();
+      tl.from('.header__images', {
+        delay: 1.5,
+        scale: 0.8,
+        duration: 0.9,
+        ease: 'power1.inOut',
+      });
     }
   });
 };

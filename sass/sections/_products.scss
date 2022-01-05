@@ -37,8 +37,8 @@
       background-image: url(../img/breadstick-1.webp),
         url(../img/products-title-background.webp);
       background-size: 30%, contain;
-      background-repeat: no-repeat;
-      background-position: 120% 80%, left;
+      background-repeat: no-repeat, repeat;
+      background-position: 120% 80%, center;
     }
   }
 
@@ -93,7 +93,7 @@
   }
 
   &__image {
-    height: 50vmax;
+    height: 55vmax;
     transition: 0.3s all ease-in-out;
     transform: rotate(1deg);
     position: relative;

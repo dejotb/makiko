@@ -107,6 +107,32 @@ const navigationSwitch = function () {
   nav.addEventListener('click', toggleHam);
 };
 
+// Lazy iages loading
+
+const lazyImageLoad = function () {
+  const imgTargets = document.querySelectorAll('img[data-src]');
+
+  const loadImg = function (entries, observer) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) return;
+
+    entry.target.src = entry.target.dataset.src;
+    entry.target.addEventListener('load', () => {
+      entry.target.classList.remove('lazy-img');
+    });
+    observer.unobserve(entry.target);
+  };
+
+  const imgObserver = new IntersectionObserver(loadImg, {
+    root: null,
+    threshold: 0,
+    rootMargin: '200px',
+  });
+
+  imgTargets.forEach((img) => imgObserver.observe(img));
+};
+
 // gsap animations
 
 const animationElements = function () {
@@ -219,6 +245,9 @@ const compositionSwitch = function () {
         <p class="pg">
         Składniki: mąka pszenna, <b>${ingredient}</b>, tłuszcz roślinny, cukier, drożdże,
         wodorotlenek sodu <br> (regulator kwasowości).
+        </p>
+        <p class="pg">
+        Masa netto: 70g
         </p>
 
       </div>
@@ -396,8 +425,9 @@ const callFunctions = function () {
 
   modalOptions(); // Form Modal handle
 
-  // gsap animations
-  animationElements();
+  lazyImageLoad(); // Lazy image load
+
+  animationElements(); // gsap animations
 };
 
 callFunctions();

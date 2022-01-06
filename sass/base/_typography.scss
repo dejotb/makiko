@@ -13,6 +13,7 @@
     text-shadow: 3px 3px 0px var(--color-white);
     line-height: 1.1;
     letter-spacing: 1px;
+    max-width: 70ch;
 
     & .first-word {
       color: var(--color-red);
@@ -36,10 +37,10 @@
   }
 }
 
-.pg {
+.text-width {
   max-width: 70ch;
 
-  & > p:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 1rem;
   }
 }

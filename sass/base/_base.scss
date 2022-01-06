@@ -92,3 +92,11 @@ textarea {
 table {
   contain: strict;
 }
+
+p {
+  max-width: 70ch;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

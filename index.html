@@ -63,8 +63,8 @@
           </a>
         </div>
       </nav>
-      <div class="header__heading pg">
-        <h1 class="heading--1 pd"><span class="first-word">Niezmienna</span> receptura i smak od 1980 roku.</h1>
+      <div class="header__heading text-width">
+        <h1 class="heading--1"><span class="first-word">Niezmienna</span> receptura i smak od 1980 roku.</h1>
       </div>
       <div class="header__images">
         <div class="header__img">
@@ -89,18 +89,18 @@
       <section id="produkty" class="products">
         <div class="section__title products__title">
           <h2 class="heading--2">Nasze Produkty</h2>
-          <p class="pg">
+          <p>
             Paluszki firmy Makiko to gwarancja niezmiennej receptury i smaku.
             Właściwie dobrane proporcje składników sprawiają, że paluszki są
             doskonale kruche i chrupiące.
           </p>
           <div class="breadsticks__image breadsticks__image--products"></div>
-          <p class="pg">
+          <p>
             Produkcja naszych paluszków oparta jest na oryginalnej recepturze. W
             procesie wytwarzania nie stosujemy sztucznych środków
             spulchniających, ulepszaczy czy konserwantów.
           </p>
-          <p class="pg">
+          <p>
             Bazując na naturalnych, zdrowych produktach i stosując unikalną
             metodę wytwarzania proponujemy produkty najwyższej jakości,
             znajdujące amatorów również wśród amatorów zdrowej żywności.
@@ -116,7 +116,7 @@
             </div>
             <div class="products__image ">
               <img class="img img--shadow" src="img/shadow-1.png" alt="" />
-              <picture class="img">
+              <!-- <picture class="img">
                 <source
                 srcset="img/products_img-1-small.png"
                 alt="opakowanie paluszków z sezamem"
@@ -124,8 +124,13 @@
                 media="(max-width: 800px)"
               />
               <img srcset="img/products_img--1.webp 1x, img/products_img-1-small.png 2x"  alt="" class="img"/>
-              </picture>
+              </picture> -->
 
+              <img class="img lazy-img" src="img/products_img--1-lazy.webp" data-src="img/products_img--1.webp" alt="opakowanie paluszków z sezamem">
+
+
+
+              <!-- <img srcset="img/products_img--1.webp 1x, img/products_img-1-small.png 2x"  alt="" class="img"/> -->
               <img class="img--ingredient" src="img/sesame.webp" alt="sezam" />
             </div>
 
@@ -141,7 +146,7 @@
                   class="btn products__btn products__btn--ingredients opacity--half"
                   data-btn-ingredients="1"
                 >
-                  Skład
+                  Skład/Masa
                 </button>
 
               </div>
@@ -157,7 +162,7 @@
             </div>
             <div class="products__image ">
               <img class="img img--shadow" src="img/shadow-2.png" alt="" />
-              <picture class="img">
+              <!-- <picture class="img">
                 <source
                 srcset="img/products_img-2-small.png"
                 alt="opakowanie paluszków z makiem"
@@ -165,7 +170,9 @@
                 media="(max-width: 800px)"
               />
               <img srcset="img/products_img--2.webp 1x, img/products_img-2-small.png 2x"  alt="" class="img"/>
-              </picture>
+              </picture> -->
+
+              <img class="img lazy-img" src="img/products_img--2-lazy.webp" data-src="img/products_img--2.webp" alt="opakowanie paluszków z makiem">
               <img class="img--ingredient" src="img/poppy.webp" alt="mak" />
             </div>
             <div class="products__composition" data-boxComposition="2">
@@ -181,7 +188,7 @@
                 class="btn products__btn products__btn--ingredients opacity--half"
                 data-btn-ingredients="2"
               >
-                Skład
+                Skład/Masa
               </button>
               </div>
             </div>
@@ -195,7 +202,7 @@
             </div>
             <div class="products__image ">
               <img class="img img--shadow" src="img/shadow-3.png" alt="" />
-              <picture class="img">
+              <!-- <picture class="img">
                 <source
                 srcset="img/products_img-3-small.png"
                 alt="opakowanie paluszków z solą"
@@ -203,7 +210,8 @@
                 media="(max-width: 800px)"
               />
               <img srcset="img/products_img--3.webp 1x, img/products_img-3-small.png 2x"  alt="" class="img"/>
-              </picture>
+              </picture> -->
+              <img class="img lazy-img" src="img/products_img--3-lazy.webp" data-src="img/products_img--3.webp" alt="opakowanie paluszków z solą">
               <img class="img--ingredient" src="img/salt.webp" alt="sól" />
             </div>
             <div class="products__composition" data-boxComposition="3">
@@ -218,7 +226,7 @@
                   class="btn products__btn products__btn--ingredients opacity--half"
                   data-btn-ingredients="3"
                 >
-                  Skład
+                  Skład/Masa
                 </button>
               </div>
             </div>
@@ -228,24 +236,24 @@
       <section id="company" class="company">
         <div class="section__title company__title">
           <h2 class="heading--2">Nasza Firma</h2>
-          <p class="pg">
+          <p>
             Firma Makiko powstała w 1980 roku jako niewielka, rodzinna firma
             nastawiona głównie na produkcję paluszków smakowych.
           </p>
-          <p class="pg">
+          <p>
             Początkowo produkowaliśmy jedynie paluszki z makiem. W miarę rozwoju
             i unowocześniania firmy nasza produkcja została poszerzona o nowe
             smaki - paluszki słone i sztandarowy produkt Makiko – paluszki z
             sezamem.
           </p>
           <div class="breadsticks__image breadsticks__image--company"></div>
-          <p class="pg">
+          <p>
             W ciągu ponad 40 lat działalności Makiko, produkcja firmy zawsze opierała
             się na zasadach Dobrej Praktyki Produkcyjnej i Higienicznej, co
             pozwoliło nam wraz z wejściem przepisów unijnych na wdrażanie
             systemu jakości HACCP.
           </p>
-          <p class="pg">
+          <p>
             Firma Makiko zawsze była, jest i będzie nastawiona na zaspokojenie
             oczekiwań swoich klientów.
           </p>
@@ -261,12 +269,12 @@
 
         <div class="contact__card">
           <address class="contact__text">
-            <p class="pg">Makiko Sp. z o.o.</p>
-            <p class="pg">ul. Matejki 3 05-420 Józefów</p>
-            <p class="pg">Telefon kontaktowy:</p>
-            <p class="pg">pon-śr: <a class="contact__link" href="tel:22 789 26 40">22 789 26 40</a></p>
-            <p class="pg">E-mail:</p>
-            <p class="pg">makiko@makiko.pl</p>
+            <p>Makiko Sp. z o.o.</p>
+            <p>ul. Matejki 3 05-420 Józefów</p>
+            <p>Telefon kontaktowy:</p>
+            <p>pon-śr: <a class="contact__link" href="tel:22 789 26 40">22 789 26 40</a></p>
+            <p>E-mail:</p>
+            <p>makiko@makiko.pl</p>
           </address>
         </div>
 
@@ -280,7 +288,7 @@
         <div class="contact__modal hidden">
           <form class="contact__form" action="https://formsubmit.co/dejotb1@gmail.com" method="POST">
             <h2 class="heading--2">Formularz kontaktowy</h2>
-            <p class="pg">Pola oznaczone gwiazdką (*) są obowiązkowe do wypełnienia.</p>
+            <p>Pola oznaczone gwiazdką (*) są obowiązkowe do wypełnienia.</p>
             <button id="btn__form--close" class="btn btn--close" title="zamknij (Esc)" type="button">x</button>
             <input type="hidden" name="_next" value="https://dejotb.github.io/makiko/pages/thankYou.html">
             <input type="hidden" name="_subject" value="Nowa wiadomość ze strony makiko.pl">

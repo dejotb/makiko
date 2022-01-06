@@ -32,6 +32,10 @@
   transition: 0.2s all ease-in-out;
 }
 
+.lazy-img {
+  filter: blur(8px);
+}
+
 .accented {
   accent-color: var(--color-blue);
 }

@@ -448,7 +448,7 @@ p:not(:last-child) {
   grid-area: description;
 }
 .products__image {
-  height: 45vmax;
+  height: 55vmax;
   transition: 0.3s all ease-in-out;
   transform: rotate(1deg);
   position: relative;

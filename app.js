@@ -176,22 +176,6 @@ const animationElements = function () {
         },
       }
     );
-    // Image Scroll trigger
-    // gsap.fromTo(
-    //   section.querySelector('.products__image'),
-    //   { scale: 0.9 },
-    //   {
-    //     scale: 1,
-    //     stagger: 0.2,
-    //     duration: 0.5,
-    //     ease: 'easeInOut',
-
-    //     scrollTrigger: {
-    //       trigger: section,
-    //       start: 'top 80%',
-    //     },
-    //   }
-    // );
   });
 };
 

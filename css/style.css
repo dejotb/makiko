@@ -314,7 +314,7 @@ p:not(:last-child) {
 .header__images {
   grid-area: img;
   display: flex;
-  height: max(40vmin, 20rem);
+  height: max(40vmin, 19rem);
   width: auto;
   aspect-ratio: 1.58/1;
 }

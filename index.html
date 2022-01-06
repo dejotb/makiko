@@ -69,17 +69,41 @@
       <div class="header__images">
         <div class="header__img">
           <a href="#product__card--2" class="header__link">
-            <img class="img" src="img/products_img-2-small.png" alt="paluszki z makiem" />
+            <picture class="img">
+                <source
+                srcset="img/products_img-2-small.webp"
+                alt="opakowanie paluszków z sezamem"
+                class="img"
+                media="(max-width: 800px)"
+              />
+              <img srcset="img/products_img--2.webp 1x, img/products_img-2-small.webp 2x"  alt="Opakowanie paluszków z makiem" class="img"/>
+              </picture>
           </a>
         </div>
         <div class="header__img">
           <a href="#product__card--1" class="header__link">
-            <img class="img" src="img/products_img-1-small.png" alt="paluszki z sezamem" />
+            <picture class="img">
+              <source
+              srcset="img/products_img-1-small.webp"
+              alt="opakowanie paluszków z makiem"
+              class="img"
+              media="(max-width: 800px)"
+            />
+            <img srcset="img/products_img--1.webp 1x, img/products_img-1-small.webp 2x"  alt="Opakowanie paluszków z makiem" class="img"/>
+            </picture>
           </a>
         </div>
         <div class="header__img">
           <a href="#product__card--3" class="header__link">
-            <img class="img" src="img/products_img-3-small.png" alt="paluszki solone"/>
+            <picture class="img">
+              <source
+              srcset="img/products_img-3-small.webp"
+              alt="opakowanie paluszków z solą"
+              class="img"
+              media="(max-width: 800px)"
+            />
+            <img srcset="img/products_img--3.webp 1x, img/products_img-3-small.webp 2x"  alt="Opakowanie paluszków z solą" class="img"/>
+            </picture>
           </a>
         </div>
       </div>

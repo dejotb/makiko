@@ -44,7 +44,7 @@
   }
 
   &__card {
-    padding: 5rem 1rem 4rem;
+    padding: 6rem 1rem 0rem;
     display: grid;
     grid-template-areas:
       "description"
@@ -59,6 +59,10 @@
     position: relative;
     overflow: hidden;
 
+    &:last-of-type {
+      padding-bottom: 6rem;
+    }
+
     @media screen and (min-width: $bp-md) {
       padding: 12rem 1rem;
       grid-template-areas:
@@ -66,6 +70,10 @@
         "img composition";
       background-position: center;
       background-attachment: fixed;
+
+      &:last-of-type {
+        padding-bottom: 12rem;
+      }
     }
 
     @media screen and (min-width: $bp-xl) {

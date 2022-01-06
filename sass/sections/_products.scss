@@ -44,7 +44,7 @@
   }
 
   &__card {
-    padding: 4rem 1rem;
+    padding: 5rem 1rem 4rem;
     display: grid;
     grid-template-areas:
       "description"
@@ -52,7 +52,7 @@
       "composition";
     align-items: center;
     justify-items: center;
-    grid-gap: 8rem;
+    grid-gap: 6rem;
     background-repeat: no-repeat;
     background-position: 25% 73%;
     background-size: cover;

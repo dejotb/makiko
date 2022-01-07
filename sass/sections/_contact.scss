@@ -55,7 +55,7 @@
     left: 0;
     background-color: var(--color-primary);
     display: grid;
-    align-items: center;
+    align-items: flex-start;
     z-index: var(--z-index-modal);
     transition: 0.3s all;
     padding: 1rem;
@@ -92,12 +92,5 @@
         max-width: 80rem;
       }
     }
-  }
-}
-
-@keyframes modalHide {
-  100% {
-    transform: translateX(100%);
-    display: none;
   }
 }

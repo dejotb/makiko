@@ -32,16 +32,12 @@
     }
   }
 
-  &__list {
-    // list-style: none;
-  }
-
   &__item {
     font-size: var(--fs-600);
   }
 
   &__list--overlay {
-    background-color: black;
+    background-color: var(--color-grey);
     position: fixed;
     transition: 0.9s all 0.5s ease-out;
     opacity: 0.5;
@@ -57,10 +53,6 @@
     text-decoration: none;
     transition: 0.2s all;
     position: relative;
-
-    &:hover {
-      // color: var(--color-red);
-    }
 
     &:after {
       transition: 0.7s all 0.2s ease-in-out;
@@ -192,11 +184,11 @@
 }
 
 .hamburger__active {
-  animation: lettersEffectActive 1s ease-in-out;
+  animation: hamburgerTextActive 1s ease-in-out;
 }
 
 .hamburger__inactive {
-  animation: lettersEffectsInactive 1s ease-in-out;
+  animation: hamburgerTextInactive 1s ease-in-out;
 }
 
 .nav__logo {

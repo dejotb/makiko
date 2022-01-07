@@ -41,8 +41,6 @@
   &__heading {
     grid-area: text;
     display: grid;
-    h1 {
-    }
 
     @media screen and (min-width: $bp-xl) {
       align-self: end;

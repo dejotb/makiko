@@ -8,30 +8,21 @@
     justify-items: center;
     align-content: start;
     grid-gap: 5rem;
-    background-color: var(--color-primary);
+    background-image: url(../img/header-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2rem 1rem;
   }
 
-  &__text {
-    // display: grid;
-    // justify-content: center;
-  }
-
   &__heading {
-    // font-family: $font-display;
     font-size: var(--fs-600);
-    // color: var(--color--font);
-    // color: var(--color-red);
-    // line-height: 1;
     font-weight: 700;
-    // text-shadow: 3px 3px 0px var(--color-white);
     letter-spacing: 1px;
 
     span {
-      font-size: var(--fs-400);
+      font-size: var(--fs-500);
       font-weight: 400;
       display: block;
-      //   color: pink;
     }
   }
 

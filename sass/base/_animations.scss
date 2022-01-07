@@ -10,6 +10,13 @@
   }
 }
 
+@keyframes modalHide {
+  100% {
+    transform: translateX(100%);
+    display: none;
+  }
+}
+
 .show {
   animation: fade-in 0.2s ease-in;
 }
@@ -36,7 +43,7 @@
   }
 }
 
-@keyframes lettersEffectActive {
+@keyframes hamburgerTextActive {
   0% {
     transform: translateX(0);
     opacity: 1;
@@ -48,7 +55,7 @@
   }
 }
 
-@keyframes lettersEffectsInactive {
+@keyframes hamburgerTextInactive {
   0% {
     transform: translateX(0);
     opacity: 1;

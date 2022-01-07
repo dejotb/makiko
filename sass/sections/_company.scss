@@ -1,10 +1,6 @@
 @use "../abstracts" as *;
 
 .company {
-  //   display: grid;
-  //   align-items: flex-start;
-  //   min-height: 100vh;
-
   &__title {
     background-color: var(--color-blue);
     background-image: url(../img/company-background.webp);

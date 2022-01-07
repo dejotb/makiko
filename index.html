@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Paluszki Makiko">
+    <meta name="description" content="Paluszki Makiko" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Neuton:wght@400;700&display=swap"
       rel="stylesheet"
@@ -12,14 +12,19 @@
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <title>makiko</title>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-   <script
-   defer src="app.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="loader">
-      <img src="img/logo.webp" alt="wczytywanie strony...">
+      <img src="img/logo.webp" alt="wczytywanie strony..." />
     </div>
     <header id="header" class="header">
       <a class="skip-nav-link" href="#main__content">pomiń nawigację</a>
@@ -42,14 +47,13 @@
             </li>
           </ul>
           <ul class="nav__info">
-            <li class="nav__span ">
+            <li class="nav__span">
               <a
                 href="https://www.google.com/maps/place/Makiko+Sp.+Z+o.o.+Producent+paluszk%C3%B3w+sezamowych,+makowych+i+s%C5%82onych/@52.1415142,21.2332521,15z/data=!4m5!3m4!1s0x0:0x6823dd208f41011a!8m2!3d52.141669!4d21.2333655"
                 class="nav__link"
                 target="bank_"
                 >Lokalizacja
-                </a
-              >
+              </a>
             </li>
             <li class="nav__span">
               <a href="tel:227892640" class="nav__link">Tel. 22 789 26 40</a>
@@ -64,32 +68,47 @@
         </div>
       </nav>
       <div class="header__heading text-width">
-        <h1 class="heading--1"><span class="first-word">Niezmienna</span> receptura i smak od 1980 roku.</h1>
+        <h1 class="heading--1">
+          <span class="first-word">Niezmienna</span> receptura i smak od 1980
+          roku.
+        </h1>
       </div>
       <div class="header__images">
         <div class="header__img">
           <a href="#product__card--2" class="header__link">
             <picture class="img">
-                <source
+              <source
                 srcset="img/products_img-2-small.webp"
-                alt="opakowanie paluszków z sezamem"
                 class="img"
                 media="(max-width: 800px)"
               />
-              <img srcset="img/products_img--2.webp 1x, img/products_img-2-small.webp 2x"  alt="Opakowanie paluszków z makiem" class="img"/>
-              </picture>
+              <img
+                srcset="
+                  img/products_img--2.webp      1x,
+                  img/products_img-2-small.webp 2x
+                "
+                alt="Opakowanie paluszków z makiem"
+                class="img"
+              />
+            </picture>
           </a>
         </div>
         <div class="header__img">
           <a href="#product__card--1" class="header__link">
             <picture class="img">
               <source
-              srcset="img/products_img-1-small.webp"
-              alt="opakowanie paluszków z makiem"
-              class="img"
-              media="(max-width: 800px)"
-            />
-            <img srcset="img/products_img--1.webp 1x, img/products_img-1-small.webp 2x"  alt="Opakowanie paluszków z makiem" class="img"/>
+                srcset="img/products_img-1-small.webp"
+                class="img"
+                media="(max-width: 800px)"
+              />
+              <img
+                srcset="
+                  img/products_img--1.webp      1x,
+                  img/products_img-1-small.webp 2x
+                "
+                alt="Opakowanie paluszków z makiem"
+                class="img"
+              />
             </picture>
           </a>
         </div>
@@ -97,17 +116,25 @@
           <a href="#product__card--3" class="header__link">
             <picture class="img">
               <source
-              srcset="img/products_img-3-small.webp"
-              alt="opakowanie paluszków z solą"
-              class="img"
-              media="(max-width: 800px)"
-            />
-            <img srcset="img/products_img--3.webp 1x, img/products_img-3-small.webp 2x"  alt="Opakowanie paluszków z solą" class="img"/>
+                srcset="img/products_img-3-small.webp"
+                class="img"
+                media="(max-width: 800px)"
+              />
+              <img
+                srcset="
+                  img/products_img--3.webp      1x,
+                  img/products_img-3-small.webp 2x
+                "
+                alt="Opakowanie paluszków z solą"
+                class="img"
+              />
             </picture>
           </a>
         </div>
       </div>
-      <a href="#produkty" id="btn--header" class="btn btn--cta" role="button">Więcej</a>
+      <a href="#produkty" id="btn--header" class="btn btn--cta" role="button"
+        >Więcej</a
+      >
     </header>
     <main id="main__content" class="main">
       <section id="produkty" class="products">
@@ -130,18 +157,20 @@
             znajdujące amatorów również wśród amatorów zdrowej żywności.
           </p>
         </div>
-        <div  class="products__box">
-          <div
-            id="product__card--1"
-            class="products__card products__card--1"
-          >
+        <div class="products__box">
+          <div id="product__card--1" class="products__card products__card--1">
             <div class="products__description">
               <h3 class="heading--3">Paluszki <span>sezamowe</span></h3>
             </div>
-            <div class="products__image ">
+            <div class="products__image">
               <img class="img img--shadow" src="img/shadow-1.webp" alt="" />
 
-              <img class="img lazy-img" src="img/products_img--1-lazy.webp" data-src="img/products_img--1.webp" alt="opakowanie paluszków z sezamem">
+              <img
+                class="img lazy-img"
+                src="img/products_img--1-lazy.webp"
+                data-src="img/products_img--1.webp"
+                alt="opakowanie paluszków z sezamem"
+              />
 
               <img class="img--ingredient" src="img/sesame.webp" alt="sezam" />
             </div>
@@ -160,26 +189,26 @@
                 >
                   Skład/Masa
                 </button>
-
               </div>
             </div>
           </div>
 
-          <div
-            id="product__card--2"
-            class="products__card products__card--2 "
-          >
+          <div id="product__card--2" class="products__card products__card--2">
             <div class="products__description">
               <h3 class="heading--3">Paluszki <span>makowe</span></h3>
             </div>
-            <div class="products__image ">
+            <div class="products__image">
               <img class="img img--shadow" src="img/shadow-2.webp" alt="" />
-              <img class="img lazy-img" src="img/products_img--2-lazy.webp" data-src="img/products_img--2.webp" alt="opakowanie paluszków z makiem">
+              <img
+                class="img lazy-img"
+                src="img/products_img--2-lazy.webp"
+                data-src="img/products_img--2.webp"
+                alt="opakowanie paluszków z makiem"
+              />
               <img class="img--ingredient" src="img/poppy.webp" alt="mak" />
             </div>
             <div class="products__composition" data-boxComposition="2">
               <div class="products__buttons">
-
                 <button
                   class="btn products__btn products__btn--nutritients opacity--full"
                   data-btn-nutritients="2"
@@ -187,34 +216,36 @@
                   Tabela wartości
                 </button>
                 <button
-                class="btn products__btn products__btn--ingredients opacity--half"
-                data-btn-ingredients="2"
-              >
-                Skład/Masa
-              </button>
+                  class="btn products__btn products__btn--ingredients opacity--half"
+                  data-btn-ingredients="2"
+                >
+                  Skład/Masa
+                </button>
               </div>
             </div>
           </div>
-          <div
-            id="product__card--3"
-            class="products__card products__card--3"
-          >
+          <div id="product__card--3" class="products__card products__card--3">
             <div class="products__description">
               <h3 class="heading--3">Paluszki <span>solone</span></h3>
             </div>
-            <div class="products__image ">
+            <div class="products__image">
               <img class="img img--shadow" src="img/shadow-3.webp" alt="" />
-              <img class="img lazy-img" src="img/products_img--3-lazy.webp" data-src="img/products_img--3.webp" alt="opakowanie paluszków z solą">
+              <img
+                class="img lazy-img"
+                src="img/products_img--3-lazy.webp"
+                data-src="img/products_img--3.webp"
+                alt="opakowanie paluszków z solą"
+              />
               <img class="img--ingredient" src="img/salt.webp" alt="sól" />
             </div>
             <div class="products__composition" data-boxComposition="3">
               <div class="products__buttons">
                 <button
-                class="btn products__btn products__btn--nutritients opacity--full"
-                data-btn-nutritients="3"
-              >
-                Tabela wartości
-              </button>
+                  class="btn products__btn products__btn--nutritients opacity--full"
+                  data-btn-nutritients="3"
+                >
+                  Tabela wartości
+                </button>
                 <button
                   class="btn products__btn products__btn--ingredients opacity--half"
                   data-btn-ingredients="3"
@@ -241,10 +272,10 @@
           </p>
           <div class="breadsticks__image breadsticks__image--company"></div>
           <p>
-            W ciągu ponad 40 lat działalności Makiko, produkcja firmy zawsze opierała
-            się na zasadach Dobrej Praktyki Produkcyjnej i Higienicznej, co
-            pozwoliło nam wraz z wejściem przepisów unijnych na wdrażanie
-            systemu jakości HACCP.
+            W ciągu ponad 40 lat działalności Makiko, produkcja firmy zawsze
+            opierała się na zasadach Dobrej Praktyki Produkcyjnej i
+            Higienicznej, co pozwoliło nam wraz z wejściem przepisów unijnych na
+            wdrażanie systemu jakości HACCP.
           </p>
           <p>
             Firma Makiko zawsze była, jest i będzie nastawiona na zaspokojenie
@@ -256,7 +287,11 @@
         <div class="contact__title">
           <h2 class="heading--2">Kontakt</h2>
           <div class="contact__image">
-            <img class="img contact__image" src="img/logo.webp" alt="logo strony">
+            <img
+              class="img contact__image"
+              src="img/logo.webp"
+              alt="logo strony"
+            />
           </div>
         </div>
 
@@ -265,7 +300,10 @@
             <p>Makiko Sp. z o.o.</p>
             <p>ul. Matejki 3 05-420 Józefów</p>
             <p>Telefon kontaktowy:</p>
-            <p>pon-śr: <a class="contact__link" href="tel:22 789 26 40">22 789 26 40</a></p>
+            <p>
+              pon-śr:
+              <a class="contact__link" href="tel:227892640">22 789 26 40</a>
+            </p>
             <p>E-mail:</p>
             <p>makiko@makiko.pl</p>
           </address>
@@ -274,22 +312,75 @@
         <div class="contact__card">
           <div class="contact__form">
             <h3 class="heading--4"><span>Formularz kontaktowy</span></h3>
-            <button id='btn__form--open' class="btn btn--cta">Napisz do nas</button>
+            <button id="btn__form--open" class="btn btn--cta">
+              Napisz do nas
+            </button>
           </div>
         </div>
 
         <div class="contact__modal hidden">
-          <form class="contact__form" action="https://formsubmit.co/dejotb1@gmail.com" method="POST">
+          <form
+            class="contact__form"
+            action="https://formsubmit.co/dejotb1@gmail.com"
+            method="POST"
+          >
             <h2 class="heading--2">Formularz kontaktowy</h2>
             <p>Pola oznaczone gwiazdką (*) są obowiązkowe do wypełnienia.</p>
-            <button id="btn__form--close" class="btn btn--close" title="zamknij (Esc)" type="button">x</button>
-            <input type="hidden" name="_next" value="https://dejotb.github.io/makiko/pages/thankYou.html">
-            <input type="hidden" name="_subject" value="Nowa wiadomość ze strony makiko.pl">
-            <input class="accented" type="text" name="subject"  value="" placeholder="*Wpisz temat wiadomości" required>
-            <input class="accented" type="text" name="fullName" value="" placeholder="*Imię i nazwisko" required>
-            <input class="accented" type="email" name="email" placeholder="*Adres e-mail" aria-invalid="true" aria-describedby="email-error" required>
-            <input class="accented" type="tel" name="tel"  placeholder="Numer telefonu" >
-            <textarea class="accented" type="text" name="message" placeholder="*Wpisz swoją wiadomość" required></textarea>
+            <button
+              id="btn__form--close"
+              class="btn btn--close"
+              title="zamknij (Esc)"
+              type="button"
+            >
+              x
+            </button>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://dejotb.github.io/makiko/pages/thankYou.html"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nowa wiadomość ze strony makiko.pl"
+            />
+            <input
+              class="accented"
+              type="text"
+              name="subject"
+              value=""
+              placeholder="*Wpisz temat wiadomości"
+              required
+            />
+            <input
+              class="accented"
+              type="text"
+              name="fullName"
+              value=""
+              placeholder="*Imię i nazwisko"
+              required
+            />
+            <input
+              class="accented"
+              type="email"
+              name="email"
+              placeholder="*Adres e-mail"
+              aria-invalid="true"
+              aria-describedby="email-error"
+              required
+            />
+            <input
+              class="accented"
+              type="tel"
+              name="tel"
+              placeholder="Numer telefonu"
+            />
+            <textarea
+              class="accented"
+              name="message"
+              placeholder="*Wpisz swoją wiadomość"
+              required
+            ></textarea>
             <button class="btn btn--cta" type="submit">Wyślij</button>
           </form>
         </div>
@@ -312,18 +403,17 @@
       </ul>
 
       <div class="footer__contact">
-        <a class="footer__link" href="tel:22 789 26 40">
-          <span class="icon">&#9743</span> 22 789 26 40
+        <a class="footer__link" href="tel:227892640">
+          <span class="icon">&#9743;</span> 22 789 26 40
         </a>
         <a class="footer__link" href="mailto:makiko@makiko.pl">
-          <span class="icon">&#9993</span> makiko@makiko.pl
+          <span class="icon">&#9993;</span> makiko@makiko.pl
         </a>
       </div>
       <div class="footer__text">
-        <span>&#174; 2022 MAKIKO  / </span>
+        <span>&#174; 2022 MAKIKO / </span>
         <span>projekt i realizacja: Bartosz Kraszewski</span>
       </div>
     </footer>
-
   </body>
 </html>

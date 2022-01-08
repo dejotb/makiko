@@ -654,7 +654,7 @@ p:not(:last-child) {
   overflow: hidden;
   display: grid;
   justify-items: center;
-  padding-bottom: 1rem;
+  padding: 4rem 0 1rem;
   grid-gap: 2.5rem;
 }
 .contact__form input,

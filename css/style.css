@@ -790,9 +790,10 @@ p:not(:last-child) {
 .hamburger__text {
   font-size: var(--fs-400);
   font-family: var(--ff-display);
+  font-weight: 700;
   position: absolute;
   top: 0;
-  right: -5.5rem;
+  right: -6rem;
   color: var(--color-red);
   cursor: default;
 }
@@ -828,7 +829,7 @@ p:not(:last-child) {
   transform: rotate(-225deg);
 }
 .toggleHam .hamburger__text {
-  right: -7rem;
+  right: -8rem;
 }
 
 .hamburger__active {

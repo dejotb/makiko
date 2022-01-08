@@ -404,7 +404,7 @@ p:not(:last-child) {
     background-image: url(../img/breadstick-1.webp), url(../img/products-title-background.webp), url(../img/products-title-background.webp);
     background-size: 30%, contain;
     background-repeat: no-repeat;
-    background-position: 120% 80%, 5%, 95%;
+    background-position: 118% 90%, 5%, 95%;
   }
 }
 .products__card {
@@ -548,12 +548,12 @@ p:not(:last-child) {
   background-size: contain;
 }
 .breadsticks__image--products {
-  background-image: url("../img/breadstick-3.webp");
-  height: 14vmin;
-}
-.breadsticks__image--company {
   background-image: url("../img/breadstick-2.webp");
   height: 6vmin;
+}
+.breadsticks__image--company {
+  background-image: url("../img/breadstick-3.webp");
+  height: 16vmin;
 }
 @media screen and (min-width: 75em) {
   .breadsticks__image {
@@ -590,7 +590,7 @@ p:not(:last-child) {
     background-image: url(../img/breadstick-3.webp), url(../img/company-background.webp), url(../img/company-background.webp);
     background-size: 40%, contain;
     background-repeat: no-repeat;
-    background-position: -30% 50%, right, left;
+    background-position: -30% 80%, right, left;
   }
 }
 

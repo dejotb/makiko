@@ -34,7 +34,7 @@
         url(../img/products-title-background.webp);
       background-size: 30%, contain;
       background-repeat: no-repeat;
-      background-position: 120% 80%, 5%, 95%;
+      background-position: 118% 90%, 5%, 95%;
     }
   }
 
@@ -195,12 +195,12 @@
   background-size: contain;
 
   &--products {
-    background-image: url("../img/breadstick-3.webp");
-    height: 14vmin;
-  }
-  &--company {
     background-image: url("../img/breadstick-2.webp");
     height: 6vmin;
+  }
+  &--company {
+    background-image: url("../img/breadstick-3.webp");
+    height: 16vmin;
   }
 
   @media screen and (min-width: $bp-xl) {

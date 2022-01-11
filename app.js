@@ -414,4 +414,6 @@ const callFunctions = function () {
   animationElements(); // gsap animations
 };
 
+// Run all functions
+
 callFunctions();

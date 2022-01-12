@@ -394,9 +394,10 @@ const modalOptions = function () {
   });
 
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
+    if (e.key !== 'Escape') {
+    } else {
       form.classList.add('hidden');
-    } else return;
+    }
   });
 };
 

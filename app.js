@@ -1,4 +1,4 @@
-// Page Loader
+// Site load
 
 const pageLoader = function () {
   const loader = document.querySelector('.loader');

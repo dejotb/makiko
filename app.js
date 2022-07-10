@@ -2,61 +2,60 @@
 
 const pageLoader = function () {
   const loader = document.querySelector('.loader');
+  loader.classList.add('hidden');
+  const tl = gsap.timeline({ paused: true });
 
-  window.addEventListener('load', () => {
-    loader.classList.add('hidden');
-    const tl = gsap.timeline({ paused: true });
+  const mqs = [
+    window.matchMedia('(min-width: 600px)'),
+    window.matchMedia('(min-width: 768px)'),
+    window.matchMedia('(min-width: 1200px)'),
+  ];
 
-    const mqs = [
-      window.matchMedia('(min-width: 600px)'),
-      window.matchMedia('(min-width: 768px)'),
-      window.matchMedia('(min-width: 1200px)'),
-    ];
+  if (mqs[2].matches) {
+    tl.play();
 
-    if (mqs[2].matches) {
-      tl.play();
-
-      tl.from('.header__images', {
-        delay: 1.5,
-        scale: 0.8,
+    tl.from('.header__images', {
+      delay: 1.5,
+      scale: 0.8,
+      duration: 0.9,
+      ease: 'power1.inOut',
+    })
+      .from('.header__images', {
+        xPercent: -80,
+        delay: 1,
+        ease: 'back.inOut',
         duration: 0.9,
-        ease: 'power1.inOut',
       })
-        .from('.header__images', {
-          xPercent: -80,
-          delay: 1,
-          ease: 'back.inOut',
-          duration: 0.9,
-        })
-        .from(
-          '.heading--1',
-          {
-            opacity: 0,
-            x: 100,
-            ease: 'back',
-            duration: 0.8,
-          },
-          '<35%'
-        )
-        .from(
-          '#btn--header',
-          {
-            opacity: 0,
-            y: 20,
-          },
-          '<85%'
-        );
-    } else {
-      tl.play();
-      tl.from('.header__images', {
-        delay: 1.5,
-        scale: 0.8,
-        duration: 0.9,
-        ease: 'power1.inOut',
-      });
-    }
-  });
+      .from(
+        '.heading--1',
+        {
+          opacity: 0,
+          x: 100,
+          ease: 'back',
+          duration: 0.8,
+        },
+        '<35%'
+      )
+      .from(
+        '#btn--header',
+        {
+          opacity: 0,
+          y: 20,
+        },
+        '<85%'
+      );
+  } else {
+    tl.play();
+    tl.from('.header__images', {
+      delay: 1.5,
+      scale: 0.8,
+      duration: 0.9,
+      ease: 'power1.inOut',
+    });
+  }
 };
+
+window.addEventListener('load', pageLoader);
 
 // Navigation
 
@@ -394,15 +393,14 @@ const modalOptions = function () {
   });
 
   window.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape') {
-    } else {
-      form.classList.add('hidden');
-    }
+    if (e.key !== 'Escape') return;
+
+    form.classList.add('hidden');
   });
 };
 
 const callFunctions = function () {
-  pageLoader(); // Page Loader
+  // pageLoader(); // Page Loader
 
   navigationSwitch(); // Navigation
 
